@@ -1,0 +1,128 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+main {
+    background-color: whitesmoke; 
+}
+
+ul .logo img{
+    width: 100px;
+}
+
+.menu {
+background-color: rgba(0, 0, 255, 0.508);
+
+}
+
+.espaco {
+    background-color: whitesmoke;
+    color: whitesmoke;
+}
+
+.menu ul {
+display: flex;
+justify-content: space-around;
+align-items: center;
+list-style-type: none;
+}
+
+
+.itens_2 ul {
+    display: flex;
+    align-items: center;
+    list-style-type: none;
+
+}
+
+.banner {
+    
+    padding-top: 20%;
+    
+    padding-left: 85%;
+    margin-left: 5.6%;
+    /* margin-top: 2.3%; */
+    width: 50px;
+    height: 50px;
+    border-radius: 40px;
+    background-image: url(/Adote-aqui/api-site/public/assets/imgs/cachorro_gato.jpg);
+    background-position: center;
+    background-size: cover
+}
+
+.opt ul {
+    display: flex;
+    list-style-type: none;
+    
+    justify-content: space-evenly;
+    margin: 1%;
+}
+
+.opt {
+    display: flex;
+   
+}
+
+.opt .opt_1 {
+    background-color: rgba(0, 0, 255, 0.508);
+    
+    padding: 14%;
+    padding-bottom: 1.15%;
+    padding-top: 0;
+    margin-top: 2.3%;
+    margin-left: 9.3%;
+   margin-right: 1.5%;
+    
+    border-radius: 10px;
+   
+
+}
+.opt .opt_1 a{
+    
+    text-decoration: none;
+    color: white;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-size: 28px;
+    
+    
+}
+
+
+.opt .opt_2 {
+    padding: 14%;
+    padding-bottom: 1.15%;
+    margin-right: 5%;
+    padding-top: 0;
+    margin-top: 2.3%;
+    
+    margin-left: 1.5%;
+    background-color: rgba(0, 0, 255, 0.275);
+   
+   
+    text-decoration: none;
+    border-radius: 10px;
+   
+}
+.opt .opt_2 a{
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-size: 28px;    
+    text-decoration: none;
+    color: white;
+    
+   
+    
+}
+
+.navbar div{
+    padding-top: 3%;
+    margin-left: 7%;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-size: large;
+    font-weight: bold;
+    color: rgba(0, 0, 255, 0.508);
+}
+
+.article {
+    background-color: whitesmoke;
+}

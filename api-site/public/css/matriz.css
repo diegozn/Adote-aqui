@@ -51,7 +51,7 @@ list-style-type: none;
     width: 50px;
     height: 50px;
     border-radius: 40px;
-    background-image: url(../assets/imgs/cachorro_gato.jpg);
+    background-image: url(/api-site/public/assets/imgs/cachorro_gato.jpg);
     background-position: center;
     background-size: cover
 }
@@ -152,11 +152,40 @@ list-style-type: none;
 
 .container .pet_1 img{
     
-    height: 280px;
+    height: 250px;
     border-radius: 10px;
 
    
 }
+
+.container .pet_1_1 {
+   
+    background-color: white;
+   
+    padding-bottom: 6%;
+    margin-left: 5%;
+    
+    background-position: center;
+    background-size: cover;
+    border-radius: 10px;
+    flex-direction: column;
+    box-shadow: 10px 10px 5px grey;
+    
+    
+    
+}
+
+.container .pet_1_1 img{
+    
+    height: 250px;
+    border-radius: 10px;
+
+   
+}
+
+
+
+
 .container_2 {
     margin-top: 3%;
     display: flex;
@@ -180,11 +209,38 @@ list-style-type: none;
 
 .container_2 .pet_2 img{
     
-    height: 280px;
+    height: 250px;
     border-radius: 10px;
 
    
 }
+
+.container_2 .pet_2_2 {
+   
+    background-color: white;
+   
+    padding-bottom: 6%;
+    margin-left: 5%;
+    
+    background-position: center;
+    background-size: cover;
+    border-radius: 10px;
+    flex-direction: column;
+    box-shadow: 10px 10px 5px grey;
+    
+    
+}
+
+.container_2 .pet_2_2 img{
+    
+    height: 250px;
+    border-radius: 10px;
+
+   
+}
+
+
+
 
 .container_3 {
     margin-top: 3%;
@@ -207,13 +263,36 @@ list-style-type: none;
     
 }
 
+/* .container_3 {
+    margin-top: 3%;
+    display: flex;
+}
+
+.container_3 .pet_3_3 {
+   
+    background-color: white;
+   
+    padding-bottom: 6%;
+    margin-left: 5%;
+    
+    background-position: center;
+    background-size: cover;
+    border-radius: 10px;
+    flex-direction: column;
+    box-shadow: 10px 10px 5px grey;
+    height: 250px;
+    border-radius: 10px;
+    
+    
+}
+
 .container_3 .pet_3 img{
     
-    height: 280px;
+    height: 250px;
     border-radius: 10px;
 
    
-}
+} */
 
 #btn_1 {
     
@@ -228,3 +307,69 @@ list-style-type: none;
     color: white;
   
 }
+/* ---------------------------------- */
+
+.container_4 {
+    margin-top: 2%;
+    display: flex;
+}
+
+.container_4 .dica {
+    
+    background-color: white;
+   
+    padding-bottom: 6%;
+    margin-left: 5%;
+    
+    background-position: center;
+    background-size: cover;
+    border-radius: 10px;
+    flex-direction: column;
+    box-shadow: 10px 10px 5px grey;
+    
+    
+    
+}
+
+.container_4 .dica img{
+    
+    height: 250px;
+    border-radius: 10px;
+
+   
+}
+
+.container_4 .dica1 {
+   
+    background-color: white;
+   
+    padding-bottom: 6%;
+    margin-left: 5%;
+    
+    background-position: center;
+    background-size: cover;
+    border-radius: 10px;
+    flex-direction: column;
+    box-shadow: 10px 10px 5px grey;
+    
+    
+    
+}
+
+.container_4 .dica1 img{
+    
+    height: 250px;
+    border-radius: 10px;
+
+   
+}
+
+footer {
+    display: flex;
+    justify-content: space-around;
+    margin-top: 2%;
+    padding: 3%;
+    background-color: rgba(0, 0, 255, 0.508);
+    
+}
+

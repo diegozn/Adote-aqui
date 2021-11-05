@@ -135,7 +135,7 @@ list-style-type: none;
 
 .container .pet_1 {
    
-    margin-left: 1%;
+    margin-left: 2%;
     flex-direction: column;
     border-radius: 10px; 
     position: relative;
@@ -143,10 +143,6 @@ list-style-type: none;
     height: 250px;
     display: flex;
     box-shadow: 10px 10px 5px rgba(128, 128, 128, 0.282);
-    
-    
-    
-    
 }
 
 .container .pet_1 img{
@@ -159,9 +155,11 @@ list-style-type: none;
 }
 
 .container .pet_1_1 {
-    margin-left: 6%;
+    margin-left: 8.5%;
+    
     flex-direction: column;
     border-radius: 10px; 
+    
     position: relative;
     width: 205px;
     height: 250px;
@@ -185,26 +183,23 @@ list-style-type: none;
 }
 
 .container .pet_1_1 img{
-    
     width: 205px;
     border-radius: 10px; 
      height: 250px;
-     
-
-   
+    
 }
-
 
 
 
 .container_2 {
     margin-top: 3%;
     display: flex;
+    
 }
 
 .container_2 .pet_2 {
    
-    margin-left: 1%;
+    margin-left: 2%;
     flex-direction: column;
     border-radius: 10px; 
     position: relative;
@@ -217,17 +212,18 @@ list-style-type: none;
 }
 
 .container_2 .pet_2 img{
-    
+  
     width: 205px;
     border-radius: 10px; 
      height: 250px;
+     
 
    
 }
 
 .container_2 .pet_2_2 {
    
-    margin-left: 1%;
+    margin-left: 8.5%;
     flex-direction: column;
     border-radius: 10px; 
     position: relative;
@@ -243,9 +239,8 @@ list-style-type: none;
     
     width: 205px;
     border-radius: 10px; 
-     height: 250px;
+    height: 250px;
 
-   
 }
 
 
@@ -315,12 +310,12 @@ list-style-type: none;
 
 .container_4 .dica {
     
-    margin-left: 6%;
+    margin-left: 1%;
     flex-direction: column;
     border-radius: 10px; 
     position: relative;
-    width: 205px;
-    height: 250px;
+    width: 379px;
+    height: 255px;
     display: flex;
     box-shadow: 10px 10px 5px rgba(128, 128, 128, 0.282);
     
@@ -329,20 +324,21 @@ list-style-type: none;
 }
 
 .container_4 .dica img{
-    width: 205px;
+    width: 379px;
     border-radius: 10px; 
-     height: 250px;
-   
+     height: 255px;
+ 
 }
+
 
 .container_4 .dica1 {
    
-    margin-left: 6%;
+    margin-left: 7.3%;
     flex-direction: column;
     border-radius: 10px; 
     position: relative;
-    width: 205px;
-    height: 250px;
+    width: 379px;
+    height: 255px;
     display: flex;
     box-shadow: 10px 10px 5px rgba(128, 128, 128, 0.282);
     
@@ -352,9 +348,9 @@ list-style-type: none;
 
 .container_4 .dica1 img{
     
-    width: 205px;
+    width: 379px;
     border-radius: 10px; 
-     height: 250px;
+     height: 255px;
     
 }
 

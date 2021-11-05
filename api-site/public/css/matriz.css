@@ -51,7 +51,7 @@ list-style-type: none;
     width: 50px;
     height: 50px;
     border-radius: 40px;
-    background-image: url(/api-site/public/assets/imgs/cachorro_gato.jpg);
+    background-image: url(../assets/imgs/cachorro_gato.jpg);
     background-position: center;
     background-size: cover
 }
@@ -135,16 +135,15 @@ list-style-type: none;
 
 .container .pet_1 {
    
-    background-color: white;
-   
-    padding-bottom: 6%;
-    margin-left: 5%;
-    
-    background-position: center;
-    background-size: cover;
-    border-radius: 10px;
+    margin-left: 1%;
     flex-direction: column;
-    box-shadow: 10px 10px 5px grey;
+    border-radius: 10px; 
+    position: relative;
+    width: 205px;
+    height: 250px;
+    display: flex;
+    box-shadow: 10px 10px 5px rgba(128, 128, 128, 0.282);
+    
     
     
     
@@ -152,33 +151,45 @@ list-style-type: none;
 
 .container .pet_1 img{
     
-    height: 250px;
-    border-radius: 10px;
+    width: 205px;
+    border-radius: 10px; 
+     height: 250px;
 
    
 }
 
 .container .pet_1_1 {
-   
-    background-color: white;
-   
-    padding-bottom: 6%;
-    margin-left: 5%;
-    
-    background-position: center;
-    background-size: cover;
-    border-radius: 10px;
+    margin-left: 6%;
     flex-direction: column;
-    box-shadow: 10px 10px 5px grey;
+    border-radius: 10px; 
+    position: relative;
+    width: 205px;
+    height: 250px;
+    display: flex;
+    box-shadow: 10px 10px 5px rgba(128, 128, 128, 0.282);
     
+}
+
+.pet_cidade {
+    position: absolute;
+    bottom: 0;
+    background-color: white;
+    color: black;
+    width: 100%;
     
+    /* padding-left: 20px; */
+    border-bottom-left-radius: 10px ;
+    border-bottom-right-radius: 10px ;
     
+
 }
 
 .container .pet_1_1 img{
     
-    height: 250px;
-    border-radius: 10px;
+    width: 205px;
+    border-radius: 10px; 
+     height: 250px;
+     
 
    
 }
@@ -193,48 +204,46 @@ list-style-type: none;
 
 .container_2 .pet_2 {
    
-    background-color: white;
-   
-    padding-bottom: 6%;
-    margin-left: 5%;
-    
-    background-position: center;
-    background-size: cover;
-    border-radius: 10px;
+    margin-left: 1%;
     flex-direction: column;
-    box-shadow: 10px 10px 5px grey;
+    border-radius: 10px; 
+    position: relative;
+    width: 205px;
+    height: 250px;
+    display: flex;
+    box-shadow: 10px 10px 5px rgba(128, 128, 128, 0.282);
     
     
 }
 
 .container_2 .pet_2 img{
     
-    height: 250px;
-    border-radius: 10px;
+    width: 205px;
+    border-radius: 10px; 
+     height: 250px;
 
    
 }
 
 .container_2 .pet_2_2 {
    
-    background-color: white;
-   
-    padding-bottom: 6%;
-    margin-left: 5%;
-    
-    background-position: center;
-    background-size: cover;
-    border-radius: 10px;
+    margin-left: 1%;
     flex-direction: column;
-    box-shadow: 10px 10px 5px grey;
+    border-radius: 10px; 
+    position: relative;
+    width: 205px;
+    height: 250px;
+    display: flex;
+    box-shadow: 10px 10px 5px rgba(128, 128, 128, 0.282);
     
     
 }
 
 .container_2 .pet_2_2 img{
     
-    height: 250px;
-    border-radius: 10px;
+    width: 205px;
+    border-radius: 10px; 
+     height: 250px;
 
    
 }
@@ -249,47 +258,37 @@ list-style-type: none;
 
 .container_3 .pet_3 {
    
-    background-color: white;
-   
-    padding-bottom: 6%;
-    margin-left: 5%;
-    
-    background-position: center;
-    background-size: cover;
-    border-radius: 10px;
+    margin-left: 6%;
     flex-direction: column;
-    box-shadow: 10px 10px 5px grey;
-    
-    
-}
-
-/* .container_3 {
-    margin-top: 3%;
+    border-radius: 10px; 
+    position: relative;
+    width: 205px;
+    height: 250px;
     display: flex;
+    box-shadow: 10px 10px 5px rgba(128, 128, 128, 0.282);
+    
+    
 }
+/*
 
 .container_3 .pet_3_3 {
    
-    background-color: white;
-   
-    padding-bottom: 6%;
-    margin-left: 5%;
-    
-    background-position: center;
-    background-size: cover;
-    border-radius: 10px;
+    margin-left: 6%;
     flex-direction: column;
-    box-shadow: 10px 10px 5px grey;
+    border-radius: 10px; 
+    position: relative;
+    width: 205px;
     height: 250px;
-    border-radius: 10px;
-    
+    display: flex;
+    box-shadow: 10px 10px 5px rgba(128, 128, 128, 0.282);
     
 }
 
 .container_3 .pet_3 img{
     
-    height: 250px;
-    border-radius: 10px;
+      width: 205px;
+    border-radius: 10px; 
+     height: 250px;
 
    
 } */
@@ -316,52 +315,47 @@ list-style-type: none;
 
 .container_4 .dica {
     
-    background-color: white;
-   
-    padding-bottom: 6%;
-    margin-left: 5%;
-    
-    background-position: center;
-    background-size: cover;
-    border-radius: 10px;
+    margin-left: 6%;
     flex-direction: column;
-    box-shadow: 10px 10px 5px grey;
+    border-radius: 10px; 
+    position: relative;
+    width: 205px;
+    height: 250px;
+    display: flex;
+    box-shadow: 10px 10px 5px rgba(128, 128, 128, 0.282);
     
     
     
 }
 
 .container_4 .dica img{
-    
-    height: 250px;
-    border-radius: 10px;
-
+    width: 205px;
+    border-radius: 10px; 
+     height: 250px;
    
 }
 
 .container_4 .dica1 {
    
-    background-color: white;
-   
-    padding-bottom: 6%;
-    margin-left: 5%;
-    
-    background-position: center;
-    background-size: cover;
-    border-radius: 10px;
+    margin-left: 6%;
     flex-direction: column;
-    box-shadow: 10px 10px 5px grey;
+    border-radius: 10px; 
+    position: relative;
+    width: 205px;
+    height: 250px;
+    display: flex;
+    box-shadow: 10px 10px 5px rgba(128, 128, 128, 0.282);
     
-    
+   
     
 }
 
 .container_4 .dica1 img{
     
-    height: 250px;
-    border-radius: 10px;
-
-   
+    width: 205px;
+    border-radius: 10px; 
+     height: 250px;
+    
 }
 
 footer {

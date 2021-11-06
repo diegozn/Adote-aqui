@@ -139,57 +139,83 @@ list-style-type: none;
     flex-direction: column;
     border-radius: 10px; 
     position: relative;
-    width: 205px;
-    height: 250px;
+    width: 220px;
+    height: 320px;
     display: flex;
-    box-shadow: 10px 10px 5px rgba(128, 128, 128, 0.282);
+    box-shadow: 10px 10px 5px rgba(128, 128, 128, 0.562);
 }
 
 .container .pet_1 img{
     
-    width: 205px;
+    width: 220px;
     border-radius: 10px; 
-     height: 250px;
+     height: 320px;
 
    
 }
 
 .container .pet_1_1 {
-    margin-left: 8.5%;
+    margin-left: 5.5%;
     
     flex-direction: column;
     border-radius: 10px; 
     
     position: relative;
-    width: 205px;
-    height: 250px;
+    width: 220px;
+    height: 320px;
     display: flex;
-    box-shadow: 10px 10px 5px rgba(128, 128, 128, 0.282);
+    box-shadow: 10px 10px 5px rgba(128, 128, 128, 0.562);
     
 }
 
-.pet_cidade {
+
+
+.container .pet_1_1 img{
+     width: 220px;
+    border-radius: 10px; 
+    height: 320px;
+    
+}
+
+
+
+/* .div_itens {
+    
+ } */
+
+ .pet_nome {
     position: absolute;
     bottom: 0;
     background-color: white;
-    color: black;
+    color: rgba(0, 0, 255, 0.645);
     width: 100%;
-    
+    height: 25%;
+   margin-top: 3px;
+   font-size: x-large;
+   font-weight: bold;
+
     /* padding-left: 20px; */
     border-bottom-left-radius: 10px ;
     border-bottom-right-radius: 10px ;
     
-
-}
-
-.container .pet_1_1 img{
-    width: 205px;
-    border-radius: 10px; 
-     height: 250px;
     
+
 }
 
+.div_itens {
+   display: flex;
+}
 
+.pet_cidade {
+    color: rgb(170, 170, 170);
+    font-size: medium;
+    font-weight: 400;
+   
+}
+
+.branco {
+    background-color: white;
+}
 
 .container_2 {
     margin-top: 3%;
@@ -203,19 +229,19 @@ list-style-type: none;
     flex-direction: column;
     border-radius: 10px; 
     position: relative;
-    width: 205px;
-    height: 250px;
+    width: 220px;
+    height: 320px;
     display: flex;
-    box-shadow: 10px 10px 5px rgba(128, 128, 128, 0.282);
+    box-shadow: 10px 10px 5px rgba(128, 128, 128, 0.562);
     
     
 }
 
 .container_2 .pet_2 img{
   
-    width: 205px;
+    width: 220px;
     border-radius: 10px; 
-     height: 250px;
+     height: 320px;
      
 
    
@@ -223,23 +249,23 @@ list-style-type: none;
 
 .container_2 .pet_2_2 {
    
-    margin-left: 8.5%;
+    margin-left: 5.5%;
     flex-direction: column;
     border-radius: 10px; 
     position: relative;
-    width: 205px;
-    height: 250px;
+    width: 220px;
+    height: 320px;
     display: flex;
-    box-shadow: 10px 10px 5px rgba(128, 128, 128, 0.282);
+    box-shadow: 10px 10px 5px rgba(128, 128, 128, 0.562);
     
     
 }
 
 .container_2 .pet_2_2 img{
     
-    width: 205px;
+    width: 220px;
     border-radius: 10px; 
-    height: 250px;
+    height: 320px;
 
 }
 
@@ -257,34 +283,31 @@ list-style-type: none;
     flex-direction: column;
     border-radius: 10px; 
     position: relative;
-    width: 205px;
-    height: 250px;
+    width: 220px;
+    height: 320px;
     display: flex;
-    box-shadow: 10px 10px 5px rgba(128, 128, 128, 0.282);
+    box-shadow: 10px 10px 5px rgba(128, 128, 128, 0.562);
     
     
 }
 /*
-
 .container_3 .pet_3_3 {
    
     margin-left: 6%;
     flex-direction: column;
     border-radius: 10px; 
     position: relative;
-    width: 205px;
-    height: 250px;
+    width: 220px;
+    height: 320px;
     display: flex;
-    box-shadow: 10px 10px 5px rgba(128, 128, 128, 0.282);
+    box-shadow: 10px 10px 5px rgba(128, 128, 128, 0.562);
     
 }
-
 .container_3 .pet_3 img{
     
-      width: 205px;
+      width: 220px;
     border-radius: 10px; 
-     height: 250px;
-
+     height: 320px;
    
 } */
 
@@ -303,6 +326,7 @@ list-style-type: none;
 }
 /* ---------------------------------- */
 
+
 .container_4 {
     margin-top: 2%;
     display: flex;
@@ -317,7 +341,7 @@ list-style-type: none;
     width: 379px;
     height: 255px;
     display: flex;
-    box-shadow: 10px 10px 5px rgba(128, 128, 128, 0.282);
+    box-shadow: 10px 10px 5px rgba(128, 128, 128, 0.562);
     
     
     
@@ -340,7 +364,7 @@ list-style-type: none;
     width: 379px;
     height: 255px;
     display: flex;
-    box-shadow: 10px 10px 5px rgba(128, 128, 128, 0.282);
+    box-shadow: 10px 10px 5px rgba(128, 128, 128, 0.562);
     
    
     
@@ -354,6 +378,10 @@ list-style-type: none;
     
 }
 
+
+
+
+
 footer {
     display: flex;
     justify-content: space-around;
@@ -362,4 +390,3 @@ footer {
     background-color: rgba(0, 0, 255, 0.508);
     
 }
-

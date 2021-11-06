@@ -10,15 +10,18 @@ main {
     
 }
 
-ul .logo img{
+.logo img{
     width: 100px;
 }
 
 .menu {
 background-color: #0000ff82;
+display: flex;
 
 
 }
+
+
 
 .espaco {
     background-color: #c0c0c013;
@@ -26,13 +29,36 @@ background-color: #0000ff82;
 
 }
 
-.menu ul {
+.menu .menu_1 {
 display: flex;
-justify-content: space-around;
+justify-content: space-evenly;
 align-items: center;
 list-style-type: none;
+width: 75%;
+
+font-size: large;
+font-weight: 400 ;
+
 }
 
+.menu .menu_1 a {
+    color: whitesmoke;
+}
+.menu .menu_2 a {
+    color: #0000ff82;
+    font-size: large;
+    font-weight: 500 ;
+}
+
+
+.menu .menu_2 {
+    display: flex;
+    justify-content: space-around;
+    align-items: flex-end;
+    align-items: center;
+    list-style-type: none;
+    width: 15%;
+}
 
 .itens_2 ul {
     display: flex;
@@ -214,9 +240,7 @@ list-style-type: none;
    
 }
 
-.branco {
-    background-color: white;
-}
+
 
 .container_2 {
     margin-top: 3%;
@@ -331,7 +355,7 @@ list-style-type: none;
 .container_4 {
     margin-top: 2%;
     display: flex;
-    padding-bottom: 8.5%;
+    padding-bottom: 21.5%;
     
 }
 
@@ -382,15 +406,29 @@ list-style-type: none;
      border-top-left-radius: 10px; 
     border-top-right-radius: 10px; 
      height: 255px;
-    
+     
 }
-
+/* titulo */
 .txt_1 {
     background-color: white;
     border-bottom-left-radius: 10px;
     border-bottom-right-radius: 10px;
     box-shadow: 10px 10px 5px rgba(128, 128, 128, 0.562);
+    color: #0000ffa4;
+    font-size: large;
+    font-weight: bold;
+    padding: 20px;
+    
 }
+/* conteudo */
+.txt_2 {
+    font-size: large;
+    font-weight: 400;
+    color: rgb(126, 126, 126);
+
+}
+
+
 
 
 

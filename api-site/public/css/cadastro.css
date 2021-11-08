@@ -1,19 +1,43 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  
+}
 .banner-login {
-    background-color: rgba(0, 0, 255, 0.222);
+    /* background-color: #0000ff19; */
+
+    /* glassmorfismo */
+
+    /* background: rgba(255, 255, 255, 0.15);
+    backdrop-filter: blur(45px); */
+    
+    border: 1px solid rgba(255, 255, 255, 0.2);
+    background: rgba(255, 255, 255, 0.1);
     margin-top: 5%;
     padding-bottom: 10%;
-    padding-top: 10%;
-  
-    /* position:relative; */
-    width: 940px;
-    margin: 0 auto;
-    border-radius: 20px;
     
-   
+    width: 940px;
+    margin: 35px 10px 50px 210px;
+    border-radius: 20px;
+    color: white;
+  
 }
+
+
+
+
+body {
+
+
+  background: rgb(0,0,255);
+  background: linear-gradient(90deg, rgba(0,0,255,0.58) 0%, rgba(0,0,255,0.54) 9%, rgba(0,0,255,0.59) 20%, rgba(0,0,255,0.54) 32%, rgba(0,0,255,0.51) 41%, rgba(0,0,255,0.51) 54%, rgba(0,0,255,0.53) 55%, rgba(0,0,255,0.51) 61%, rgba(0,0,255,0.56) 66%, rgba(0,0,255,0.56) 72%, rgba(0,0,255,0.55) 81%, rgba(0,0,255,0.56) 89%, rgba(0,0,255,0.54) 94%, rgba(0,0,255,0.58) 97%);
+  background-repeat: no-repeat;
+} 
 
 .menu {
     margin-bottom: 4%;
+    
    
 }
 
@@ -26,12 +50,19 @@
     
   }
 
-  .banner-login {
-    color: rgba(0, 0, 255, 0.508)
+
+  .div_logo .logo img {
+    width: 200px;
+    display: flex;
+    padding: 0 0 75px 0;
+    margin: 0 auto;
+    
+    
   }
 
   .banner-login .card {
-    background-color: #e5e5e5;
+    background-color: #3d3dff81;
+    /* background-color: red; */
     height: 350px;
     width: 400px;
     border-radius: 30px;
@@ -41,12 +72,12 @@
     align-items: center;
     flex-direction: column;
     flex-wrap: wrap;
-
   }
   
   .banner-login a {
     color: white;
     text-decoration: none;
+    
   }
 
   /* ------------------------------------------------------------------------------------ */
@@ -64,10 +95,8 @@
     height: 30px;
     
    
-    border: 2px solid rgba(0, 0, 255, 0.508);
+    border: 2px solid #1919c2;
     border-radius: 10px;
-
-    
     
   }
   
@@ -79,7 +108,7 @@
     font-size: 18px;
     padding: 10px 15px;
     color: white;
-    background-color: rgba(0, 0, 255, 0.508);
+    background-color: #0000ff82;
     width: 120px;
     align-self: center;
 
@@ -88,8 +117,6 @@
   form {
     display: flex;
     flex-direction: column;
-    
-    margin-left: 80px;
 
   }
 
@@ -107,4 +134,6 @@
 
 
   }
+  
+
   

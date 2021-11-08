@@ -10,12 +10,15 @@ main {
     
 }
 
+
+
 .logo img{
     width: 100px;
+    margin-left: 90px;
 }
 
 .menu {
-background-color: #0000ff82;
+background-color: rgba(0, 0, 255, 0.51);
 display: flex;
 
 
@@ -38,26 +41,33 @@ width: 75%;
 
 font-size: large;
 font-weight: 400 ;
+    
 
 }
 
 .menu .menu_1 a {
     color: whitesmoke;
+    
 }
 .menu .menu_2 a {
-    color: #0000ff82;
+    color: rgba(0, 0, 255, 0.51);
     font-size: large;
     font-weight: 500 ;
+    
 }
 
 
 .menu .menu_2 {
     display: flex;
     justify-content: space-around;
-    align-items: flex-end;
+    
     align-items: center;
     list-style-type: none;
-    width: 15%;
+    width: 20%;
+    margin-right: 100px;
+
+
+    
 }
 
 .itens_2 ul {

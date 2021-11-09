@@ -4,6 +4,8 @@
   box-sizing: border-box;
   
 }
+
+/* forma1 */
 .banner-login {
     /* background-color: #0000ff19; */
 
@@ -21,6 +23,7 @@
     margin: 35px 10px 50px 210px;
     border-radius: 20px;
     color: white;
+   
   
 }
 
@@ -47,19 +50,22 @@ body {
     display: flex;
     align-items: center;
     justify-content: center;
+   
     
   }
 
 
+  /* logo da imagem */
   .div_logo .logo img {
     width: 200px;
     display: flex;
     padding: 0 0 75px 0;
     margin: 0 auto;
-    
+   
     
   }
 
+  /* forma mais proxima do input */
   .banner-login .card {
     background-color: #3d3dff81;
     /* background-color: red; */
@@ -72,11 +78,13 @@ body {
     align-items: center;
     flex-direction: column;
     flex-wrap: wrap;
+    
   }
   
   .banner-login a {
     color: white;
     text-decoration: none;
+    
     
   }
 

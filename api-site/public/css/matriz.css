@@ -438,7 +438,67 @@ font-weight: 400 ;
 
 }
 
+/* cadastro inicio */
 
+
+  
+    /* ------------------------------------------------------------------------------------ */
+    .banner-login #div_erros_login {
+      margin-top: 15px;
+    }
+    
+    button {
+      cursor: pointer;
+    }
+    
+    /* FORMULARIO */
+    
+    input {
+      height: 30px;
+      
+     
+      border: 2px solid #1919c2;
+      border-radius: 10px;
+      
+    }
+    
+    .btn {
+      font-family: "Exo 2", sans-serif;
+      border: 0;
+      border-radius: 5px;
+      font-weight: 600;
+      font-size: 18px;
+      padding: 10px 15px;
+      color: white;
+      background-color: #0000ff82;
+      width: 120px;
+      align-self: center;
+  
+    }
+    
+    form {
+      display: flex;
+      flex-direction: column;
+  
+    }
+  
+    .loading-div {
+      width: 50px;
+      /* border: 3px solid pink; */
+      margin: auto;
+      display: none;
+      
+    }
+    
+    .loading-div img {
+      height: 50px;
+      width: 50px;
+  
+  
+    }
+    
+  
+    
 
 
 

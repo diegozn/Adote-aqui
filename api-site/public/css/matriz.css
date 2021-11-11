@@ -37,6 +37,12 @@ display: flex;
 
 }
 
+.espaco2 {
+    background-color: rgba(245, 245, 245, 0.027);
+    width: 100%;
+    height: 30px;
+}
+
 .menu .menu_1 {
 display: flex;
 justify-content: space-evenly;
@@ -505,23 +511,61 @@ font-weight: 400 ;
   
     /* cadastro final */
 
-
-
-
-
-
-
-
-
-
     
+.btn_ver_mais {
+    display: flex;
+    margin-top: 3%;
+    width: 30px;
+    height: 30px;
+    border-radius: 4px;
+    color: white;
+    background-color: rgba(0, 0, 255, 0.508);
+    border: 0.5px solid rgba(0, 0, 255, 0.61);
+}
+
+
+.btn_ver_mais3 , .btn_ver_mais2, .btn_ver_mais1, .btn_ver_mais  {
+    margin: left;
+    margin-top: 3%;
+    /* margin-left: 45%; */
+    width: 30px;
+    height: 30px;
+    border-radius: 4px;
+    color: white;
+    background-color: rgba(0, 0, 255, 0.508);
+    border: 1px rgba(0, 0, 255, 0.508);
+    margin-left: 3px;
+    }
+
+.btn_ver_mais1 {
+    margin-left: 46%;
+    
+
+}
+
+.btn_ver_mais {
+    padding-bottom: 15px;
+    height: 14px;
+    width: 15px;
+    margin-top: 55px;
+    
+}
+
+
+
+.sequencia {
+    display: flex;
+    
+}
+
 
 footer {
     display: flex;
     justify-content: space-around;
-    margin-top: 2%;
+    
     padding: 3%;
     background-color: rgba(0, 0, 255, 0.508);
+    
     
 }
 

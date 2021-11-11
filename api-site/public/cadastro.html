@@ -5,86 +5,50 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/cadastro.css">
+    <script src=""></script>
     
     <title>Adote-aqui</title>
-    
-    
-    <script src="./js/funcoes.js"></script>
-    
-    
-    
+       
+    <script src="js/login.js"></script>
     <link rel="shortcut icon" href="assets/imgs/fav.png" type="image/x-icon">
-  
+    <link rel="stylesheet" href="css/cadastro.css">
     <link rel="stylesheet" href="css/matriz.css">
+ 
     <!-- <link rel="stylesheet" href="/api-site/public/css/matriz.css"> -->
+    <script src="https://kit.fontawesome.com/37e38224d1.js" crossorigin="anonymous"></script>
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link
         href="https://fonts.googleapis.com/css2?family=Exo+2:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
         rel="stylesheet">
 </head>
 
-
-
 <body>
-    <header>
-        <nav>
-            
-            <div class="menu">
-                <a class="logo" href="home.html"><img src="assets/imgs/fav.png" alt="Logo cachorro e gato"></a>
-                <ul class="menu_1">
-                    <li><a href="">Inicio</a></li>
-                    <li><a href="">Quem somos</a></li>
-                    <li><a href="">Ajude-nos</a></li>
-                    
-                </ul>
-                
-                <ul class="menu_2">    
-                    <li><a href="login.html">Entrar</a></li> 
-                    <li><a href="cadastro.html">Cadastrar-se</a></li> 
-                </ul>
-            </div>
-        </nav>
-        <div class="foto_perfil"></div>
-    </header>
-    <div class="filter_b"></div>
-    <main>
-        
-        <div class="banner-login ">
-            <div class="div_logo"><a class="logo" href="/api-site/public/home.html"><img src="assets/imgs/fav.png" alt="Logo cachorro e gato"></a></div>
-            <div class="container ">
-                <div class="card medio">
-                
-                    <div class="formulario">
-                        <form id="form_cadastro" method="post" onsubmit="return cadastrar()">
-                            Nome:
-                            <input name="nome" type="text" placeholder="">
-                            <br>
-                            E-mail:
-                            <input name="email" type="text" placeholder="">
-                            <br>
-                            Senha:
-                            <input name="senha" type="password" placeholder="******">
-                            <br>
-                            Confirmação da Senha:
-                            <input name="confirmacao-senha" type="password" placeholder="******">
-                            <br>
-                            <button class="btn">Cadastrar</button>
-                        </form>
-                    </div>
-                    <div id="div_aguardar" class="loading-div">
-                        <img src="./assets/circle-loading.gif" id="loading-gif">
-                    </div>
-
-                    <div id="div_erros_login">
-
-                    </div>
-                </div>
-            </div>
-        </div>
-
-    </main>
     
+    <section class="form-section">
+        <h1>Adote já o seu pet <i class="fas fa-paw"></i></h1>
+        <a class="logo_login" href="home.html"><img src="assets/imgs/fav.png" alt="Logo cachorro e gato"></a>
+        
+        <div class="form-wrapper">
+          <form action="">
+            <div class="input-block">
+              <label for="login-email">Email</label>
+              <input type="email" id="login-email" placeholder="Digite seu email" />
+            </div>
+            <div class="input-block">
+              <label for="login-password">Senha</label>w
+              <input type="password" id="login-password" placeholder="Digite sua senha" />
+            </div>
+            <div class="input-block">
+                <label for="login-password">Senha</label>
+                <input type="password" id="login-password" placeholder="senha"/>
+              </div>
+            <button type="submit" class="btn-login">Login</button>
+          </form>
+        </div>
+      </section>
 </body>
+
 </html>
 
 <script>

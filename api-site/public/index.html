@@ -15,7 +15,7 @@
         <nav>
             
             <div id="topo" class="menu">
-                <a class="logo" href="/"><img src="assets/imgs/fav.png" alt="Logo cachorro e gato"></a>
+                <a class="logo" href="index.html"><img src="assets/imgs/fav.png" alt="Logo cachorro e gato"></a>
                 <ul class="menu_1">
                     <li><a href="index.html">Inicio</a></li>
                     <li><a href="">Quem somos</a></li>
@@ -37,12 +37,51 @@
     <main>
         <div id="id_div_banner" class="banner"></div> 
         <div id="id_div_banner_2" class="opt">
-            <div class="opt_1"><a href="">Quero&nbsp;adotar</a></div>
-            <div class="opt_2"><a href="">Quero&nbsp;doar</a></div>
+            <button onclick="adotar()" class="opt_1"><a href="#">Quero&nbsp;adotar</a></button>
+            <button class="opt_2"><a href="#">Quero&nbsp;doar</a></button>
         </div>
-        <div class="navbar">
+        <div id="id_frase_navbar" class="navbar">
             <div>Cães e gatos Procurando por um dono:</div>
         </div>
+        <div id="all_select_box">
+            <select name="" id="select_box_1">
+                <option value="especies">Todos os pets</option>
+                <option value="especies">Apenas cachorro</option>
+                <option value="especies">Apenas gato</option>
+            </select>
+            <select name="" id="">
+                <option value="">Macho e Fêmea</option>
+                <option value="">Fêmea</option>
+                <option value="">Macho</option>
+            </select>
+            <select name="" id="">
+                <option value="">Todos os portes</option>
+                <option value="">Pequeno porte</option>
+                <option value="">Médio porte</option>
+                <option value="">Grande porte</option>
+            </select>
+            <select name="" id="">
+                <option value="">Todas as cidades</option>
+                <option value="">São Paulo</option>
+                <option value="">Guarulhos</option>
+                <option value="">Santo André</option>
+                <option value="">Osasco</option>
+                <option value="">Sorocaba</option>
+                <option value=""> Diadema</option>
+                <option value="">Santos</option>
+                <option value="">Jundiaí</option>
+                <option value="">Bauru</option>
+                <option value="">Franca</option>
+                <option value="">Praia Grande</option>
+                <option value="">Guarujá</option>
+                <option value="">Taubaté</option>
+                <option value="">Limeira</option>
+                <option value="">Suzano</option>
+            </select>
+            <input type="text" placeholder="Pesquisar por nome...">
+            <button>Buscar</button>
+        </div>
+           
         <div class="article">
             <div class="container">
                 
@@ -132,6 +171,19 @@
         btn_1.style.display = 'none';
         id_btn_ver_mais1.style = 'background-color: rgb(68, 68, 237)';
         id_pet_lista_2.style.display = 'block';
+        id_frase_navbar.style.display = 'none'
+    };
+
+    function adotar(){
+       
+        id_pet_lista_2.style.display = 'block';
+         id_div_banner.style.display = 'none';
+         id_div_banner_2.style.display = 'none';
+         id_div_dicas.style.display = 'none';
+        id_btn_1.style.display = 'none';
+        btn_1.style.display = 'none';
+       
+        all_select_box.style.display = 'block'
     }
 </script>
 

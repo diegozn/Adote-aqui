@@ -1,77 +1,86 @@
 <!DOCTYPE html>
-<html lang="pt-BR">
+<html lang="pt-br">
 
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="css/cadastro.css">
-    <script src=""></script>
-    
-    <title>Adote-aqui</title>
-       
-    <script src="js/login.js"></script>
+
+    <title>AcquaTec | Login</title>
+
+    <script src="./js/funcoes.js"></script>
+
     <link rel="shortcut icon" href="assets/imgs/fav.png" type="image/x-icon">
-    <link rel="stylesheet" href="css/cadastro.css">
-    <link rel="stylesheet" href="css/matriz.css">
- 
-    <!-- <link rel="stylesheet" href="/api-site/public/css/matriz.css"> -->
-    <script src="https://kit.fontawesome.com/37e38224d1.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="./css/style.css">
+    <link rel="stylesheet" href="./css/cadastro.css">
+    <link rel="stylesheet" href="./css/matriz.css">
     <link rel="preconnect" href="https://fonts.gstatic.com">
+    <script src="https://kit.fontawesome.com/37e38224d1.js" crossorigin="anonymous"></script>
     <link
         href="https://fonts.googleapis.com/css2?family=Exo+2:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
         rel="stylesheet">
 </head>
 
 <body>
-    
-    <section class="form-section">
-        <h1>Adote já o seu pet <i class="fas fa-paw"></i></h1>
-        <a class="logo_login" href="index.html"><img src="assets/imgs/fav.png" alt="Logo cachorro e gato"></a>
-        
-        <div class="form-wrapper">
-          <form action="">
-            <div class="input-block">
-              <label for="login-email">Email</label>
-              <input type="email" id="email_input" placeholder="Login" />
+
+    <div class="banner-login">
+        <div class="container">
+            <div class="logo_frase">
             </div>
-            <div class="input-block">
-              <label for="login-password">Senha</label>
-              <input type="password" id="senha_input" placeholder="******" />
+            <div class="card medio">
+                <a class="logo_login" href="index.html"><img src="assets/imgs/fav.png" alt="Logo cachorro e gato"></a>
+                <h1>Adote <br>aqui<br> o seu<br> pet <i class="fas fa-cat"></i> </h1>
+                
+                <div class="formulario">
+                    <div>
+                        E-mail: <br>
+                        <input id="email_input" type="text" placeholder="Login">
+                        <br> <br>
+                        Senha: <br> 
+                        <input id="senha_input" type="password" placeholder="******">
+                        <br> <br>
+                        <button class="btn" onclick="entrar()">Entrar  <i class="fas fa-paw"></i></button>
+                        <li><a href="cadastro.html"><span class="ou_login" >Ou fazer Cadastro</span></a></li> 
+                    </div>
+
+
+                </div>
+
+                <div id="div_aguardar" class="loading-div">
+                    <img src="./assets/circle-loading.gif" id="loading-gif">
+                </div>
+
+                <div id="div_erros_login">
+
+                </div>
             </div>
-            <button type="submit" onclick="entrar()" class="btn-login">Entrar</button>
-          </form>
         </div>
-      </section>
+    </div>
+
+
+
 </body>
 
 </html>
 
 <script>
-
-    function limparFormulario() {
-        document.getElementById("form_login").reset();
-    }
-
     function entrar() {
         aguardar();
 
-        var formulario = new URLSearchParams(new FormData(document.getElementById("form_login")));
+        var emailVar = email_input.value;
+        var senhaVar = senha_input.value;
 
-        var email = formulario.get("email");
-        var senha = formulario.get("senha");
-
-        console.log("FORM LOGIN: ", email);
-        console.log("FORM SENHA: ", senha);
+        console.log("FORM LOGIN: ", emailVar);
+        console.log("FORM SENHA: ", senhaVar);
 
         // TODO: VERIFICAR AS VALIDAÇÕES QUE ELES ESTÃO APRENDENDO EM ALGORITMOS 
-        if (email == "" || senha == "") {
+        if (emailVar == "" || senhaVar == "") {
             window.alert("Preencha todos os campos para prosseguir!");
             finalizarAguardar();
             return false;
         }
 
-        if (email.indexOf("@") == -1 || email.indexOf(".com") == -1) {
+        if (emailVar.indexOf("@") == -1 || emailVar.indexOf(".com") == -1) {
             window.alert("Ops, e-mail inválido! Verifique e tente novamente.");
             finalizarAguardar();
             return false;
@@ -79,7 +88,13 @@
 
         fetch("/usuarios/autenticar", {
             method: "POST",
-            body: formulario
+            headers: {
+                "Content-Type": "application/json"
+            },
+            body: JSON.stringify({
+                emailServer: emailVar,
+                senhaServer: senhaVar
+            })
         }).then(function (resposta) {
             console.log("ESTOU NO THEN DO entrar()!")
 
@@ -118,4 +133,3 @@
     }
 
 </script>
-

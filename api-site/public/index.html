@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Adote-aqui</title>
     <link rel="shortcut icon" href="assets/imgs/fav.png" type="image/x-icon">
+    <script src="https://kit.fontawesome.com/37e38224d1.js" crossorigin="anonymous"></script>
     <link rel="stylesheet" href="css/matriz.css">
     
 </head>
@@ -18,8 +19,8 @@
                 <a class="logo" href="index.html"><img src="assets/imgs/fav.png" alt="Logo cachorro e gato"></a>
                 <ul class="menu_1">
                     <li><a href="index.html">Inicio</a></li>
-                    <li><a href="">Quem somos</a></li>
-                    <li><a href="">Ajude-nos</a></li>
+                    <li onclick="quem_somos()"><a href="#">Quem somos</a></li>
+                    <li onclick="encontre()"><a href="#">Encontre</a></li>
                     
                 </ul>
                 
@@ -33,12 +34,13 @@
     </header>
 
 
-    <div class="espaco">.</div>
-    <main>
+    <div id="id_espaco" class="espaco">.</div>
+    <h2 id="frase_h2"><i class="fas fa-exclamation-triangle"></i>CACHORROS E GATOS PERDIDOS<i class="fas fa-exclamation-triangle"></i> </h2>
+    <main id="id_main"> 
         <div id="id_div_banner" class="banner"></div> 
         <div id="id_div_banner_2" class="opt">
             <button onclick="adotar()" class="opt_1"><a href="#">Quero&nbsp;adotar</a></button>
-            <button class="opt_2"><a href="#">Quero&nbsp;doar</a></button>
+            <button onclick="doar()" class="opt_2"><a href="#">Quero&nbsp;doar</a></button>
         </div>
         <div id="id_frase_navbar" class="navbar">
             <div>Cães e gatos Procurando por um dono:</div>
@@ -85,8 +87,8 @@
         <div class="article">
             <div class="container">
                 
-                <div id="id_pet_lista_0" class="pet_1_1"><img src="assets/imgs/pet_1.jpg" alt=""><div class="div_itens"><div class="pet_nome"> &emsp;Laica<br><span class="pet_cidade">&emsp;São Paulo, São Paulo</span></div> </div></div>
-                <div class="pet_1"><img src="assets/imgs/pet_2.jpg" alt=""><div class="div_itens"><div class="pet_nome"> &emsp;Laica<br><span class="pet_cidade">&emsp;São Paulo, São Paulo</span></div> </div></div>
+                <div id="id_pet_lista_0" class="pet_1_1"><img onclick="estrutura_pet()" src="assets/imgs/pet_1.jpg" alt=""><div class="div_itens"><div class="pet_nome"> &emsp;Laica<br><span class="pet_cidade">&emsp;São Paulo, São Paulo</span></div> </div></div>
+                <div class="pet_1"><img src="assets/imgs/pet_2.jpg" alt=""><div class="div_itens"><div id="id_pet_nome" class="pet_nome"> &emsp;Laica<br><span class="pet_cidade">&emsp;São Paulo, São Paulo</span></div> </div></div>
                 <div class="pet_1"><img src="assets/imgs/pet_3.jpg" alt=""><div class="div_itens"><div class="pet_nome"> &emsp;Laica<br><span class="pet_cidade">&emsp;São Paulo, São Paulo</span></div> </div></div>
                 <div class="pet_1"><img src="assets/imgs/pet_4.png" alt=""><div class="div_itens"><div class="pet_nome"> &emsp;Laica<br><span class="pet_cidade">&emsp;São Paulo, São Paulo</span></div> </div></div>
                 <div class="pet_1"><img src="assets/imgs/pet_5.jpg" alt=""><div class="div_itens"><div class="pet_nome"> &emsp;Laica<br><span class="pet_cidade">&emsp;São Paulo, São Paulo</span></div> </div></div>
@@ -152,7 +154,92 @@
 
                 </div>
             <div class="espaco2"></div>
+            
     </main>
+
+       
+    <div id="container_doar">
+        <form id="id_doar_formulario" action="">
+                <h1>Cadastro para Doação</h1>
+                <h4>Informações gerais: (PREENCHA TODOS OS CAMPOS)</h4>
+                <br>
+                <br>
+                <span>Animal:</span> <br>
+                <select name="" >
+                    <option value="#"></option>
+                    <option value="">Gato</option>
+                    <option value="">Cachorro</option>
+                </select> <br>
+                <span>Nome do animal:</span> <br>
+                <input  class="span_c_border" type="text" placeholder="">
+                <br>
+                <span>Sexo:</span> <br>
+                <select name="" id=""> 
+                    <option value="#"></option>
+                    <option value="">Macho...</option>
+                    <option value="">Fêmea...</option>
+                </select> <br>
+                <span>Porte:</span> <br>
+                <select name="" id="">
+                    <option value="#"></option>
+                    <option value="">Pequeno</option>
+                    <option value="">Médio</option>
+                    <option value="">Grande</option>
+                </select> <br>
+                <span>Idade:</span> <br>
+                <select name="" id="">
+                    <option value=""></option>
+                    <option value="">Filhote...</option>
+                    <option value="">Adulto...</option>
+                    <option value="">Idoso...</option>
+                </select> 
+                <span></span>
+                
+                <span>Sobre a Personalidade do Pet:</span> 
+                <input id="id_select_box_item_1" type="text" placeholder="Carinhoso / Dorminhoco, etc..."> <br>
+    
+                <span>Sobre a Personalidade do Pet:</span> 
+                <input id="id_select_box_item_2" type="text" placeholder="Castrado, vacinado, etc..."> <br> <br>
+    
+                <span>Foto do Pet:</span>
+                
+                <input type="file" id="image_input" accept="image/png, image/jpg"><br> <br>
+                <div id="display_image"></div> <br>
+            <button class="btn_anunciar" >Anunciar Doação</button>
+            </form>
+        </div>
+
+    <div id="id_quem_somos">
+       
+        Quem Somos?
+        Somos amantes de pets, e por isso queríamos criar uma forma de ajudar a causa animal, e quem mais gente como a gente também ajudasse. O passo a passo no nosso raciocínio para criar a PetsdoBem foi simples:
+        
+        Vamos criar uma plataforma digital – é o que sabemos fazer como histórico de vida e profissão, além do mundo ser digital hoje.
+        Vamos criar uma plataforma de venda recorrente, com produtos que são consumidos no cotidiano do pet, pois isso gera receita recorrente também para o PetsdoBem, e podemos de forma recorrente ajudar. Não em campanhas únicas, não 1 vez por ano… ajudamos a cada compra. Todos os dias.
+        Vamos levar conforto para nossos assinantes-lindos, entrega em casa, simples, não precisa ficar lembrando de comprar a cada momento, ou até mesmo se já está acostumado a comprar online, tem que fazer um pedido toda vez, passar cartão toda vez. 1 única compra, e já deixa toda a vida programada.
+        Vamos juntar mais e mais gente para ajudar a causa animal, mas sem gastar mais $$$ com isso. Sabemos que o dia a dia é apertado, as contas não param de chegar nas nossas casas. Então, criamos uma forma de que você compra o que já costuma comprar para o seu pet – da sua marca de preferência – e dela fazemos a doação. Da margem (sim, margem, somos uma empresa do bem e doamos da nossa margem sim!) do produto que fazemos a doação.
+         
+        Ou seja, você compra sem sair de casa, gasta o mesmo dinheiro que já gastaria em qualquer outro petshop, recebe seus produtos em casa e ajuda diretamente a causa animal.
+        Nós acreditamos que animais fazem pessoas melhores, e pessoas melhores fazem um mundo melhor. Pegada por pegada, podemos transformar nosso mundo. Mas para transformas, temos que começar.
+        Não dá pra evitar, quem ama um cão ou gato, ama todos eles.
+        O amor que você tem pelo seu pelu inspira, contagia. Esse amor pode alimentar. Amor alimenta amor. Alimente o seu, e ele alimenta o mundo.
+        Só não vale, como muitos, se fingir de morto.
+       
+        Somos amantes de pets, e por isso queríamos criar uma forma de ajudar a causa animal, e quem mais gente como a gente também ajudasse. O passo a passo no nosso raciocínio para criar a PetsdoBem foi simples:
+        
+        Vamos criar uma plataforma digital – é o que sabemos fazer como histórico de vida e profissão, além do mundo ser digital hoje.
+        Vamos criar uma plataforma de venda recorrente, com produtos que são consumidos no cotidiano do pet, pois isso gera receita recorrente também para o PetsdoBem, e podemos de forma recorrente ajudar. Não em campanhas únicas, não 1 vez por ano… ajudamos a cada compra. Todos os dias.
+        Vamos levar conforto para nossos assinantes-lindos, entrega em casa, simples, não precisa ficar lembrando de comprar a cada momento, ou até mesmo se já está acostumado a comprar online, tem que fazer um pedido toda vez, passar cartão toda vez. 1 única compra, e já deixa toda a vida programada.
+        Vamos juntar mais e mais gente para ajudar a causa animal, mas sem gastar mais $$$ com isso. Sabemos que o dia a dia é apertado, as contas não param de chegar nas nossas casas. Então, criamos uma forma de que você compra o que já costuma comprar para o seu pet – da sua marca de preferência – e dela fazemos a doação. Da margem (sim, margem, somos uma empresa do bem e doamos da nossa margem sim!) do produto que fazemos a doação.
+         
+        Ou seja, você compra sem sair de casa, gasta o mesmo dinheiro que já gastaria em qualquer outro petshop, recebe seus produtos em casa e ajuda diretamente a causa animal.
+        Nós acreditamos que animais fazem pessoas melhores, e pessoas melhores fazem um mundo melhor. Pegada por pegada, podemos transformar nosso mundo. Mas para transformas, temos que começar.
+        Não dá pra evitar, quem ama um cão ou gato, ama todos eles.
+        O amor que você tem pelo seu pelu inspira, contagia. Esse amor pode alimentar. Amor alimenta amor. Alimente o seu, e ele alimenta o mundo.
+        Só não vale, como muitos, se fingir de morto.
+    </div>
+
+    <div style="display: none;" id="id_espaco_footer">.</div>
     <footer>
         <div><a href="#">termos de uso</a></div>
         <div><a href="#">termos de uso</a></div>
@@ -182,8 +269,42 @@
          id_div_dicas.style.display = 'none';
         id_btn_1.style.display = 'none';
         btn_1.style.display = 'none';
-       
+        div_sequencia_btn.style.display = 'block'
         all_select_box.style.display = 'block'
+    } 
+
+    function doar(){
+        console.log('teste')
+        id_main.style.display = 'none';
+        container_doar.style.display = 'block'
+        id_espaco.style.display = 'none';
+        id_espaco_footer.style.display = 'block'
+        frase_h2.style.display = 'none';
+    }
+    function quem_somos(){
+        id_main.style.display = 'none';
+        id_quem_somos.style.display = 'block';
+        frase_h2.style.display = 'none';
+    }
+
+    function encontre(){
+        id_quem_somos.style.display = 'none'
+        frase_h2.style.display = 'block';
+        div_sequencia_btn.style.display = 'block'
+         id_div_banner.style.display = 'none';
+         id_div_banner_2.style.display = 'none';
+         id_div_dicas.style.display = 'none';
+        id_btn_1.style.display = 'none';
+        btn_1.style.display = 'none';
+        id_btn_ver_mais1.style = 'background-color: rgb(68, 68, 237)';
+        id_pet_lista_2.style.display = 'block';
+        id_frase_navbar.style.display = 'none'
+        id_pet_nome.style = 'background-color="red";';
+        all_select_box.style.display = 'none'
+    }
+    
+    function estrutura_pet() {
+        
     }
 </script>
 

@@ -88,7 +88,7 @@
             <div class="container">
                 
                 <div id="id_pet_lista_0" class="pet_1_1"><img onclick="estrutura_pet()" src="assets/imgs/pet_1.jpg" alt=""><div class="div_itens"><div class="pet_nome"> &emsp;Laica<br><span class="pet_cidade">&emsp;São Paulo, São Paulo</span></div> </div></div>
-                <div class="pet_1"><img src="assets/imgs/pet_2.jpg" alt=""><div class="div_itens"><div id="id_pet_nome" class="pet_nome"> &emsp;Laica<br><span class="pet_cidade">&emsp;São Paulo, São Paulo</span></div> </div></div>
+                <div onclick="estrutura_pet()" class="pet_1"><img src="assets/imgs/pet_2.jpg" alt=""><div class="div_itens"><div id="id_pet_nome" class="pet_nome"> &emsp;Laica<br><span class="pet_cidade">&emsp;São Paulo, São Paulo</span></div> </div></div>
                 <div class="pet_1"><img src="assets/imgs/pet_3.jpg" alt=""><div class="div_itens"><div class="pet_nome"> &emsp;Laica<br><span class="pet_cidade">&emsp;São Paulo, São Paulo</span></div> </div></div>
                 <div class="pet_1"><img src="assets/imgs/pet_4.png" alt=""><div class="div_itens"><div class="pet_nome"> &emsp;Laica<br><span class="pet_cidade">&emsp;São Paulo, São Paulo</span></div> </div></div>
                 <div class="pet_1"><img src="assets/imgs/pet_5.jpg" alt=""><div class="div_itens"><div class="pet_nome"> &emsp;Laica<br><span class="pet_cidade">&emsp;São Paulo, São Paulo</span></div> </div></div>
@@ -203,10 +203,32 @@
     
                 <span>Foto do Pet:</span>
                 
-                <input type="file" id="image_input" accept="image/png, image/jpg"><br> <br>
+                
+                <input type="file" id="image_input" accept="image/png, image/jpg"><br> 
                 <div id="display_image"></div> <br>
+                <span>Seu contato:</span>
+                <input id="id_ipt_telefone" type="text" placeholder=" (11) 96719-7958"><br> <br>
             <button class="btn_anunciar" >Anunciar Doação</button>
             </form>
+        </div>
+
+        <div id="container_estrutura" >
+            
+            <div id="id_estrutura_pet">
+                <img id="image_pet" src="../public/assets/imgs/pet_1.jpg" alt="">
+                <div id="texto_pet">
+                    <h1>Laika</h1>
+                    <p id="texto_pet_tag">Cachorro | Macho | Filhote | Porte médio</span> <br> <br>
+                    <span><i class="fas fa-map-marker-alt"></i> Região: São paulo, São Paulo</span> <br>
+                    <p>Sobre a Personalidade do Pet:</p> <br>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Delectus <br> quidem officia eligendi earum reprehenderit corporis sequi, accusamus magni porro nobis distinctio? Accusamus, quisquam! Quisquam laborum natus corporis voluptatem eveniet nobis?</p> <br> <br>
+                    
+                    <p>Sobre a Personalidade do Pet:</p> <br>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestias excepturi officiis, illo saepe sint id nesciunt neque voluptates sit ducimus? Officia temporibus, quos cupiditate maiores dignissimos perspiciatis vero veniam. Eum. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nemo debitis tenetur consequuntur, laboriosam officiis veniam doloribus quia! Fuga nam eveniet, voluptatem dolor dolorum, nesciunt cupiditate, ad saepe unde eum quisquam!</p>
+                    <br><br>
+                </div>
+            </div>
+    
         </div>
 
     <div id="id_quem_somos">
@@ -285,6 +307,7 @@
         id_main.style.display = 'none';
         id_quem_somos.style.display = 'block';
         frase_h2.style.display = 'none';
+        container_estrutura.style.display = 'none';
     }
 
     function encontre(){
@@ -301,10 +324,15 @@
         id_frase_navbar.style.display = 'none'
         id_pet_nome.style = 'background-color="red";';
         all_select_box.style.display = 'none'
+        container_estrutura.style.display = 'none';
     }
     
     function estrutura_pet() {
-
+        id_main.style.display = 'none';
+        container_estrutura.style.display = 'block';
+        // <img id="image_pet" src="../public/assets/imgs/pet_1.jpg" alt="">
+        
+        
     }
 </script>
 

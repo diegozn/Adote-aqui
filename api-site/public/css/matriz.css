@@ -713,18 +713,24 @@ font-weight: 400 ;
     display: none;
 }
 
-.container_estrutura {
-display: flex;
+#container_estrutura {
+display: none;
 }
 
+#id_estrutura_pet {
+    display: flex;
+}
+
+
 #image_pet {
+   
     margin-left: 8%;
     margin-top: 2%;
     margin-bottom: 2%;
     /* padding: 25% 0% 0% 0%; */
-    width: 50%;
-    border-radius: 10px;
     
+    border-radius: 10px;
+    height: 500px;
     /* background-color: rgb(68, 0, 255); */
 }
 
@@ -783,6 +789,9 @@ display: flex;
     
     }
 
+#container_estrutura {
+    display: none;
+}
 
 
 /* #texto_pet h1{

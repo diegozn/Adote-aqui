@@ -188,6 +188,7 @@ font-weight: 400 ;
 }
 
 .container .pet_1 {
+    transition: 0.8s;
     cursor: pointer;
     margin-left: 2%;
     flex-direction: column;
@@ -213,7 +214,28 @@ font-weight: 400 ;
 /* .container .pet_1_1:hover {
 
 } */
+
+/* .pet_1_1 {
+    transition: 1s;
+} */
+.pet_1_1:hover {
+    transform: scale(1.1);
+}
+.pet_1:hover {
+    transform: scale(1.1);
+}
+
+.pet_2:hover {
+    transform: scale(1.1);
+}
+
+.pet_2_2:hover {
+    transform: scale(1.1);
+}
+
 .container .pet_1_1 {
+    
+    transition: 0.8s;
     cursor: pointer;
     margin-left: 5.5%;
     
@@ -284,6 +306,7 @@ font-weight: 400 ;
 }
 
 .container_2 .pet_2 {
+    transition: 0.8s;
     cursor: pointer;
     margin-left: 2%;
     flex-direction: column;
@@ -308,6 +331,7 @@ font-weight: 400 ;
 }
 
 .container_2 .pet_2_2 {
+    transition: 0.8s;
     cursor: pointer;
     margin-left: 5.5%;
     flex-direction: column;

@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -8,25 +9,26 @@
     <link rel="shortcut icon" href="assets/imgs/fav.png" type="image/x-icon">
     <script src="https://kit.fontawesome.com/37e38224d1.js" crossorigin="anonymous"></script>
     <link rel="stylesheet" href="css/matriz.css">
-    
+
 </head>
+
 <body>
 
     <header>
         <nav>
-           
+
             <div id="topo" class="menu">
                 <a class="logo" href="index.html"><img src="assets/imgs/fav.png" alt="Logo cachorro e gato"></a>
                 <ul class="menu_1">
                     <li><a href="index.html">Inicio</a></li>
                     <li onclick="quem_somos()"><a href="#">Quem somos</a></li>
                     <li onclick="encontre()"><a href="#">Encontre</a></li>
-                    
+
                 </ul>
-                
-                <ul class="menu_2">    
-                    <li><a href="login.html">Entrar</a></li> 
-                    <li><a href="cadastro.html">Se Cadastrar</a></li> 
+
+                <ul class="menu_2">
+                    <li><a href="login.html">Entrar</a></li>
+                    <li><a href="cadastro.html">Se Cadastrar</a></li>
                 </ul>
             </div>
         </nav>
@@ -35,9 +37,10 @@
 
 
     <div id="id_espaco" class="espaco">.</div>
-    <h2 id="frase_h2"><i class="fas fa-exclamation-triangle"></i>CACHORROS E GATOS PERDIDOS<i class="fas fa-exclamation-triangle"></i> </h2>
-    <main id="id_main"> 
-        <div id="id_div_banner" class="banner"></div> 
+    <h2 id="frase_h2"><i class="fas fa-exclamation-triangle"></i>CACHORROS E GATOS PERDIDOS<i
+            class="fas fa-exclamation-triangle"></i> </h2>
+    <main id="id_main">
+        <div id="id_div_banner" class="banner"></div>
         <div id="id_div_banner_2" class="opt">
             <button onclick="adotar()" class="opt_1"><a href="#">Quero&nbsp;adotar</a></button>
             <button onclick="doar()" class="opt_2"><a href="#">Quero&nbsp;doar</a></button>
@@ -83,227 +86,526 @@
             <input type="text" placeholder="Pesquisar por nome...">
             <button>Buscar</button>
         </div>
-           
+
         <div class="article">
             <div class="container">
-                
-                <div id="id_pet_lista_0" class="pet_1_1"><img onclick="estrutura_pet()" src="assets/imgs/pet_1.jpg" alt=""><div class="div_itens"><div class="pet_nome"> &emsp;Laica<br><span class="pet_cidade">&emsp;São Paulo, São Paulo</span></div> </div></div>
-                <div onclick="estrutura_pet()" class="pet_1"><img src="assets/imgs/pet_2.jpg" alt=""><div class="div_itens"><div id="id_pet_nome" class="pet_nome"> &emsp;Laica<br><span class="pet_cidade">&emsp;São Paulo, São Paulo</span></div> </div></div>
-                <div class="pet_1"><img src="assets/imgs/pet_3.jpg" alt=""><div class="div_itens"><div class="pet_nome"> &emsp;Laica<br><span class="pet_cidade">&emsp;São Paulo, São Paulo</span></div> </div></div>
-                <div class="pet_1"><img src="assets/imgs/pet_4.png" alt=""><div class="div_itens"><div class="pet_nome"> &emsp;Laica<br><span class="pet_cidade">&emsp;São Paulo, São Paulo</span></div> </div></div>
-                <div class="pet_1"><img src="assets/imgs/pet_5.jpg" alt=""><div class="div_itens"><div class="pet_nome"> &emsp;Laica<br><span class="pet_cidade">&emsp;São Paulo, São Paulo</span></div> </div></div>
-   
+
+                <div id="id_pet_lista_0" class="pet_1_1"><img id="pet_1" src="assets/imgs/pet_1.jpg" alt="">
+                    <div class="div_itens">
+                        <div class="pet_nome"> &emsp;Laica<br><span class="pet_cidade">&emsp;São Paulo, São Paulo</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="pet_1"><img id="pet_2" src="assets/imgs/pet_2.jpg" alt="">
+                    <div class="div_itens">
+                        <div id="id_pet_nome" class="pet_nome"> &emsp;Laica<br><span class="pet_cidade">&emsp;São Paulo,
+                                São Paulo</span></div>
+                    </div>
+                </div>
+                <div class="pet_1"><img id="pet_3" src="assets/imgs/pet_3.jpg" alt="">
+                    <div class="div_itens">
+                        <div class="pet_nome"> &emsp;Laica<br><span class="pet_cidade">&emsp;São Paulo, São Paulo</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="pet_1"><img id="pet_4" src="assets/imgs/pet_4.png" alt="">
+                    <div class="div_itens">
+                        <div class="pet_nome"> &emsp;Laica<br><span class="pet_cidade">&emsp;São Paulo, São Paulo</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="pet_1"><img id="pet_5" src="assets/imgs/pet_5.jpg" alt="">
+                    <div class="div_itens">
+                        <div class="pet_nome"> &emsp;Laica<br><span class="pet_cidade">&emsp;São Paulo, São Paulo</span>
+                        </div>
+                    </div>
+                </div>
+
             </div>
             <div id="id_pet_lista_1" class="container_2">
-                <div class="pet_2_2"><img src="assets/imgs/pet_6.jpeg" alt=""><div class="div_itens"><div class="pet_nome"> &emsp;Laica<br><span class="pet_cidade">&emsp;São Paulo, São Paulo</span></div> </div></div>
-                <div class="pet_2"><img src="assets/imgs/pet_7.jpeg" alt=""><div class="div_itens"><div class="pet_nome"> &emsp;Laica<br><span class="pet_cidade">&emsp;São Paulo, São Paulo</span></div> </div></div>
-                <div class="pet_2"><img src="assets/imgs/pet_8.jpeg" alt=""><div class="div_itens"><div class="pet_nome"> &emsp;Laica<br><span class="pet_cidade">&emsp;São Paulo, São Paulo</span></div> </div></div>
-                <div class="pet_2"><img src="assets/imgs/pet_9.jpeg" alt=""><div class="div_itens"><div class="pet_nome"> &emsp;Laica<br><span class="pet_cidade">&emsp;São Paulo, São Paulo</span></div> </div></div> 
-                <div class="pet_2"><img src="assets/imgs/pet_10.jpg" alt=""><div class="div_itens"><div class="pet_nome"> &emsp;Laica<br><span class="pet_cidade">&emsp;São Paulo, São Paulo</span></div> </div></div>
+                <div class="pet_2_2"><img id="pet_6" src="assets/imgs/pet_6.jpg" alt="">
+                    <div class="div_itens">
+                        <div class="pet_nome"> &emsp;Laica<br><span class="pet_cidade">&emsp;São Paulo, São Paulo</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="pet_2"><img id="pet_7" src="assets/imgs/pet_7.jpg" alt="">
+                    <div class="div_itens">
+                        <div class="pet_nome"> &emsp;Laica<br><span class="pet_cidade">&emsp;São Paulo, São Paulo</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="pet_2"><img id="pet_8" src="assets/imgs/pet_8.jpg" alt="">
+                    <div class="div_itens">
+                        <div class="pet_nome"> &emsp;Laica<br><span class="pet_cidade">&emsp;São Paulo, São Paulo</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="pet_2"><img id="pet_9" src="assets/imgs/pet_9.jpg" alt="">
+                    <div class="div_itens">
+                        <div class="pet_nome"> &emsp;Laica<br><span class="pet_cidade">&emsp;São Paulo, São Paulo</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="pet_2"><img id="pet_10" src="assets/imgs/pet_10.jpg" alt="">
+                    <div class="div_itens">
+                        <div class="pet_nome"> &emsp;Laica<br><span class="pet_cidade">&emsp;São Paulo, São Paulo</span>
+                        </div>
+                    </div>
+                </div>
 
             </div>
             <div id="id_pet_lista_2">
-                <div  class="container_2">
-                    <div class="pet_2_2"><img src="assets/imgs/pet_11.jpg" alt=""><div class="div_itens"><div class="pet_nome"> &emsp;Laica<br><span class="pet_cidade">&emsp;São Paulo, São Paulo</span></div> </div></div>
-                    <div class="pet_2"><img src="assets/imgs/pet_12.jpg" alt=""><div class="div_itens"><div class="pet_nome"> &emsp;Laica<br><span class="pet_cidade">&emsp;São Paulo, São Paulo</span></div> </div></div>
-                    <div class="pet_2"><img src="assets/imgs/pet_13.jpg" alt=""><div class="div_itens"><div class="pet_nome"> &emsp;Laica<br><span class="pet_cidade">&emsp;São Paulo, São Paulo</span></div> </div></div>
-                    <div class="pet_2"><img src="assets/imgs/pet_14.jpg" alt=""><div class="div_itens"><div class="pet_nome"> &emsp;Laica<br><span class="pet_cidade">&emsp;São Paulo, São Paulo</span></div> </div></div> 
-                    <div class="pet_2"><img src="assets/imgs/pet_15.jpg" alt=""><div class="div_itens"><div class="pet_nome"> &emsp;Laica<br><span class="pet_cidade">&emsp;São Paulo, São Paulo</span></div> </div></div>
+                <div class="container_2">
+                    <div class="pet_2_2"><img id="pet_11" src="assets/imgs/pet_11.jpg" alt="">
+                        <div class="div_itens">
+                            <div class="pet_nome"> &emsp;Laica<br><span class="pet_cidade">&emsp;São Paulo, São
+                                    Paulo</span></div>
+                        </div>
+                    </div>
+                    <div class="pet_2"><img id="pet_12" src="assets/imgs/pet_12.jpg" alt="">
+                        <div class="div_itens">
+                            <div class="pet_nome"> &emsp;Laica<br><span class="pet_cidade">&emsp;São Paulo, São
+                                    Paulo</span></div>
+                        </div>
+                    </div>
+                    <div class="pet_2"><img id="pet_13" src="assets/imgs/pet_13.jpg" alt="">
+                        <div class="div_itens">
+                            <div class="pet_nome"> &emsp;Laica<br><span class="pet_cidade">&emsp;São Paulo, São
+                                    Paulo</span></div>
+                        </div>
+                    </div>
+                    <div class="pet_2"><img id="pet_14" src="assets/imgs/pet_14.jpg" alt="">
+                        <div class="div_itens">
+                            <div class="pet_nome"> &emsp;Laica<br><span class="pet_cidade">&emsp;São Paulo, São
+                                    Paulo</span></div>
+                        </div>
+                    </div>
+                    <div class="pet_2"><img id="pet_15" src="assets/imgs/pet_15.jpg" alt="">
+                        <div class="div_itens">
+                            <div class="pet_nome"> &emsp;Laica<br><span class="pet_cidade">&emsp;São Paulo, São
+                                    Paulo</span></div>
+                        </div>
+                    </div>
 
                 </div>
                 <div class="container_2">
-                    <div class="pet_2_2"><img src="assets/imgs/pet_16.jpg" alt=""><div class="div_itens"><div class="pet_nome"> &emsp;Laica<br><span class="pet_cidade">&emsp;São Paulo, São Paulo</span></div> </div></div>
-                    <div class="pet_2"><img src="assets/imgs/pet_17.jpg" alt=""><div class="div_itens"><div class="pet_nome"> &emsp;Laica<br><span class="pet_cidade">&emsp;São Paulo, São Paulo</span></div> </div></div>
-                    <div class="pet_2"><img src="assets/imgs/pet_18.jpg" alt=""><div class="div_itens"><div class="pet_nome"> &emsp;Laica<br><span class="pet_cidade">&emsp;São Paulo, São Paulo</span></div> </div></div>
-                    <div class="pet_2"><img src="assets/imgs/pet_19.jpg" alt=""><div class="div_itens"><div class="pet_nome"> &emsp;Laica<br><span class="pet_cidade">&emsp;São Paulo, São Paulo</span></div> </div></div>
-                    <div class="pet_2"><img src="assets/imgs/pet_20.jpg" alt=""><div class="div_itens"><div class="pet_nome"> &emsp;Laica<br><span class="pet_cidade">&emsp;São Paulo, São Paulo</span></div> </div></div> 
+                    <div class="pet_2_2"><img id="pet_16" src="assets/imgs/pet_16.jpg" alt="">
+                        <div class="div_itens">
+                            <div class="pet_nome"> &emsp;Laica<br><span class="pet_cidade">&emsp;São Paulo, São
+                                    Paulo</span></div>
+                        </div>
+                    </div>
+                    <div class="pet_2"><img id="pet_17" src="assets/imgs/pet_17.jpg" alt="">
+                        <div class="div_itens">
+                            <div class="pet_nome"> &emsp;Laica<br><span class="pet_cidade">&emsp;São Paulo, São
+                                    Paulo</span></div>
+                        </div>
+                    </div>
+                    <div class="pet_2"><img id="pet_18" src="assets/imgs/pet_18.jpg" alt="">
+                        <div class="div_itens">
+                            <div class="pet_nome"> &emsp;Laica<br><span class="pet_cidade">&emsp;São Paulo, São
+                                    Paulo</span></div>
+                        </div>
+                    </div>
+                    <div class="pet_2"><img id="pet_19" src="assets/imgs/pet_19.jpg" alt="">
+                        <div class="div_itens">
+                            <div class="pet_nome"> &emsp;Laica<br><span class="pet_cidade">&emsp;São Paulo, São
+                                    Paulo</span></div>
+                        </div>
+                    </div>
+                    <div class="pet_2"><img id="pet_20" src="assets/imgs/pet_20.jpg" alt="">
+                        <div class="div_itens">
+                            <div class="pet_nome"> &emsp;Laica<br><span class="pet_cidade">&emsp;São Paulo, São
+                                    Paulo</span></div>
+                        </div>
+                    </div>
 
                 </div>
-                
-                    <div class="container_2">
-                        <div class="pet_2_2"><img src="assets/imgs/pet_21.jpg" alt=""><div class="div_itens"><div class="pet_nome"> &emsp;Laica<br><span class="pet_cidade">&emsp;São Paulo, São Paulo</span></div> </div></div>
-                        <div class="pet_2"><img src="assets/imgs/pet_22.jpg" alt=""><div class="div_itens"><div class="pet_nome"> &emsp;Laica<br><span class="pet_cidade">&emsp;São Paulo, São Paulo</span></div> </div></div>
-                        <div class="pet_2"><img src="assets/imgs/pet_23.jpg" alt=""><div class="div_itens"><div class="pet_nome"> &emsp;Laica<br><span class="pet_cidade">&emsp;São Paulo, São Paulo</span></div> </div></div>
-                        <div class="pet_2"><img src="assets/imgs/pet_24.jpg" alt=""><div class="div_itens"><div class="pet_nome"> &emsp;Laica<br><span class="pet_cidade">&emsp;São Paulo, São Paulo</span></div> </div></div>
-                        <div class="pet_2"><img src="assets/imgs/pet_25.jpg" alt=""><div class="div_itens"><div class="pet_nome"> &emsp;Laica<br><span class="pet_cidade">&emsp;São Paulo, São Paulo</span></div> </div></div> 
-                    </div>
 
-                    <div class="container_2">
-                        <div class="pet_2_2"><img src="assets/imgs/pet_26.jpg" alt=""><div class="div_itens"><div class="pet_nome"> &emsp;Laica<br><span class="pet_cidade">&emsp;São Paulo, São Paulo</span></div> </div></div>
-                        <div class="pet_2"><img src="assets/imgs/pet_27.jpg" alt=""><div class="div_itens"><div class="pet_nome"> &emsp;Laica<br><span class="pet_cidade">&emsp;São Paulo, São Paulo</span></div> </div></div>
-                        <div class="pet_2"><img src="assets/imgs/pet_28.jpg" alt=""><div class="div_itens"><div class="pet_nome"> &emsp;Laica<br><span class="pet_cidade">&emsp;São Paulo, São Paulo</span></div> </div></div>
-                        <div class="pet_2"><img src="assets/imgs/pet_29.jpg" alt=""><div class="div_itens"><div class="pet_nome"> &emsp;Laica<br><span class="pet_cidade">&emsp;São Paulo, São Paulo</span></div> </div></div>
-                        <div class="pet_2"><img src="assets/imgs/pet_30.jpg" alt=""><div class="div_itens"><div class="pet_nome"> &emsp;Laica<br><span class="pet_cidade">&emsp;São Paulo, São Paulo</span></div> </div></div> 
+                <div class="container_2">
+                    <div class="pet_2_2"><img id="pet_21" src="assets/imgs/pet_21.jpg" alt="">
+                        <div class="div_itens">
+                            <div class="pet_nome"> &emsp;Laica<br><span class="pet_cidade">&emsp;São Paulo, São
+                                    Paulo</span></div>
+                        </div>
                     </div>
+                    <div class="pet_2"><img id="pet_22" src="assets/imgs/pet_22.jpg" alt="">
+                        <div class="div_itens">
+                            <div class="pet_nome"> &emsp;Laica<br><span class="pet_cidade">&emsp;São Paulo, São
+                                    Paulo</span></div>
+                        </div>
+                    </div>
+                    <div class="pet_2"><img id="pet_23" src="assets/imgs/pet_23.jpg" alt="">
+                        <div class="div_itens">
+                            <div class="pet_nome"> &emsp;Laica<br><span class="pet_cidade">&emsp;São Paulo, São
+                                    Paulo</span></div>
+                        </div>
+                    </div>
+                    <div class="pet_2"><img id="pet_24" src="assets/imgs/pet_24.jpg" alt="">
+                        <div class="div_itens">
+                            <div class="pet_nome"> &emsp;Laica<br><span class="pet_cidade">&emsp;São Paulo, São
+                                    Paulo</span></div>
+                        </div>
+                    </div>
+                    <div class="pet_2"><img id="pet_25" src="assets/imgs/pet_25.jpg" alt="">
+                        <div class="div_itens">
+                            <div class="pet_nome"> &emsp;Laica<br><span class="pet_cidade">&emsp;São Paulo, São
+                                    Paulo</span></div>
+                        </div>
+                    </div>
+                </div>
 
-                    <div class="container_2">
-                        <div class="pet_2_2"><img src="assets/imgs/pet_31.jpg" alt=""><div class="div_itens"><div class="pet_nome"> &emsp;Laica<br><span class="pet_cidade">&emsp;São Paulo, São Paulo</span></div> </div></div>
-                        <div class="pet_2"><img src="assets/imgs/pet_32.jpg" alt=""><div class="div_itens"><div class="pet_nome"> &emsp;Laica<br><span class="pet_cidade">&emsp;São Paulo, São Paulo</span></div> </div></div>
-                        <div class="pet_2"><img src="assets/imgs/pet_33.jpg" alt=""><div class="div_itens"><div class="pet_nome"> &emsp;Laica<br><span class="pet_cidade">&emsp;São Paulo, São Paulo</span></div> </div></div>
-                        <div class="pet_2"><img src="assets/imgs/pet_34.jpg" alt=""><div class="div_itens"><div class="pet_nome"> &emsp;Laica<br><span class="pet_cidade">&emsp;São Paulo, São Paulo</span></div> </div></div>
-                        <div class="pet_2"><img src="assets/imgs/pet_35.jpg" alt=""><div class="div_itens"><div class="pet_nome"> &emsp;Laica<br><span class="pet_cidade">&emsp;São Paulo, São Paulo</span></div> </div></div> 
+                <div class="container_2">
+                    <div class="pet_2_2"><img id="pet_26" src="assets/imgs/pet_26.jpg" alt="">
+                        <div class="div_itens">
+                            <div class="pet_nome"> &emsp;Laica<br><span class="pet_cidade">&emsp;São Paulo, São
+                                    Paulo</span></div>
+                        </div>
                     </div>
+                    <div class="pet_2"><img id="pet_27" src="assets/imgs/pet_27.jpg" alt="">
+                        <div class="div_itens">
+                            <div class="pet_nome"> &emsp;Laica<br><span class="pet_cidade">&emsp;São Paulo, São
+                                    Paulo</span></div>
+                        </div>
+                    </div>
+                    <div class="pet_2"><img id="pet_28" src="assets/imgs/pet_28.jpg" alt="">
+                        <div class="div_itens">
+                            <div class="pet_nome"> &emsp;Laica<br><span class="pet_cidade">&emsp;São Paulo, São
+                                    Paulo</span></div>
+                        </div>
+                    </div>
+                    <div class="pet_2"><img id="pet_29" src="assets/imgs/pet_29.jpg" alt="">
+                        <div class="div_itens">
+                            <div class="pet_nome"> &emsp;Laica<br><span class="pet_cidade">&emsp;São Paulo, São
+                                    Paulo</span></div>
+                        </div>
+                    </div>
+                    <div class="pet_2"><img id="pet_30" src="assets/imgs/pet_30.jpg" alt="">
+                        <div class="div_itens">
+                            <div class="pet_nome"> &emsp;Laica<br><span class="pet_cidade">&emsp;São Paulo, São
+                                    Paulo</span></div>
+                        </div>
+                    </div>
+                </div>
 
-                    <div class="container_2">
-                        <div class="pet_2_2"><img src="assets/imgs/pet_36.jpg" alt=""><div class="div_itens"><div class="pet_nome"> &emsp;Laica<br><span class="pet_cidade">&emsp;São Paulo, São Paulo</span></div> </div></div>
-                        <div class="pet_2"><img src="assets/imgs/pet_37.jpg" alt=""><div class="div_itens"><div class="pet_nome"> &emsp;Laica<br><span class="pet_cidade">&emsp;São Paulo, São Paulo</span></div> </div></div>
-                        <div class="pet_2"><img src="assets/imgs/pet_38.jpg" alt=""><div class="div_itens"><div class="pet_nome"> &emsp;Laica<br><span class="pet_cidade">&emsp;São Paulo, São Paulo</span></div> </div></div>
-                        <div class="pet_2"><img src="assets/imgs/pet_39.jpg" alt=""><div class="div_itens"><div class="pet_nome"> &emsp;Laica<br><span class="pet_cidade">&emsp;São Paulo, São Paulo</span></div> </div></div>
-                        <div class="pet_2"><img src="assets/imgs/pet_40.jpg" alt=""><div class="div_itens"><div class="pet_nome"> &emsp;Laica<br><span class="pet_cidade">&emsp;São Paulo, São Paulo</span></div> </div></div> 
+                <div class="container_2">
+                    <div class="pet_2_2"><img id="pet_31" src="assets/imgs/pet_31.jpg" alt="">
+                        <div class="div_itens">
+                            <div class="pet_nome"> &emsp;Laica<br><span class="pet_cidade">&emsp;São Paulo, São
+                                    Paulo</span></div>
+                        </div>
                     </div>
+                    <div class="pet_2"><img id="pet_32" src="assets/imgs/pet_32.jpg" alt="">
+                        <div class="div_itens">
+                            <div class="pet_nome"> &emsp;Laica<br><span class="pet_cidade">&emsp;São Paulo, São
+                                    Paulo</span></div>
+                        </div>
+                    </div>
+                    <div class="pet_2"><img id="pet_33" src="assets/imgs/pet_33.jpg" alt="">
+                        <div class="div_itens">
+                            <div class="pet_nome"> &emsp;Laica<br><span class="pet_cidade">&emsp;São Paulo, São
+                                    Paulo</span></div>
+                        </div>
+                    </div>
+                    <div class="pet_2"><img id="pet_34" src="assets/imgs/pet_34.jpg" alt="">
+                        <div class="div_itens">
+                            <div class="pet_nome"> &emsp;Laica<br><span class="pet_cidade">&emsp;São Paulo, São
+                                    Paulo</span></div>
+                        </div>
+                    </div>
+                    <div class="pet_2"><img id="pet_35" src="assets/imgs/pet_35.jpg" alt="">
+                        <div class="div_itens">
+                            <div class="pet_nome"> &emsp;Laica<br><span class="pet_cidade">&emsp;São Paulo, São
+                                    Paulo</span></div>
+                        </div>
+                    </div>
+                </div>
 
-                    <div class="container_2">
-                        <div class="pet_2_2"><img src="assets/imgs/pet_41.jpg" alt=""><div class="div_itens"><div class="pet_nome"> &emsp;Laica<br><span class="pet_cidade">&emsp;São Paulo, São Paulo</span></div> </div></div>
-                        <div class="pet_2"><img src="assets/imgs/pet_42.jpg" alt=""><div class="div_itens"><div class="pet_nome"> &emsp;Laica<br><span class="pet_cidade">&emsp;São Paulo, São Paulo</span></div> </div></div>
-                        <div class="pet_2"><img src="assets/imgs/pet_43.jpg" alt=""><div class="div_itens"><div class="pet_nome"> &emsp;Laica<br><span class="pet_cidade">&emsp;São Paulo, São Paulo</span></div> </div></div>
-                        <div class="pet_2"><img src="assets/imgs/pet_44.jpg" alt=""><div class="div_itens"><div class="pet_nome"> &emsp;Laica<br><span class="pet_cidade">&emsp;São Paulo, São Paulo</span></div> </div></div>
-                        <div class="pet_2"><img src="assets/imgs/pet_45.jpg" alt=""><div 
-                            class="div_itens"><div class="pet_nome"> &emsp;Laica<br><span class="pet_cidade">&emsp;São Paulo, São Paulo</span></div> </div></div>
+                <div class="container_2">
+                    <div class="pet_2_2"><img id="pet_36" src="assets/imgs/pet_36.jpg" alt="">
+                        <div class="div_itens">
+                            <div class="pet_nome"> &emsp;Laica<br><span class="pet_cidade">&emsp;São Paulo, São
+                                    Paulo</span></div>
+                        </div>
                     </div>
+                    <div class="pet_2"><img id="pet_37" src="assets/imgs/pet_37.jpg" alt="">
+                        <div class="div_itens">
+                            <div class="pet_nome"> &emsp;Laica<br><span class="pet_cidade">&emsp;São Paulo, São
+                                    Paulo</span></div>
+                        </div>
+                    </div>
+                    <div class="pet_2"><img id="pet_38" src="assets/imgs/pet_38.jpg" alt="">
+                        <div class="div_itens">
+                            <div class="pet_nome"> &emsp;Laica<br><span class="pet_cidade">&emsp;São Paulo, São
+                                    Paulo</span></div>
+                        </div>
+                    </div>
+                    <div class="pet_2"><img id="pet_39" src="assets/imgs/pet_39.jpg" alt="">
+                        <div class="div_itens">
+                            <div class="pet_nome"> &emsp;Laica<br><span class="pet_cidade">&emsp;São Paulo, São
+                                    Paulo</span></div>
+                        </div>
+                    </div>
+                    <div class="pet_2"><img id="pet_40" src="assets/imgs/pet_40.jpg" alt="">
+                        <div class="div_itens">
+                            <div class="pet_nome"> &emsp;Laica<br><span class="pet_cidade">&emsp;São Paulo, São
+                                    Paulo</span></div>
+                        </div>
+                    </div>
+                </div>
 
-                    <div class="container_2">
-                        <div class="pet_2_2"><img src="assets/imgs/pet_46.jpg" alt=""><div class="div_itens"><div class="pet_nome"> &emsp;Laica<br><span class="pet_cidade">&emsp;São Paulo, São Paulo</span></div> </div></div>
-                        <div class="pet_2"><img src="assets/imgs/pet_47.jpg" alt=""><div class="div_itens"><div class="pet_nome"> &emsp;Laica<br><span class="pet_cidade">&emsp;São Paulo, São Paulo</span></div> </div></div>
-                        <div class="pet_2"><img src="assets/imgs/pet_48.jpg" alt=""><div class="div_itens"><div class="pet_nome"> &emsp;Laica<br><span class="pet_cidade">&emsp;São Paulo, São Paulo</span></div> </div></div>
-                        <div class="pet_2"><img src="assets/imgs/pet_49.jpeg" alt=""><div class="div_itens"><div class="pet_nome"> &emsp;Laica<br><span class="pet_cidade">&emsp;São Paulo, São Paulo</span></div> </div></div>
-                        <div class="pet_2"><img src="assets/imgs/pet_50.jpg" alt=""><div class="div_itens"><div class="pet_nome"> &emsp;Laica<br><span class="pet_cidade">&emsp;São Paulo, São Paulo</span></div> </div></div>
+                <div class="container_2">
+                    <div class="pet_2_2"><img id="pet_41" src="assets/imgs/pet_41.jpg" alt="">
+                        <div class="div_itens">
+                            <div class="pet_nome"> &emsp;Laica<br><span class="pet_cidade">&emsp;São Paulo, São
+                                    Paulo</span></div>
+                        </div>
                     </div>
+                    <div class="pet_2"><img id="pet_42" src="assets/imgs/pet_42.jpg" alt="">
+                        <div class="div_itens">
+                            <div class="pet_nome"> &emsp;Laica<br><span class="pet_cidade">&emsp;São Paulo, São
+                                    Paulo</span></div>
+                        </div>
+                    </div>
+                    <div class="pet_2"><img id="pet_43" src="assets/imgs/pet_43.jpg" alt="">
+                        <div class="div_itens">
+                            <div class="pet_nome"> &emsp;Laica<br><span class="pet_cidade">&emsp;São Paulo, São
+                                    Paulo</span></div>
+                        </div>
+                    </div>
+                    <div class="pet_2"><img id="pet_44" src="assets/imgs/pet_44.jpg" alt="">
+                        <div class="div_itens">
+                            <div class="pet_nome"> &emsp;Laica<br><span class="pet_cidade">&emsp;São Paulo, São
+                                    Paulo</span></div>
+                        </div>
+                    </div>
+                    <div class="pet_2"><img id="pet_45" src="assets/imgs/pet_45.jpg" alt="">
+                        <div class="div_itens">
+                            <div class="pet_nome"> &emsp;Laica<br><span class="pet_cidade">&emsp;São Paulo, São
+                                    Paulo</span></div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="container_2">
+                    <div class="pet_2_2"><img id="pet_46" src="assets/imgs/pet_46.jpg" alt="">
+                        <div class="div_itens">
+                            <div class="pet_nome"> &emsp;Laica<br><span class="pet_cidade">&emsp;São Paulo, São
+                                    Paulo</span></div>
+                        </div>
+                    </div>
+                    <div class="pet_2"><img id="pet_47" src="assets/imgs/pet_47.jpg" alt="">
+                        <div class="div_itens">
+                            <div class="pet_nome"> &emsp;Laica<br><span class="pet_cidade">&emsp;São Paulo, São
+                                    Paulo</span></div>
+                        </div>
+                    </div>
+                    <div class="pet_2"><img id="pet_48" src="assets/imgs/pet_48.jpg" alt="">
+                        <div class="div_itens">
+                            <div class="pet_nome"> &emsp;Laica<br><span class="pet_cidade">&emsp;São Paulo, São
+                                    Paulo</span></div>
+                        </div>
+                    </div>
+                    <div class="pet_2"><img id="pet_49" src="assets/imgs/pet_49.jpg" alt="">
+                        <div class="div_itens">
+                            <div class="pet_nome"> &emsp;Laica<br><span class="pet_cidade">&emsp;São Paulo, São
+                                    Paulo</span></div>
+                        </div>
+                    </div>
+                    <div class="pet_2"><img id="pet_50" src="assets/imgs/pet_50.jpg" alt="">
+                        <div class="div_itens">
+                            <div class="pet_nome"> &emsp;Laica<br><span class="pet_cidade">&emsp;São Paulo, São
+                                    Paulo</span></div>
+                        </div>
+                    </div>
+                </div>
             </div>
 
 
 
-            <!-- ---- ponto ver mais -->
-          
-          
+            <!-- ---- ponto ver maiis -->
 
 
 
-           
+
+
+
             <button id="btn_1" class="btn_1" onclick="ver_mais()"><a href="#topo">Ver mais</a></button>
 
             <div id="id_div_dicas" class="container_4">
-                <div class="dica1"><img src="assets/imgs/dicas2.jpg " alt=""><div class="txt_1">Intoxicação com produtos de limpeza, saiba como manter seu pet em segurança: <br><span class="txt_2">Os produtos de limpeza podem oferecer riscos para o seu pet, afinal a maioria deles contém ingredientes tóxicos, como o ácido bórico, o peróxido de sódio, a amônia, entre outros. Mas manter a limpeza da casa e do ambiente em que o seu filho de quatro patas fica...</span></div></div> 
-                <div class="dica"><img src="assets/imgs/dicas1.png" alt=""><div class="txt_1">Confira tudo o que você precisa saber sobre Alimentação Natural para cães e gatos: <br><span class="txt_2">Você sabia que escolher uma boa ração é tão importante quanto manter as vacinas do seu amigão em dia? Pois, é. Mas não se engane, nem só de alimentos industrializados vive um gato ou cachorro. Existe um conceito chamado de alimentação natural e é sobre isso..</span> </div></div>
-                <div class="dica"><img src="assets/imgs/dicas3.png" alt=""><div class="txt_1">Como prevenir pulgas nos cachorros: <br> <span class="txt_2">O verão está aí! Na maior parte do país está um calor arretado que só! E junto com o calor chega a necessidade de redobrarmos a atenção com nossos amigos. No verão a gente precisa ficar atentos a várias coisas, como o horário de passear com o cachorro para evitar de queimar as patinhas Também temos que redobrar a atenção em relação...</span> </div></div> 
+                <div class="dica1"><img src="assets/imgs/dicas2.jpg " alt="">
+                    <div class="txt_1">Intoxicação com produtos de limpeza, saiba como manter seu pet em segurança:
+                        <br><span class="txt_2">Os produtos de limpeza podem oferecer riscos para o seu pet, afinal a
+                            maioria deles contém ingredientes tóxicos, como o ácido bórico, o peróxido de sódio, a
+                            amônia, entre outros. Mas manter a limpeza da casa e do ambiente em que o seu filho de
+                            quatro patas fica...</span></div>
+                </div>
+                <div class="dica"><img src="assets/imgs/dicas1.png" alt="">
+                    <div class="txt_1">Confira tudo o que você precisa saber sobre Alimentação Natural para cães e
+                        gatos: <br><span class="txt_2">Você sabia que escolher uma boa ração é tão importante quanto
+                            manter as vacinas do seu amigão em dia? Pois, é. Mas não se engane, nem só de alimentos
+                            industrializados vive um gato ou cachorro. Existe um conceito chamado de alimentação natural
+                            e é sobre isso..</span> </div>
+                </div>
+                <div class="dica"><img src="assets/imgs/dicas3.png" alt="">
+                    <div class="txt_1">Como prevenir pulgas nos cachorros: <br> <span class="txt_2">O verão está aí! Na
+                            maior parte do país está um calor arretado que só! E junto com o calor chega a necessidade
+                            de redobrarmos a atenção com nossos amigos. No verão a gente precisa ficar atentos a várias
+                            coisas, como o horário de passear com o cachorro para evitar de queimar as patinhas Também
+                            temos que redobrar a atenção em relação...</span> </div>
+                </div>
             </div>
 
             <button id="id_btn_1" class="btn_1" onclick="ver_dicas()">Ver dicas</button>
-            
-        
+
+
             <div id="div_sequencia_btn" style="display: none;" class="sequencia">
                 <button id="id_btn_ver_mais1" class="btn_ver_mais1">1</button>
                 <button onclick="sequencia_1()" class="btn_ver_mais2">2</button>
                 <button class="btn_ver_mais3">3</button>
                 <button class="btn_ver_mais3">...</button>
 
-                </div>
+            </div>
             <div class="espaco2"></div>
-            
+
     </main>
 
-       
+
     <div id="container_doar">
         <form id="id_doar_formulario" action="">
-                <h1>Cadastro para Doação</h1>
-                <h4>Informações gerais: (PREENCHA TODOS OS CAMPOS)</h4>
-                <br>
-                <br>
-                <span>Animal:</span> <br>
-                <select name="" >
-                    <option value="#"></option>
-                    <option value="">Gato</option>
-                    <option value="">Cachorro</option>
-                </select> <br>
-                <span>Nome do animal:</span> <br>
-                <input  class="span_c_border" type="text" placeholder="">
-                <br>
-                <span>Sexo:</span> <br>
-                <select name="" id=""> 
-                    <option value="#"></option>
-                    <option value="">Macho...</option>
-                    <option value="">Fêmea...</option>
-                </select> <br>
-                <span>Porte:</span> <br>
-                <select name="" id="">
-                    <option value="#"></option>
-                    <option value="">Pequeno</option>
-                    <option value="">Médio</option>
-                    <option value="">Grande</option>
-                </select> <br>
-                <span>Idade:</span> <br>
-                <select name="" id="">
-                    <option value=""></option>
-                    <option value="">Filhote...</option>
-                    <option value="">Adulto...</option>
-                    <option value="">Idoso...</option>
-                </select> 
-                <span></span>
-                
-                <span>Sobre a Personalidade do Pet:</span> 
-                <input id="id_select_box_item_1" type="text" placeholder="Carinhoso / Dorminhoco, etc..."> <br>
-    
-                <span>Demais Informações:</span> 
-                <input id="id_select_box_item_2" type="text" placeholder="Castrado, vacinado, etc..."> <br> <br>
-    
-                <span>Foto do Pet:</span>
-                
-                
-                <input type="file" id="image_input" accept="image/png, image/jpg"><br> 
-                <div id="display_image"></div> <br>
-                <span>Seu contato:</span>
-                <input id="id_ipt_telefone" type="text" placeholder=" (11) 96719-7958"><br> <br>
-            <button class="btn_anunciar" >Anunciar Doação</button>
-            </form>
+            <h1>Cadastro para Doação</h1>
+            <h4>Informações gerais: (PREENCHA TODOS OS CAMPOS)</h4>
+            <br>
+            <br>
+            <span>Animal:</span> <br>
+            <select name="">
+                <option value="#"></option>
+                <option value="">Gato</option>
+                <option value="">Cachorro</option>
+            </select> <br>
+            <span>Nome do animal:</span> <br>
+            <input class="span_c_border" type="text" placeholder="">
+            <br>
+            <span>Sexo:</span> <br>
+            <select name="" id="">
+                <option value="#"></option>
+                <option value="">Macho...</option>
+                <option value="">Fêmea...</option>
+            </select> <br>
+            <span>Porte:</span> <br>
+            <select name="" id="">
+                <option value="#"></option>
+                <option value="">Pequeno</option>
+                <option value="">Médio</option>
+                <option value="">Grande</option>
+            </select> <br>
+            <span>Idade:</span> <br>
+            <select name="" id="">
+                <option value=""></option>
+                <option value="">Filhote...</option>
+                <option value="">Adulto...</option>
+                <option value="">Idoso...</option>
+            </select>
+            <span></span>
+
+            <span>Sobre a Personalidade do Pet:</span>
+            <input id="id_select_box_item_1" type="text" placeholder="Carinhoso / Dorminhoco, etc..."> <br>
+
+            <span>Demais Informações:</span>
+            <input id="id_select_box_item_2" type="text" placeholder="Castrado, vacinado, etc..."> <br> <br>
+
+            <span>Foto do Pet:</span>
+
+
+            <input type="file" id="image_input" accept="image/png, image/jpg"><br>
+            <div id="display_image"></div> <br>
+            <span>Seu contato:</span>
+            <input id="id_ipt_telefone" type="text" placeholder=" (11) 96719-7958"><br> <br>
+            <button class="btn_anunciar">Anunciar Doação</button>
+        </form>
+    </div>
+
+    <div id="container_estrutura">
+
+        <div id="id_estrutura_pet">
+            <img id="image_pet" src="../public/assets/imgs/pet_10.jpg" alt="">
+            <div id="texto_pet">
+                <h1>Laika</h1>
+                <p id="texto_pet_tag">Cachorro | Macho | Filhote | Porte médio</span> <br> <br>
+                    <span><i class="fas fa-map-marker-alt"></i> Região: São paulo, São Paulo</span> <br>
+                <p>Sobre a Personalidade do Pet:</p> <br>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Delectus <br> quidem officia eligendi earum
+                    reprehenderit corporis sequi, accusamus magni porro nobis distinctio? Accusamus, quisquam! Quisquam
+                    laborum natus corporis voluptatem eveniet nobis?</p> <br> <br>
+
+                <p>Sobre a Personalidade do Pet:</p> <br>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestias excepturi officiis, illo saepe
+                    sint id nesciunt neque voluptates sit ducimus? Officia temporibus, quos cupiditate maiores
+                    dignissimos perspiciatis vero veniam. Eum. Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+                    Nemo debitis tenetur consequuntur, laboriosam officiis veniam doloribus quia! Fuga nam eveniet,
+                    voluptatem dolor dolorum, nesciunt cupiditate, ad saepe unde eum quisquam!</p>
+                <br><br>
+            </div>
         </div>
 
-        <div id="container_estrutura" >
-            
-            <div id="id_estrutura_pet">
-                <img id="image_pet" src="../public/assets/imgs/pet_10.jpg" alt="">
-                <div id="texto_pet">
-                    <h1>Laika</h1>
-                    <p id="texto_pet_tag">Cachorro | Macho | Filhote | Porte médio</span> <br> <br>
-                    <span><i class="fas fa-map-marker-alt"></i> Região: São paulo, São Paulo</span> <br>
-                    <p>Sobre a Personalidade do Pet:</p> <br>
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Delectus <br> quidem officia eligendi earum reprehenderit corporis sequi, accusamus magni porro nobis distinctio? Accusamus, quisquam! Quisquam laborum natus corporis voluptatem eveniet nobis?</p> <br> <br>
-                    
-                    <p>Sobre a Personalidade do Pet:</p> <br>
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestias excepturi officiis, illo saepe sint id nesciunt neque voluptates sit ducimus? Officia temporibus, quos cupiditate maiores dignissimos perspiciatis vero veniam. Eum. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nemo debitis tenetur consequuntur, laboriosam officiis veniam doloribus quia! Fuga nam eveniet, voluptatem dolor dolorum, nesciunt cupiditate, ad saepe unde eum quisquam!</p>
-                    <br><br>
-                </div>
-            </div>
-    
-        </div>
+    </div>
 
     <div id="id_quem_somos">
-       
+
         <div>
-        Quem Somos?
-        Somos amantes de pets, e por isso queríamos criar uma forma de ajudar a causa animal, e quem mais gente como a gente também ajudasse. O passo a passo no nosso raciocínio para criar a PetsdoBem foi simples:
-        
-        Vamos criar uma plataforma digital – é o que sabemos fazer como histórico de vida e profissão, além do mundo ser digital hoje.
-        Vamos criar uma plataforma de venda recorrente, com produtos que são consumidos no cotidiano do pet, pois isso gera receita recorrente também para o PetsdoBem, e podemos de forma recorrente ajudar. Não em campanhas únicas, não 1 vez por ano… ajudamos a cada compra. Todos os dias.
-        Vamos levar conforto para nossos assinantes-lindos, entrega em casa, simples, não precisa ficar lembrando de comprar a cada momento, ou até mesmo se já está acostumado a comprar online, tem que fazer um pedido toda vez, passar cartão toda vez. 1 única compra, e já deixa toda a vida programada.
-        Vamos juntar mais e mais gente para ajudar a causa animal, mas sem gastar mais $$$ com isso. Sabemos que o dia a dia é apertado, as contas não param de chegar nas nossas casas. Então, criamos uma forma de que você compra o que já costuma comprar para o seu pet – da sua marca de preferência – e dela fazemos a doação. Da margem (sim, margem, somos uma empresa do bem e doamos da nossa margem sim!) do produto que fazemos a doação.
-         
-        Ou seja, você compra sem sair de casa, gasta o mesmo dinheiro que já gastaria em qualquer outro petshop, recebe seus produtos em casa e ajuda diretamente a causa animal.
-        Nós acreditamos que animais fazem pessoas melhores, e pessoas melhores fazem um mundo melhor. Pegada por pegada, podemos transformar nosso mundo. Mas para transformas, temos que começar.
-        Não dá pra evitar, quem ama um cão ou gato, ama todos eles.
-        O amor que você tem pelo seu pelu inspira, contagia. Esse amor pode alimentar. Amor alimenta amor. Alimente o seu, e ele alimenta o mundo.
-        Só não vale, como muitos, se fingir de morto.
-       
-        Somos amantes de pets, e por isso queríamos criar uma forma de ajudar a causa animal, e quem mais gente como a gente também ajudasse. O passo a passo no nosso raciocínio para criar a PetsdoBem foi simples:
-        
-        Vamos criar uma plataforma digital – é o que sabemos fazer como histórico de vida e profissão, além do mundo ser digital hoje.
-        Vamos criar uma plataforma de venda recorrente, com produtos que são consumidos no cotidiano do pet, pois isso gera receita recorrente também para o PetsdoBem, e podemos de forma recorrente ajudar. Não em campanhas únicas, não 1 vez por ano… ajudamos a cada compra. Todos os dias.
-        Vamos levar conforto para nossos assinantes-lindos, entrega em casa, simples, não precisa ficar lembrando de comprar a cada momento, ou até mesmo se já está acostumado a comprar online, tem que fazer um pedido toda vez, passar cartão toda vez. 1 única compra, e já deixa toda a vida programada.
-        Vamos juntar mais e mais gente para ajudar a causa animal, mas sem gastar mais $$$ com isso. Sabemos que o dia a dia é apertado, as contas não param de chegar nas nossas casas. Então, criamos uma forma de que você compra o que já costuma comprar para o seu pet – da sua marca de preferência – e dela fazemos a doação. Da margem (sim, margem, somos uma empresa do bem e doamos da nossa margem sim!) do produto que fazemos a doação.
-         
-        Ou seja, você compra sem sair de casa, gasta o mesmo dinheiro que já gastaria em qualquer outro petshop, recebe seus produtos em casa e ajuda diretamente a causa animal.
-        Nós acreditamos que animais fazem pessoas melhores, e pessoas melhores fazem um mundo melhor. Pegada por pegada, podemos transformar nosso mundo. Mas para transformas, temos que começar.
-        Não dá pra evitar, quem ama um cão ou gato, ama todos eles.
-        O amor que você tem pelo seu pelu inspira, contagia. Esse amor pode alimentar. Amor alimenta amor. Alimente o seu, e ele alimenta o mundo.
-        Só não vale, como muitos, se fingir de morto.
+            Quem Somos?
+            Somos amantes de pets, e por isso queríamos criar uma forma de ajudar a causa animal, e quem mais gente como
+            a gente também ajudasse. O passo a passo no nosso raciocínio para criar a PetsdoBem foi simples:
+
+            Vamos criar uma plataforma digital – é o que sabemos fazer como histórico de vida e profissão, além do mundo
+            ser digital hoje.
+            Vamos criar uma plataforma de venda recorrente, com produtos que são consumidos no cotidiano do pet, pois
+            isso gera receita recorrente também para o PetsdoBem, e podemos de forma recorrente ajudar. Não em campanhas
+            únicas, não 1 vez por ano… ajudamos a cada compra. Todos os dias.
+            Vamos levar conforto para nossos assinantes-lindos, entrega em casa, simples, não precisa ficar lembrando de
+            comprar a cada momento, ou até mesmo se já está acostumado a comprar online, tem que fazer um pedido toda
+            vez, passar cartão toda vez. 1 única compra, e já deixa toda a vida programada.
+            Vamos juntar mais e mais gente para ajudar a causa animal, mas sem gastar mais $$$ com isso. Sabemos que o
+            dia a dia é apertado, as contas não param de chegar nas nossas casas. Então, criamos uma forma de que você
+            compra o que já costuma comprar para o seu pet – da sua marca de preferência – e dela fazemos a doação. Da
+            margem (sim, margem, somos uma empresa do bem e doamos da nossa margem sim!) do produto que fazemos a
+            doação.
+
+            Ou seja, você compra sem sair de casa, gasta o mesmo dinheiro que já gastaria em qualquer outro petshop,
+            recebe seus produtos em casa e ajuda diretamente a causa animal.
+            Nós acreditamos que animais fazem pessoas melhores, e pessoas melhores fazem um mundo melhor. Pegada por
+            pegada, podemos transformar nosso mundo. Mas para transformas, temos que começar.
+            Não dá pra evitar, quem ama um cão ou gato, ama todos eles.
+            O amor que você tem pelo seu pelu inspira, contagia. Esse amor pode alimentar. Amor alimenta amor. Alimente
+            o seu, e ele alimenta o mundo.
+            Só não vale, como muitos, se fingir de morto.
+
+            Somos amantes de pets, e por isso queríamos criar uma forma de ajudar a causa animal, e quem mais gente como
+            a gente também ajudasse. O passo a passo no nosso raciocínio para criar a PetsdoBem foi simples:
+
+            Vamos criar uma plataforma digital – é o que sabemos fazer como histórico de vida e profissão, além do mundo
+            ser digital hoje.
+            Vamos criar uma plataforma de venda recorrente, com produtos que são consumidos no cotidiano do pet, pois
+            isso gera receita recorrente também para o PetsdoBem, e podemos de forma recorrente ajudar. Não em campanhas
+            únicas, não 1 vez por ano… ajudamos a cada compra. Todos os dias.
+            Vamos levar conforto para nossos assinantes-lindos, entrega em casa, simples, não precisa ficar lembrando de
+            comprar a cada momento, ou até mesmo se já está acostumado a comprar online, tem que fazer um pedido toda
+            vez, passar cartão toda vez. 1 única compra, e já deixa toda a vida programada.
+            Vamos juntar mais e mais gente para ajudar a causa animal, mas sem gastar mais $$$ com isso. Sabemos que o
+            dia a dia é apertado, as contas não param de chegar nas nossas casas. Então, criamos uma forma de que você
+            compra o que já costuma comprar para o seu pet – da sua marca de preferência – e dela fazemos a doação. Da
+            margem (sim, margem, somos uma empresa do bem e doamos da nossa margem sim!) do produto que fazemos a
+            doação.
+
+            Ou seja, você compra sem sair de casa, gasta o mesmo dinheiro que já gastaria em qualquer outro petshop,
+            recebe seus produtos em casa e ajuda diretamente a causa animal.
+            Nós acreditamos que animais fazem pessoas melhores, e pessoas melhores fazem um mundo melhor. Pegada por
+            pegada, podemos transformar nosso mundo. Mas para transformas, temos que começar.
+            Não dá pra evitar, quem ama um cão ou gato, ama todos eles.
+            O amor que você tem pelo seu pelu inspira, contagia. Esse amor pode alimentar. Amor alimenta amor. Alimente
+            o seu, e ele alimenta o mundo.
+            Só não vale, como muitos, se fingir de morto.
         </div>
     </div>
 
@@ -319,18 +621,19 @@
 
 
 </body>
+
 </html>
 <script>
-    nome = ['Cacau', 'Snoopy','BORIS', 'Frida', 'Luck', 'Lilica', 'Simba',' Elimia', 'Haylei', 'Jake', 'Happy', 'Duda',' Lilica',' bob', 'Teco',' Sasha',' Tico', 'Lobinho', 'Bob', 'Pérola', 'Raja',' Sarah', 'Gigi', 'Don', 'Pipoca', 'Cherry',' Ariane', 'Pitoco', 'Jessica', 'Shelley',' João',' Thor', 'Valente',' Renata', 'Anya ', 'Renata', 'Minnie', 'Ringo', 'Tamires', 'Giuliano',' Miss Kitty',' Gabi', 'Ariana', 'Daniel', 'Scooby', 'Zuba', 'Evan', 'Cibele', 'Sara', 'Brad',  ];
+   var nome = ['Cacau', 'Snoopy', 'BORIS', 'Frida', 'Luck', 'Lilica', 'Simba', ' Elimia', 'Haylei', 'Jake', 'Happy', 'Duda', ' Lilica', ' bob', 'Teco', ' Sasha', ' Tico', 'Lobinho', 'Bob', 'Pérola', 'Raja', ' Sarah', 'Gigi', 'Don', 'Pipoca', 'Cherry', ' Ariane', 'Pitoco', 'Jessica', 'Shelley', ' João', ' Thor', 'Valente', ' Renata', 'Anya ', 'Renata', 'Minnie', 'Ringo', 'Tamires', 'Giuliano', ' Miss Kitty', ' Gabi', 'Ariana', 'Daniel', 'Scooby', 'Zuba', 'Evan', 'Cibele', 'Sara', 'Brad',];
 
-    info = [ `A mais linda do mundo!!!
+  var info = [`A mais linda do mundo!!!
 Dócil, amorosa,sociável. Ama bolinhas.
 Tem 8 meses, provável porte médio. Castrada e vacinas em andamento.
 Um doce!!
 Quer fazer a diferença na vida desse doguinho?
-Mande e-mail para abrigodowlad@gmail.com`, 
+Mande e-mail para abrigodowlad@gmail.com`,
 
-`Castrado e vacinado
+        `Castrado e vacinado
 Provável porte M qdo adulto
 Hoje em torno de 13 quilos
 
@@ -339,8 +642,8 @@ Vamos ajudar esse cãozinho ganhar uma família? Curtam, compartilhem.
 Quer fazer a diferença na vida desse doguinho?
 
 Mande e-mail para lorengarci@gmail.com`,
-`MUITO BONZINHO, DÓCIL, JÁ CASTRADO, CONVIVE BEM C/CÃES E GATOS. NO IPIRANGA, S.PAULO, C/ CÁSSIA: 11 99269-1046 SÓ WHATSAPP`,
-`IDADE: 2 MESES
+        `MUITO BONZINHO, DÓCIL, JÁ CASTRADO, CONVIVE BEM C/CÃES E GATOS. NO IPIRANGA, S.PAULO, C/ CÁSSIA: 11 99269-1046 SÓ WHATSAPP`,
+        `IDADE: 2 MESES
 RAÇA: SRD
 
 NÃO RESERVAMOS.
@@ -354,20 +657,20 @@ https://forms.gle/F3Ado7ojMGB4pmUH9
 Depois de enviar o questionário, entraremos em contato com você através do seu e-mail.
 
 Boa sorte :)`,
-`Cachorro de 4 meses , porte pequeno (motivo de o dono desistiu da adoção) , não temos condições de criar. (94013-4188)`,
-`Encontrei uma mamãe gatinha, muito desnutrida, cuidei com muito amor e carinho, então, 5 bebezinhos nasceram e agora já estão prontos para encontrar uma família para amar...
+        `Cachorro de 4 meses , porte pequeno (motivo de o dono desistiu da adoção) , não temos condições de criar. (94013-4188)`,
+        `Encontrei uma mamãe gatinha, muito desnutrida, cuidei com muito amor e carinho, então, 5 bebezinhos nasceram e agora já estão prontos para encontrar uma família para amar...
 Estão com 3 meses. Entre eles há 3 machinhos e duas fêmeas.
 
 Todos estão desverminados, são dóceis e adoram brincar.
 
 Qualquer dúvida pode me enviar mensagem pelo whatsapp: 41 98445-4317. Falar com Adriana`,
-`ADOÇÃO RESPONSÁVEL ❤
+        `ADOÇÃO RESPONSÁVEL 
 Estão vivendo numa clínica pois não têm onde ficar
 São fêmeas de 3 meses, vermifugadas e negativas para fiv/felv
 Adoção mediante entrevista e somente para lares telados
 Casa Verde ZN/SP
 Interessados chamar no WhatsApp 11 94999-3774 [NÃO LIGAR, adoção apenas por mensagem]`,
-`nas fotos, ele é o preto com branco
+        `nas fotos, ele é o preto com branco
 
 IDADE: 2,5 MESES
 RAÇA: SRD
@@ -383,104 +686,104 @@ https://forms.gle/F3Ado7ojMGB4pmUH9
 Depois de enviar o questionário, entraremos em contato com você através do seu e-mail.
 
 Boa sorte :)`,
-`Bob é um menino lindo que precisa de espaço, se dá bem com outros animais.
+        `Bob é um menino lindo que precisa de espaço, se dá bem com outros animais.
 Tem 7 meses de muita energia 
 Ele procura família amorosa e responsável que entenda que adoção é pra sempre `,
-`Contate Katia 99160-2906
+        `Contate Katia 99160-2906
 Raja linda gatinha castrada 2 anos ! Adote esta belíssima gatinha, ela gosta de brincar e carinho !
 Os gatinhos adultos merecem um lar também!
 Está em São Paulo Capital`,
-`ADOÇÃO RESPONSÁVEL
+        `ADOÇÃO RESPONSÁVEL
 Esse é o Thor, nasceu e vive em uma comunidade da Tijuca. Deve ter 3 meses e meio. Tomou a primeira dose da Vacina e vermifugou. Precisa muito de um lar amoroso e seguro. Caso tenham interesse entre contato diretamente com Whatsapp 21 99141- 0895`,
-`3meses, vermifugada
+        `3meses, vermifugada
 Itaquera ZL/SP
 WhatsApp 11 94999-3774 [NÃO LIGAR, adoção apenas por mensagem]`,
-`3 meses, vermifugada
+        `3 meses, vermifugada
 Itaquera ZL/SP
 WhatsApp 11 94999-3774 [NÃO LIGAR, adoção apenas por mensagem]`,
-`4 meses, vermifugada
+        `4 meses, vermifugada
 Itaquera ZL/SP
 WhatsApp 11 94999-3774 [NÃO LIGAR, adoção apenas por mensagem]`,
-`Samuca é um gatinho muito docil e carinhoso
+        `Samuca é um gatinho muito docil e carinhoso
 Precisa de amor e paciência
 Ele se dá super bem com outros gatos
 Tem mais o menos 3 meses
 Já foi vermifugado
 Será doada apenas para apartamento telado ou casas teladas
 Para mais informaçoes entrar em contato com Julia pelo Whatzapp 11 95039 1384`,
-`Theo é um gatinho muito docil e carinhoso
+        `Theo é um gatinho muito docil e carinhoso
 Precisa de amor e paciência
 Ele se dá super bem com outros gatos
 Tem mais o menos 3 meses
 Já foi vermifugado
 Será doada apenas para apartamento telado ou casas teladas
 Para mais informaçoes entrar em contato com Julia pelo Whatzapp 11 95039 1384`,
-`Kira 2 anos castrada e vacinada! Pesa 10 kg , mansinha brincalhona , não está acostumada com gatos`,
-`erca de 3 meses, castrada, com primeira dose da vacina, fiv/felv negativa, muito dócil e brincalhona. Ideal para quem já tem outo gato e quer companhia pra ele, ou quem quer adotar uma duplinha.
+        `Kira 2 anos castrada e vacinada! Pesa 10 kg , mansinha brincalhona , não está acostumada com gatos`,
+        `erca de 3 meses, castrada, com primeira dose da vacina, fiv/felv negativa, muito dócil e brincalhona. Ideal para quem já tem outo gato e quer companhia pra ele, ou quem quer adotar uma duplinha.
 Somente para apartamento totalmente telado, em Santos ou cidades vizinhas.`,
-`Max foi resgatado das ruas no início de 2020, ano passado, antes da pandemia.
+        `Max foi resgatado das ruas no início de 2020, ano passado, antes da pandemia.
 Foi tratado de um problema de pele, cujo único cuidado agora é a administração do Simparic ou do Nexgard Spectra mensalmente. Tem aproximadamente 4 anos, é castrado, vacinado e vermifugado.
 Max é um cão de sítio, chácara, casa de praia, casa com quintal grande. Ele é muito parceiro para longas caminhadas, corridas, trilhas...
 Viaja bem de carro, sabe ficar no banco de trás , não vomita, não babá.
 Não recomendamos a convivência com outros cães, principalmente machos.
 
-Adote o Max! ❤
+Adote o Max! 
 
 Contato: Marina (11) 99973-4265`,
-`Gatinho ativo e super carinhoso. Bem socializado com outros gatos e com cães.
+        `Gatinho ativo e super carinhoso. Bem socializado com outros gatos e com cães.
 
 Formulário de adoção: https://forms.gle/5gz7dayRpkp2SyAF7`,
-`Contate Katia 99160-2906
+        `Contate Katia 99160-2906
 Tom lindo gatinho , uma bolinha de pelo !!!!! Castrado e vermifugado, 1 aninho ! Adote este lindo gordinho !!!! Muito carinhos !!São Paulo capital`,
-`Contate Katia 99160-2906 WhatsApp
+        `Contate Katia 99160-2906 WhatsApp
 Diego lindo gatinho Castrado 3 aninhos fofo demais procura lar excelente ! Adote este belíssimo gatinho!!!!
 Contate Katia 99160-2906
 São Paulo capital`,
-`Contate KATIA 99160-2906///////////
+        `Contate KATIA 99160-2906///////////
 Cherry Linda gatinha muito fofa tem 1 aninho está castrada e vermifugada, boazinha e carinhosa . Os gatinhos adultos também merecem um lar !
 Ela está em São Paulo`,
-`Foi resgatada das ruas, fêmea, tem 2-3 anos, está castrada, vermifugada e vacinada
+        `Foi resgatada das ruas, fêmea, tem 2-3 anos, está castrada, vermifugada e vacinada
 Muito dócil, companheira, comportada e se dá bem com cachorros e humanos.
 Ela tem o porte grande
 ZN/SP (Responsável entrega)
 WhatsApp 11 94999-3774 [NÃO LIGAR, adoção apenas por mensagem]`,
-`Contate Katia 99160-2906
+        `Contate Katia 99160-2906
 Bolacha 1 ano castrado , vermifugado, fofo demais para adoção Muito carinhoso! Um fofo !Adote este belíssimo gatinho !!!!
 São Paulo capital`,
-`Contate Katia 99160-2906/////////
+        `Contate Katia 99160-2906/////////
 Fumaça 1 aninho linda e muito boazinha , castrada e vermifugada , muito carinhosa gosta muito de pessoas e bastante carinho . Abra seu coração para esta maravilhosa gatinha !!
 Está em São Paulo Capital`,
-`Contate Katia 99160-2906
+        `Contate Katia 99160-2906
 Procurava um gatinho lindo , carinhoso , que gosta de ficar juntinho ? Achou o Pitoco !!!
 Pitoco lindo gatinho castrado e vermifugado, 1 aninho , fofo demais ! Adote este belíssimo gatinho!!!!
 São Paulo capital`,
-`Contate Katia 11 991602906
+        `Contate Katia 11 991602906
 Branca 2 aninhos linda e muito boazinha , castrada e vermifugada , muito carinhosa gosta muito de pessoas e bastante carinho . Abra seu coração para esta maravilhosa gatinha !
 Está em São Paulo Capital`,
-`Contate Katia 99160-2906 por WhatsApp diretamente!
+        `Contate Katia 99160-2906 por WhatsApp diretamente!
 Gatinha 2 aninhos castrada e vermifugada ! Uma linda !Adote esta belíssima gatinha !!!!
 São Paulo capital`,
-`Shelley, fêmea, aprox. 2 meses
+        `Shelley, fêmea, aprox. 2 meses
 Dengosa e ronronenta
 Somente apartamento telado
 ZL/SP (Responsável entrega)
 WhatsApp 11 94999-3774 [NÃO LIGAR, adoção apenas por mensagem]`,
-`Contate Katia 99160-2906
+        `Contate Katia 99160-2906
 Linguiça 1 ano vermifugada e castrada , fofa demais ! !Muito carinhosa ! Uma linda !Adote está belíssima gatinha !!!! Está em São Paulo capital .`,
-`Contate Katia 99160-2906
+        `Contate Katia 99160-2906
 Ruivo lindo gatinho vermifugado e castrado 2 anos fofo e muito amiguinho ! Adote este lindo gatinho!!!
 São Paulo Capitalj`,
-`Contate Katia 99160-2906
+        `Contate Katia 99160-2906
 Menina é uma linda gatinha bem peludinha , castrada e vermifugada, 2 aninhos fofa demais ! Adote esta linda gatinha !!!
 São Paulo capital`,
-`É uma fêmea muito esperta casasadora avisa sempre quando tem alguma coisa ou alguém se aproximando é carinhosa porem ela gosta de tudo só pra ela tem silmes das coisas dela e das pessoas que está a sua volta ela passou por algo a pouco tempo difícil pra ela quase ela morreu ela deve um parto difícil que só sobrevivel dois filhotes o restante morreu na hora que nasceu e dentro dela tivemos que correr pra salvala contudo ela teve que ser castrada mas tudo correu bem mas não podemos ficar com ela pois não temos um quintal adequado pra ela é moramos de aluguel o quintal é aberto ela sai por Ai é tenho medo de acontecer algo com ela pela rua temos ela desde filhote adotamos aqui mesmo no bairro porem onde morávamos eu podia ter ela agora ficou difícil por mais que doa dar ela mas é necessário pro bem dela mesmo quero vela bem é o Laion é irmão dela que também é um companheirao carinhoso esperto casador defende seu território brincalhão eles são uns amores e tem também os dois filhotes que preferir não dar nome porque não quero depois que seja mais difícil ainda em dalos espero que eles encontrem um ótimo lar que os ame e cuide deles do feito que eles pressisao São cachorros de porte grande os filhotes são duas fêmeas`,
-`Peteca 5 meses castrada e vacinada ! Mansinha mas medrosinha , quem si interessar por essa linda princesinha entre em contato comigo protetora Grazi pelo Cel (11)984718611`,
-`Olá,Sou João estou muito feliz que esteja interessado(a) em adotar o nosso amado Choco. Choco não tem raça definida e possui 5 meses .Ele é super brincalhão,curioso,amigo de todos. Está vermifugado,vacinado,bem alimentado e saúdavel. Estou doando por conta de falta de espaço. Para qualquer informação adicional, por favor, entre em contato comigo.`,
-`Mamãe, adolescente, e seus dois bebês disponíveis pra adoção. Eles "ivandem" o quintal de uma amiga para comerem, mas ela não têm condições de assumir os três. A mamãe, ela se compromete a castrar.`,
-`Essa fofura tem 1 ano e meio mais ou menos, foi resgatada da rua poisnestava prenha, os filhotes já desmamaram, por isso ela está agora para adoção. Pesa cerca de 12kg, porte pequeno para médio. É muito carinhosa, se dá bem com outros animais e adoooora crianças! É bem obediente e não faz as necessidades dentro de casa se tiver um quintal. Dependendo do lugar posso ir levar! Interessados podem me chamar no whatsapp 945671529.`,
-`Filhotinhos fofos **LEIA A DESCRIÇAO**
+        `É uma fêmea muito esperta casasadora avisa sempre quando tem alguma coisa ou alguém se aproximando é carinhosa porem ela gosta de tudo só pra ela tem silmes das coisas dela e das pessoas que está a sua volta ela passou por algo a pouco tempo difícil pra ela quase ela morreu ela deve um parto difícil que só sobrevivel dois filhotes o restante morreu na hora que nasceu e dentro dela tivemos que correr pra salvala contudo ela teve que ser castrada mas tudo correu bem mas não podemos ficar com ela pois não temos um quintal adequado pra ela é moramos de aluguel o quintal é aberto ela sai por Ai é tenho medo de acontecer algo com ela pela rua temos ela desde filhote adotamos aqui mesmo no bairro porem onde morávamos eu podia ter ela agora ficou difícil por mais que doa dar ela mas é necessário pro bem dela mesmo quero vela bem é o Laion é irmão dela que também é um companheirao carinhoso esperto casador defende seu território brincalhão eles são uns amores e tem também os dois filhotes que preferir não dar nome porque não quero depois que seja mais difícil ainda em dalos espero que eles encontrem um ótimo lar que os ame e cuide deles do feito que eles pressisao São cachorros de porte grande os filhotes são duas fêmeas`,
+        `Peteca 5 meses castrada e vacinada ! Mansinha mas medrosinha , quem si interessar por essa linda princesinha entre em contato comigo protetora Grazi pelo Cel (11)984718611`,
+        `Olá,Sou João estou muito feliz que esteja interessado(a) em adotar o nosso amado Choco. Choco não tem raça definida e possui 5 meses .Ele é super brincalhão,curioso,amigo de todos. Está vermifugado,vacinado,bem alimentado e saúdavel. Estou doando por conta de falta de espaço. Para qualquer informação adicional, por favor, entre em contato comigo.`,
+        `Mamãe, adolescente, e seus dois bebês disponíveis pra adoção. Eles "ivandem" o quintal de uma amiga para comerem, mas ela não têm condições de assumir os três. A mamãe, ela se compromete a castrar.`,
+        `Essa fofura tem 1 ano e meio mais ou menos, foi resgatada da rua poisnestava prenha, os filhotes já desmamaram, por isso ela está agora para adoção. Pesa cerca de 12kg, porte pequeno para médio. É muito carinhosa, se dá bem com outros animais e adoooora crianças! É bem obediente e não faz as necessidades dentro de casa se tiver um quintal. Dependendo do lugar posso ir levar! Interessados podem me chamar no whatsapp 945671529.`,
+        `Filhotinhos fofos **LEIA A DESCRIÇAO**
 SAO FILHOTES DE VIRALATINHA MISTURADO COM UM PAI DE RAÇA QUE DESCONHEÇO NAO ESTAO VACINADOS E PRECISAM DOS CUIDADOS ESTAMOS NO JARAGUA SAO PAULO ZONA NORTE. ENTREM EM CONTATO NO WHATSAPP QUE DEIXEI PARA OS INTERESSADOS OBG. 11965468461 wpp.`,
-`Oi pessoal , sou um gatinho muito alegre .
+        `Oi pessoal , sou um gatinho muito alegre .
 Vir ao mundo dia 09/09/2020 tenho um pouco mais de 2 meses . Vou contar minha historia e a historia da mamae .
 Minha mamae foi abandonada pela dona dela. , ela ja nao cuidava dela direito passava fome , frio , ate que um dia ela foi embora e a abanou minha mamae ,por isso procurou abrigo e gracas ao papai do ceu a vizinha deu comida , agua e cuida da minha mamae ate hoje ( 1 ano) .
 Mamae ficou gravida , e na barriguinha da mamae ja sabia q minha mamae era muito bem cuidada , nasci foi uma alegria para todos desse lar q moro , porem minha dona nao pode ficar cmg pois a casinha dela e muito pequena 1 comodo e ela ganhou bebe tem 1 mes tmb e esta doentinha (depresao pos parto ) . e ela nao tem condicao de ficar comigo e com meus 4 irmao e a mamae .
@@ -488,34 +791,34 @@ Ela resolveu me doar , pois sabe que a pessoas q me adotar vai me dar mais atenc
 
 Quero alguem que va cuidar de mim , que vai me amar !
 Beijos !`,
-`Cheetos é um machinho super carinhoso que adora interagir com humanos. Também se dá bem com cães e outros gatos.
+        `Cheetos é um machinho super carinhoso que adora interagir com humanos. Também se dá bem com cães e outros gatos.
 Castrado!
 Está em lar temporário, e precisa urgente encontrar um lar amoroso que possa retribuir todo o carinho que esse menino tem a oferecer.`,
-`Fêmeazinha, +/- 2 meses , come ração e usa caixinha de areia, entregamos pra adoção responsável🙏`,
-`** CACAU **
+        `Fêmeazinha, +/- 2 meses , come ração e usa caixinha de areia, entregamos pra adoção responsável`,
+        `** CACAU **
 
 Zona Norte, São Paulo/SP (Entregamos em outras cidades)
 
 Essa morena lindona foi resgatada das ruas e agora está prontinha para ser adotada. Ela tem aprox. 2 anos, já está castrada e vermifugada. É muito amorosa e brincalhona, porte médio. Se dá bem com cães e ama gatos.
 
 Contatos com Jéssica por WhatsApp: (11) 99425-8882`,
-`LUKE TEM OLHOS CLAROS, É UM AMORZINHO DE FILHOTINHO DE 3 MESES SÓ, NO IPIRANGA, S.PAULO C/ CÁSSIA: 11 99269-1046 ZAP SÓ MENSAGEM`,
-`LUNA, UMA LINDA FILHOTINHA, MUITO AMOROSA! NO IPIRANGA, S.PAULO C/ CÁSSIA:11 99269-1046 ZAP SÓ MENSAGEM`,
-`Resgatado recem nascido hoje está com 4 mesinhos em lar temporário, precisa de um lar seguro e definitivo, entregamos pra casa telada  muito meiguinho, usa caixinha de areia e tem um charme nesses olhinhos`,
-`THEO É UMA FOFURA DE FILHOTINHO! NO IPIRANGA, S.PAULO, C/ CÁSSIA: 11 99269-1046 ZAP SÓ MENSAGEM`,
-`Encontramos ele na rua de Ibirité/MG estava com o pênis dilacerado e todo machucado. Resgatamos e cuidamos dele. Foi castrado e vacinado. Ama um carinho e está doido com uma família que cuide e ame ele. Tem um ano e meio. Mistura de akita com chow chow. Vamos dar um lar pra ele cheio de amor pessoal!!!!`,
-`Femea, 1 ano, castrada e vacinada. Foi abandonada no Jd Caputera, próximo a cidade de Embu das artes. Na época estava prenha. Uma pessoa bondosa a recolheu e esperou nascer os bebes que foram muito bem adotados. Agora, Poly precisa encontrar um lar tb. É muito boazinha, um tanto tímida e se dá bem com crianças e outros cães.`,
-`Zion é da raça Yorkshire, ele tem 5 aninhos. É um cachorro muito amoroso e levado... Ele gosta de brincar com bolinhas, ir à rua e é louco por comida (a dele e dos donos).`,
-
-
+        `LUKE TEM OLHOS CLAROS, É UM AMORZINHO DE FILHOTINHO DE 3 MESES SÓ, NO IPIRANGA, S.PAULO C/ CÁSSIA: 11 99269-1046 ZAP SÓ MENSAGEM`,
+        `LUNA, UMA LINDA FILHOTINHA, MUITO AMOROSA! NO IPIRANGA, S.PAULO C/ CÁSSIA:11 99269-1046 ZAP SÓ MENSAGEM`,
+        `Resgatado recem nascido hoje está com 4 mesinhos em lar temporário, precisa de um lar seguro e definitivo, entregamos pra casa telada  muito meiguinho, usa caixinha de areia e tem um charme nesses olhinhos`,
+        `THEO É UMA FOFURA DE FILHOTINHO! NO IPIRANGA, S.PAULO, C/ CÁSSIA: 11 99269-1046 ZAP SÓ MENSAGEM`,
+        `Encontramos ele na rua de Ibirité/MG estava com o pênis dilacerado e todo machucado. Resgatamos e cuidamos dele. Foi castrado e vacinado. Ama um carinho e está doido com uma família que cuide e ame ele. Tem um ano e meio. Mistura de akita com chow chow. Vamos dar um lar pra ele cheio de amor pessoal!!!!`,
+        `Femea, 1 ano, castrada e vacinada. Foi abandonada no Jd Caputera, próximo a cidade de Embu das artes. Na época estava prenha. Uma pessoa bondosa a recolheu e esperou nascer os bebes que foram muito bem adotados. Agora, Poly precisa encontrar um lar tb. É muito boazinha, um tanto tímida e se dá bem com crianças e outros cães.`,
+        `Zion é da raça Yorkshire, ele tem 5 aninhos. É um cachorro muito amoroso e levado... Ele gosta de brincar com bolinhas, ir à rua e é louco por comida (a dele e dos donos).`,
     ]
+    
+
     console.log(info);
     console.log(nome);
-    function ver_mais(){
+    function ver_mais() {
         div_sequencia_btn.style.display = 'block'
-         id_div_banner.style.display = 'none';
-         id_div_banner_2.style.display = 'none';
-         id_div_dicas.style.display = 'none';
+        id_div_banner.style.display = 'none';
+        id_div_banner_2.style.display = 'none';
+        id_div_dicas.style.display = 'none';
         id_btn_1.style.display = 'none';
         btn_1.style.display = 'none';
         id_btn_ver_mais1.style = 'background-color: rgb(68, 68, 237)';
@@ -523,19 +826,19 @@ Contatos com Jéssica por WhatsApp: (11) 99425-8882`,
         id_frase_navbar.style.display = 'none'
     };
 
-    function adotar(){
-       
+    function adotar() {
+
         id_pet_lista_2.style.display = 'block';
-         id_div_banner.style.display = 'none';
-         id_div_banner_2.style.display = 'none';
-         id_div_dicas.style.display = 'none';
+        id_div_banner.style.display = 'none';
+        id_div_banner_2.style.display = 'none';
+        id_div_dicas.style.display = 'none';
         id_btn_1.style.display = 'none';
         btn_1.style.display = 'none';
         div_sequencia_btn.style.display = 'block'
         all_select_box.style.display = 'block'
-    } 
+    }
 
-    function doar(){
+    function doar() {
         console.log('teste')
         id_main.style.display = 'none';
         container_doar.style.display = 'block'
@@ -543,20 +846,20 @@ Contatos com Jéssica por WhatsApp: (11) 99425-8882`,
         id_espaco_footer.style.display = 'block'
         frase_h2.style.display = 'none';
     }
-    function quem_somos(){
+    function quem_somos() {
         id_main.style.display = 'none';
         id_quem_somos.style.display = 'block';
         frase_h2.style.display = 'none';
         container_estrutura.style.display = 'none';
     }
 
-    function encontre(){
+    function encontre() {
         id_quem_somos.style.display = 'none'
         frase_h2.style.display = 'block';
         div_sequencia_btn.style.display = 'block'
-         id_div_banner.style.display = 'none';
-         id_div_banner_2.style.display = 'none';
-         id_div_dicas.style.display = 'none';
+        id_div_banner.style.display = 'none';
+        id_div_banner_2.style.display = 'none';
+        id_div_dicas.style.display = 'none';
         id_btn_1.style.display = 'none';
         btn_1.style.display = 'none';
         id_btn_ver_mais1.style = 'background-color: rgb(68, 68, 237)';
@@ -566,20 +869,13 @@ Contatos com Jéssica por WhatsApp: (11) 99425-8882`,
         all_select_box.style.display = 'none'
         container_estrutura.style.display = 'none';
     }
-    
-    function estrutura_pet() {
-        id_main.style.display = 'none';
-        container_estrutura.style.display = 'block';
-        // <img id="image_pet" src="../public/assets/imgs/pet_1.jpg" alt="">
-        
-        
-    }
-    
-    function sequencia_1(){
+
+
+    function sequencia_1() {
         id_btn_ver_mais1.style = 'background-color: "silver"';
         id_btn_ver_mais1.style = 'background-color: "blue"';
         id_pet_lista_0.innerHTML = '';
-       
+
 
     }
 </script>

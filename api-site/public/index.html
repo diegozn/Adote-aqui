@@ -12,7 +12,7 @@
 
 </head>
 
-<body>
+<body onclick="estrutura()">
 
     <header>
         <nav>
@@ -809,11 +809,31 @@ Contatos com Jéssica por WhatsApp: (11) 99425-8882`,
         `Encontramos ele na rua de Ibirité/MG estava com o pênis dilacerado e todo machucado. Resgatamos e cuidamos dele. Foi castrado e vacinado. Ama um carinho e está doido com uma família que cuide e ame ele. Tem um ano e meio. Mistura de akita com chow chow. Vamos dar um lar pra ele cheio de amor pessoal!!!!`,
         `Femea, 1 ano, castrada e vacinada. Foi abandonada no Jd Caputera, próximo a cidade de Embu das artes. Na época estava prenha. Uma pessoa bondosa a recolheu e esperou nascer os bebes que foram muito bem adotados. Agora, Poly precisa encontrar um lar tb. É muito boazinha, um tanto tímida e se dá bem com crianças e outros cães.`,
         `Zion é da raça Yorkshire, ele tem 5 aninhos. É um cachorro muito amoroso e levado... Ele gosta de brincar com bolinhas, ir à rua e é louco por comida (a dele e dos donos).`,
-    ]
+    ];
+    
+    
+    function estrutura() {
+    var evento_click = event.target
+    
+    if (evento_click.tagName === "IMG") {
+        console.log(event.target.tagName)
+        container_estrutura.style.display = 'block';
+        id_main.style.display = 'none';
+        frase_h2.style.display = 'none';
+        container_estrutura.style.display = 'none';
+
+    }
+  
+         
+
+        }
+       
+      
     
 
-    console.log(info);
-    console.log(nome);
+    
+    // document.getElementById("pet_1").addEventListener("click", estrutura)
+
     function ver_mais() {
         div_sequencia_btn.style.display = 'block'
         id_div_banner.style.display = 'none';

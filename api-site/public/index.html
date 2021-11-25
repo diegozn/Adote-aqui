@@ -108,7 +108,7 @@
                         </div>
                     </div>
                 </div>
-                <div class="pet_1"><img id="4" src="assets/imgs/pet_4.png" alt="">
+                <div class="pet_1"><img id="4" src="assets/imgs/pet_4.jpg" alt="">
                     <div class="div_itens">
                         <div class="pet_nome"> &emsp;Laica<br><span class="pet_cidade">&emsp;São Paulo, São Paulo</span>
                         </div>
@@ -529,22 +529,12 @@
     <div id="container_estrutura">
 
         <div id="id_estrutura_pet">
-            <img id="image_pet" src="../public/assets/imgs/pet_10.jpg" alt="">
+            <img id="image_pet" src="../public/assets/imgs/pet_1.jpg" alt="">
             <div id="texto_pet">
-                <h1>Laika</h1>
+                <h1 id="h1_nome_pet">Laika</h1>
                 <p id="texto_pet_tag">Cachorro | Macho | Filhote | Porte médio</span> <br> <br>
                     <span><i class="fas fa-map-marker-alt"></i> Região: São paulo, São Paulo</span> <br>
-                <p>Sobre a Personalidade do Pet:</p> <br>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Delectus <br> quidem officia eligendi earum
-                    reprehenderit corporis sequi, accusamus magni porro nobis distinctio? Accusamus, quisquam! Quisquam
-                    laborum natus corporis voluptatem eveniet nobis?</p> <br> <br>
-
-                <p>Sobre a Personalidade do Pet:</p> <br>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestias excepturi officiis, illo saepe
-                    sint id nesciunt neque voluptates sit ducimus? Officia temporibus, quos cupiditate maiores
-                    dignissimos perspiciatis vero veniam. Eum. Lorem ipsum dolor sit amet, consectetur adipisicing elit.
-                    Nemo debitis tenetur consequuntur, laboriosam officiis veniam doloribus quia! Fuga nam eveniet,
-                    voluptatem dolor dolorum, nesciunt cupiditate, ad saepe unde eum quisquam!</p>
+                    <div id="info_pet"></div>
                 <br><br>
             </div>
         </div>
@@ -817,30 +807,27 @@ Contatos com Jéssica por WhatsApp: (11) 99425-8882`,
     
     if (evento_click.tagName === "IMG") {
         var imagem_correta = Number(event.target.id)
-        console.log(imagem_correta)
+        
+        for (var i = 0; i<= imagem_correta; i++) {
+            info_pet.innerHTML = `<P>${info[i]}<P>`
+            
+            image_pet.src =  `../public/assets/imgs/pet_${i}.jpg`;               
+            h1_nome_pet.innerHTML = `${nome[i]}`
+           
+        }
         container_estrutura.style.display = 'block';
         id_main.style.display = 'none';
         frase_h2.style.display = 'none';
         container_estrutura.style.display = 'none';
-        id_estrutura_pet.style.display = 'block';
         container_estrutura.style.display = 'block';
-        
-        for (var i = 0; i<= nome.length; i++) {
-
-            .innerHTML = ``; 
-            `<img id="1" src="assets/imgs/pet_1.jpg" alt="">`
-        }
     }
-  
-         
-
         }
        
       
     
 
     
-    // document.getElementById("pet_1").addEventListener("click", estrutura)
+   
 
     function ver_mais() {
         div_sequencia_btn.style.display = 'block'

@@ -777,24 +777,10 @@ display: none;
     width: 50%;
     height: 500px;
     border-radius: 10px;
-    overflow-y: scroll;
+    
     background-color: rgb(240, 240, 240);
     
 }
-
-#texto_pet::-webkit-scrollbar {
-    width: 11px;
-  }
-   
-  #texto_pet::-webkit-scrollbar-track {
-    box-shadow: inset 0 0 6px silver;
-  }
-   
-  #texto_pet::-webkit-scrollbar-thumb {
-    background-color: #7e7efd;
-    outline: 1px solid silver;
-    border-radius: 5px;
-  }
 
 
 

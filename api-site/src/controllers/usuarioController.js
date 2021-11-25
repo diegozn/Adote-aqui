@@ -102,13 +102,14 @@ function anunciardoacao(req, res) {
     var sobre = req.body.sobreServer;
     var foto = req.body.fotoServer;
     var contato = req.body.contatoServer;
-
-    if (animal == undefined) {
+    // aquiiii
+    if (animal == undefined) { 
         res.status(400).send("Seu nome está undefined!");
     } else if (nomeAnimal == undefined) {
         res.status(400).send("Seu email está undefined!");
     } else if (sexo == undefined) {
         res.status(400).send("Sua senha está undefined!");
+        else if 
     } else {
         
         usuarioModel.anunciardoacao(nome, email, senha, telefone)

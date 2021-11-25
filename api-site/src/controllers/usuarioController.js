@@ -102,17 +102,25 @@ function anunciardoacao(req, res) {
     var sobre = req.body.sobreServer;
     var foto = req.body.fotoServer;
     var contato = req.body.contatoServer;
-    // aquiiii
+    
     if (animal == undefined) { 
-        res.status(400).send("Seu nome está undefined!");
+        res.status(400).send("Seu animal está undefined!");
     } else if (nomeAnimal == undefined) {
-        res.status(400).send("Seu email está undefined!");
+        res.status(400).send("O nome do está undefined!");
     } else if (sexo == undefined) {
-        res.status(400).send("Sua senha está undefined!");
-        else if 
-    } else {
-        
-        usuarioModel.anunciardoacao(nome, email, senha, telefone)
+        res.status(400).send("Seu sexo está undefined!");    
+    } else if (porte == undefined) {
+        res.status(400).send("Seu porte está undefined!");   
+    } else if (idade == undefined) {
+        res.status(400).send("Sua idade está undefined!");   
+    } else if (sobre == undefined) {
+        res.status(400).send("Sua foto está undefined!");   
+    } else if (foto == undefined) {
+        res.status(400).send("Sua foto está undefined!");   
+    } else if (contato == undefined) {
+        res.status(400).send("Sua contato está undefined!");   
+    } else {  
+        usuarioModel.anunciardoacao(animal, nomeAnimal, sexo, porte, idade, sobre, foto, contato)
             .then(
                 function (resultado) {
                     res.json(resultado);

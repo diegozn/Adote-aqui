@@ -27,10 +27,10 @@ function cadastrar(nome, email, senha, telefone) {
     return database.executar(instrucao);
 }
 
-function anunciardoacao(nome, email, senha, telefone) {
-    console.log("ACESSEI O USUARIO MODEL \n \n\t\t >> Se aqui der erro de 'Error: connect ECONNREFUSED',\n \t\t >> verifique suas credenciais de acesso ao banco\n \t\t >> e se o servidor de seu BD está rodando corretamente. \n\n function cadastrar():", nome, email, senha, telefone);
+function anunciardoacao(animal, nomeAnimal, sexo, porte, idade, sobre, foto, contato) {
+    console.log("ACESSEI O usuarioModel.ANUNCIARDOACAO MODEL \n \n\t\t >> Se aqui der erro de 'Error: connect ECONNREFUSED',\n \t\t >> verifique suas credenciais de acesso ao banco\n \t\t >> e se o servidor de seu BD está rodando corretamente. \n\n function anunciardoacao():", animal, nomeAnimal, sexo, porte, idade, sobre, foto, contato);
     var instrucao = `
-        INSERT INTO usuario (nome, email, senha, telefone) VALUES ('${nome}', '${email}', '${senha}', '${telefone}');
+        INSERT INTO pet (animal, nomeAnimal, sexo, porte, idade, sobre, foto, contato) VALUES ('${animal}', '${nomeAnimal}', '${sexo}', '${porte}', '${idade}', '${sobre}', '${foto}', '${contato}');
     `;
     console.log("Executando a instrução SQL: \n" + instrucao);
     return database.executar(instrucao);

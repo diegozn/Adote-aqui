@@ -19,4 +19,8 @@ router.post("/autenticar", function (req, res) {
     usuarioController.entrar(req, res);
 });
 
+router.post("/anunciardoacao", function (req, res) {
+    usuarioController.anunciardoacao(req, res);
+});
+
 module.exports = router;

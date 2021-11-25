@@ -459,14 +459,14 @@
 
             <button id="id_btn_1" class="btn_1" onclick="ver_dicas()">Ver dicas</button>
 
-
+<!-- 
             <div id="div_sequencia_btn" style="display: none;" class="sequencia">
                 <button id="id_btn_ver_mais1" class="btn_ver_mais1">1</button>
                 <button onclick="sequencia_1()" class="btn_ver_mais2">2</button>
                 <button class="btn_ver_mais3">3</button>
                 <button class="btn_ver_mais3">...</button>
 
-            </div>
+            </div> -->
             <div class="espaco2"></div>
 
     </main>
@@ -479,41 +479,38 @@
             <br>
             <br>
             <span>Animal:</span> <br>
-            <select name="">
+            <select id="id_s_animal">
                 <option value="#"></option>
-                <option value="">Gato</option>
-                <option value="">Cachorro</option>
+                <option value="gato">Gato</option>
+                <option value="cachorro">Cachorro</option>
             </select> <br>
             <span>Nome do animal:</span> <br>
-            <input class="span_c_border" type="text" placeholder="">
+            <input class="span_c_border" id="id_ipt_nome_animal" type="text" placeholder="">
             <br>
             <span>Sexo:</span> <br>
-            <select name="" id="">
+            <select name="" id="id_s_sexo">
                 <option value="#"></option>
-                <option value="">Macho...</option>
-                <option value="">Fêmea...</option>
+                <option value="macho">Macho...</option>
+                <option value="femea">Fêmea...</option>
             </select> <br>
             <span>Porte:</span> <br>
-            <select name="" id="">
+            <select name="" id="id_s_porte">
                 <option value="#"></option>
-                <option value="">Pequeno</option>
-                <option value="">Médio</option>
-                <option value="">Grande</option>
+                <option value="pequeno">Pequeno</option>
+                <option value="medio">Médio</option>
+                <option value="grande">Grande</option>
             </select> <br>
             <span>Idade:</span> <br>
-            <select name="" id="">
-                <option value=""></option>
-                <option value="">Filhote...</option>
-                <option value="">Adulto...</option>
-                <option value="">Idoso...</option>
+            <select name="" id="id_s_idade">
+                <option value="#"></option>
+                <option value="filhote">Filhote...</option>
+                <option value="adulto">Adulto...</option>
+                <option value="idoso">Idoso...</option>
             </select>
             <span></span>
 
-            <span>Sobre a Personalidade do Pet:</span>
-            <input id="id_select_box_item_1" type="text" placeholder="Carinhoso / Dorminhoco, etc..."> <br>
-
-            <span>Demais Informações:</span>
-            <input id="id_select_box_item_2" type="text" placeholder="Castrado, vacinado, etc..."> <br> <br>
+            <span>Sobre o Pet:</span>
+            <input id="id_ipt_personalidade" class="id_select_box_item_1" type="text" placeholder="Personalidade, vacinado..."> <br>
 
             <span>Foto do Pet:</span>
 
@@ -521,8 +518,8 @@
             <input type="file" id="image_input" accept="image/png, image/jpg"><br>
             <div id="display_image"></div> <br>
             <span>Seu contato:</span>
-            <input id="id_ipt_telefone" type="text" placeholder=" (11) 96719-7958"><br> <br>
-            <button class="btn_anunciar">Anunciar Doação</button>
+            <input id="id_ipt_contato" type="text" placeholder=" (11) 96719-7958"><br> <br>
+            <button onclick="anunciardoacao()" class="btn_anunciar">Anunciar Doação</button>
         </form>
     </div>
 
@@ -807,11 +804,12 @@ Contatos com Jéssica por WhatsApp: (11) 99425-8882`,
     
     if (evento_click.tagName === "IMG") {
         var imagem_correta = Number(event.target.id)
-        
+        console.log(imagem_correta)
         for (var i = 0; i<= imagem_correta; i++) {
+            console.log(imagem_correta)
             info_pet.innerHTML = `<P>${info[i]}<P>`
             
-            image_pet.src =  `../public/assets/imgs/pet_${i}.jpg`;               
+            image_pet.src =  `assets/imgs/pet_${i}.jpg`;               
             h1_nome_pet.innerHTML = `${nome[i]}`
            
         }
@@ -830,7 +828,7 @@ Contatos com Jéssica por WhatsApp: (11) 99425-8882`,
    
 
     function ver_mais() {
-        div_sequencia_btn.style.display = 'block'
+        // div_sequencia_btn.style.display = 'block'
         id_div_banner.style.display = 'none';
         id_div_banner_2.style.display = 'none';
         id_div_dicas.style.display = 'none';
@@ -849,7 +847,7 @@ Contatos com Jéssica por WhatsApp: (11) 99425-8882`,
         id_div_dicas.style.display = 'none';
         id_btn_1.style.display = 'none';
         btn_1.style.display = 'none';
-        div_sequencia_btn.style.display = 'block'
+        // div_sequencia_btn.style.display = 'block'
         all_select_box.style.display = 'block'
     }
 
@@ -871,7 +869,7 @@ Contatos com Jéssica por WhatsApp: (11) 99425-8882`,
     function encontre() {
         id_quem_somos.style.display = 'none'
         frase_h2.style.display = 'block';
-        div_sequencia_btn.style.display = 'block'
+        // div_sequencia_btn.style.display = 'block'
         id_div_banner.style.display = 'none';
         id_div_banner_2.style.display = 'none';
         id_div_dicas.style.display = 'none';
@@ -885,14 +883,97 @@ Contatos com Jéssica por WhatsApp: (11) 99425-8882`,
         container_estrutura.style.display = 'none';
     }
 
+    function anunciardoacao() {
+        
 
-    function sequencia_1() {
-        id_btn_ver_mais1.style = 'background-color: "silver"';
-        id_btn_ver_mais1.style = 'background-color: "blue"';
-        id_pet_lista_0.innerHTML = '';
+        var animalVar = id_s_animal.value;
+        var nomeAnimalVar = id_ipt_nome_animal.value;
+        var sexoVar = id_s_sexo.value;
+        var porteVar = id_s_porte.value;
+        var idadeVar = id_s_idade.value;
+        var sobreVar = id_ipt_personalidade.value;
+        var fotoVar = image_input.value;
+        var contatoVar = id_ipt_contato.value;
 
+        if (animalVar == "" || nomeAnimalVar == "" || sexoVar == "" || porteVar == "" || idadeVar == "" || sobreVar == "" || fotoVar == "" || contatoVar == "") {
 
+            window.alert("Preencha todos os campos para prosseguir!");
+            if (animalVar == "#") {
+                console.log('Selecione o pet desejado!')
+            }
+            if (nomeAnimalVar == "") {
+                console.log('O nome do pet está em branco')
+            }
+            if (sexoVar == "#") {
+                console.log('sexo está em branco')
+            }
+            if (porteVar == "#") {
+                console.log('Selecione o porte do pet')
+            }
+            
+            if (idadeVar == "#") {
+                console.log('Selecione a idade do pet')
+            }
+            if (sobreVar == "") {
+                console.log('Digite o sobre o pet')
+            }
+            if (fotoVar == "") {
+                console.log('Selecione a foto do pet')
+            }
+
+            if (contatoVar == "") {
+                console.log('Digite seu contato está em branco')
+            }
+
+            return false;
+        }
+
+        fetch("/usuarios/anunciardoacao", {
+            method: "POST",
+            headers: {
+                "Content-Type": "application/json"
+            },
+            body: JSON.stringify({
+
+            animalServer: animalVar, 
+            nomeAnimalServer: nomeAnimalVar, 
+            sexoServer: sexoVar, 
+            porteServer: porteVar, 
+            idadeServer: idadeVar,
+            sobreServer: sobreVar, 
+            fotoServer: fotoVar,
+            contatoServer: contatoVar
+            
+            })
+        }).then(function (resposta) {
+
+            console.log("resposta: ", resposta);
+
+            if (resposta.ok) {
+                // window.alert("Cadastro realizado com sucesso!");
+                window.location = "login.html";
+                limparFormulario();
+                
+            } else {
+                throw ("Houve um erro ao tentar realizar o cadastro!");
+            }
+        }).catch(function (resposta) {
+            console.log(`#ERRO: ${resposta}`);
+            
+        });
+
+        return false;
     }
+
+
+
+    // function sequencia_1() {
+    //     id_btn_ver_mais1.style = 'background-color: "silver"';
+    //     id_btn_ver_mais1.style = 'background-color: "blue"';
+    //     id_pet_lista_0.innerHTML = '';
+
+
+    // }
 </script>
 
 

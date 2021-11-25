@@ -92,9 +92,47 @@ function cadastrar(req, res) {
     }
 }
 
+function anunciardoacao(req, res) {
+    
+    var animal = req.body.animalServer;
+    var nomeAnimal = req.body.nomeAnimalServer;
+    var sexo = req.body.sexoServer;
+    var porte = req.body.porteServer;
+    var idade = req.body.idadeServer;
+    var sobre = req.body.sobreServer;
+    var foto = req.body.fotoServer;
+    var contato = req.body.contatoServer;
+
+    if (animal == undefined) {
+        res.status(400).send("Seu nome está undefined!");
+    } else if (nomeAnimal == undefined) {
+        res.status(400).send("Seu email está undefined!");
+    } else if (sexo == undefined) {
+        res.status(400).send("Sua senha está undefined!");
+    } else {
+        
+        usuarioModel.anunciardoacao(nome, email, senha, telefone)
+            .then(
+                function (resultado) {
+                    res.json(resultado);
+                }
+            ).catch(
+                function (erro) {
+                    console.log(erro);
+                    console.log(
+                        "\nHouve um erro ao realizar o cadastro! Erro: ",
+                        erro.sqlMessage
+                    );
+                    res.status(500).json(erro.sqlMessage);
+                }
+            );
+    }
+}
+
 module.exports = {
     entrar,
     cadastrar,
     listar,
-    testar
+    testar,
+    anunciardoacao
 }

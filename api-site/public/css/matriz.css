@@ -668,14 +668,11 @@ font-weight: 400 ;
 }
 
 
-#id_select_box_item_1 {
+.id_select_box_item_1 {
   
     padding-bottom: 10%;
 } 
-#id_select_box_item_2 {
-  
-    padding-bottom: 10%;
-} 
+
 
 .btn_anunciar {
     padding: 10px;

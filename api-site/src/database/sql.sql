@@ -24,8 +24,8 @@ idade varchar(20),
 sobre varchar(300),
 foto varchar(45),
 contato varchar(20)
--- fk_usuario int,
--- foreign key (fk_usuario) references usuario(id)
+fk_usuario int,
+foreign key (fk_usuario) references usuario(id)
 );
  -- INSERT INTO pet (animal, nomeAnimal, sexo, porte, idade, sobre, foto, contato) VALUES ('a', 'f', 'f', 'fd', 'fd', 'tre', 'ewrg', 'gewr' );
 select * from pet;

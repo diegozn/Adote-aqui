@@ -732,6 +732,7 @@ font-weight: 400 ;
     height: 80%;
     background-color: #7e7efd72;
     
+    
 }
 
 #frase_h2 {
@@ -783,7 +784,7 @@ display: none;
 
 
 #texto_pet h1{
-   
+ 
     color: blue;
     margin-left: 10%;
     margin-top: 5%;
@@ -807,9 +808,28 @@ display: none;
 }
 
 
-/* #texto_pet h1{
+.myChart {
+    width: 500px;
+}
 
-} */
+.btn-logout {
+    margin: 0;
+    padding: 0;
+    width: 20%;
+    background-color: rgba(0, 0, 255, 0.124);
+   
+    color: white;
+    border-radius: 10px;
+    text-align: center;
+    padding: 10px 15px;
+    margin-bottom: 100px;
+    cursor: pointer;
+  }
+
+.btn-logout:hover {
+    background-color: transparent;
+    border: solid 2px rgba(255, 255, 255, 0.768);
+}
 
 footer {
     display: flex;

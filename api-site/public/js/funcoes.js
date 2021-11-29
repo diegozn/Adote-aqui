@@ -24,7 +24,12 @@ function limparSessao() {
     // aguardar();
     sessionStorage.clear();
     // finalizarAguardar();
-    window.location = "../login.html";
+    window.location = "../index.html";
+}
+
+function sair_da_sessao(){
+    window.location = "../index.html";
+    sessionStorage.clear();
 }
 
 // carregamento (loading)

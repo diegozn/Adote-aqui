@@ -25,8 +25,8 @@
 </head>
 
 <body>
-  <!-- <body onload="validarSessao(), atualizarFeed()"> -->
-  <!-- <body onload="validarSessao()"> -->
+  <body onload="validarSessao(), atualizarFeed()">
+ 
 
   <header>
     <nav>
@@ -34,7 +34,7 @@
       <div id="topo" class="menu">
         <a class="logo" href="index.html"><img src="../assets/imgs/fav.png" alt="Logo cachorro e gato"></a>
         <ul class="menu_1">
-          <li><a href="index.html">Inicio</a></li>
+          <li><a href="../index.html">Inicio</a></li>
           <li onclick="quem_somos()"><a href="#">Quem somos</a></li>
           <li onclick="encontre()"><a href="#">Encontre</a></li>
 
@@ -181,7 +181,65 @@
     });
     
   }
-  // iniciar -----------------------------------------------
+ 
+
+
+  var dado_cachorro;
+  var dado_gato;
+  qtdcachorro('cachorro')
+  function qtdcachorro() {
+    console.log('oi')
+    var cachorro = 'cachorro';
+    var gato = 'gato';
+   
+
+    fetch(`/pet/qtdcachorro/${cachorro}`, { cache: 'no-store' }).then(function (response) {
+      if (response.ok) {
+        response.json().then(function (novoRegistro) {
+
+          console.log(`Dados recebidos: ${JSON.stringify(novoRegistro)}`);
+          console.log(`Dados atuais do gráfico: ${cachorro}`);
+          dado_cachorro = JSON.stringify(novoRegistro[0]['qtd_cachorro']);
+          console.log(dado_cachorro);
+          localStorage.setItem('dado_cachorro', dado_cachorro)
+          
+          
+        });
+      } else {
+        console.error('Nenhum dado encontrado ou erro na API');
+        // proximaAtualizacao = setTimeout(() => atualizarGrafico(), 5000);
+      }
+    })
+    .catch(function (error) {
+      console.error(`Erro na obtenção dos dados p/ gráfico: ${error.message}`);
+    });
+    
+    fetch(`/pet/qtdcachorro/${gato}`, { cache: 'no-store' }).then(function (response) {
+      if (response.ok) {
+        response.json().then(function (novoRegistro) {
+          
+          console.log(`Dados recebidos: ${JSON.stringify(novoRegistro)}`);
+          console.log(`Dados atuais do gráfico: ${gato}`);
+          dado_gato = JSON.stringify(novoRegistro[0]['qtd_cachorro']);
+          console.log(dado_gato);
+          
+          localStorage.setItem('dado_gato', dado_gato)
+          
+          grafico_cachorro(dado_cachorro, dado_gato);
+          console.log(dado_cachorro)
+        });
+        
+      } else {
+        console.error('Nenhum dado encontrado ou erro na API');
+        // proximaAtualizacao = setTimeout(() => atualizarGrafico(), 5000);
+      }
+    })
+    
+    .catch(function (error) {
+      console.error(`Erro na obtenção dos dados p/ gráfico: ${error.message}`);
+    });
+    
+  }
 
   function grafico_cachorro(c,g) {
     console.log(c, g)

@@ -1,5 +1,4 @@
 CREATE DATABASE acquatec;
-
 USE acquatec;
 
 CREATE TABLE usuario (
@@ -12,13 +11,6 @@ CREATE TABLE usuario (
 insert into usuario 
 values (1, 'Diego', 'diego@gmail.com', '11534354', '123123');
 
-CREATE TABLE aviso (
-	id INT PRIMARY KEY AUTO_INCREMENT,
-	titulo VARCHAR(100),
-    descricao VARCHAR(150),
-	fk_usuario INT,
-	FOREIGN KEY (fk_usuario) REFERENCES usuario(id)
-); 
 
 create table pet (
 id int primary key auto_increment,
@@ -34,44 +26,44 @@ fk_usuario int,
 foreign key (fk_usuario) references usuario(id)
 );
 INSERT INTO pet (animal, nomeAnimal, sexo, porte, idade, sobre, foto, contato, fk_usuario)
-VALUES ('Cachorro', 'Cacau', 'Femea', 'Grande', 'Adulto', 'index', 'index', '5511967197968', 1 ),
-('Cachorro', 'Zeca', 'Macho', 'medio', 'Adulto', 'index', 'index', '5511967197968', 1),
+VALUES ('cachorro', 'Cacau', 'Femea', 'Grande', 'Adulto', 'index', 'index', '5511967197968', 1 ),
+('cachorro', 'Zeca', 'Macho', 'medio', 'Adulto', 'index', 'index', '5511967197968', 1),
  ('Gato', 'Débora', 'Femea', 'medio', 'Adulto', 'index', 'index', '5511967197971', 1),
  ('Gato', 'Frida', 'Femea', 'medio', 'Adulto', 'index', 'index', '5511967197971', 1 ),
  ('Gato', 'Vitória', 'Femea', 'medio', 'Adulto', 'index', 'index', '5511967197968', 1 ) ,
-  ('Cachorro', 'Lilica', 'Femea', 'Grande', 'adulto', 'index', 'index', '5511967197968', 1 ) ,
-  ('Cachorro', 'Simba', 'Macho', 'Grande', 'adulto', 'index', 'index', '5511967197968', 1 ),
- ('Cachorro', 'Elimia', 'Femea', 'Grande', 'idoso', 'index', 'index', '5511967197968', 1 ),
- ('Cachorro', 'Haylei', 'Macho', 'Grande', 'adulto', 'index', 'index', '5511967197968', 1 ),
- ('Cachorro', 'Jake', 'Macho', 'Grande', 'adulto', 'index', 'index', '5511967197968', 1 ) ,
-  ('Cachorro', 'Happy', 'Macho', 'Grande', 'filhote', 'index', 'index', '5511967197968', 1 ) ,
-  ('Cachorro', 'Duda', 'Femea', 'medio', 'filhote', 'index', 'index', '5511967197968', 1 ),
- ('Cachorro', 'Lilica', 'Femea', 'medio', 'adulto', 'index', 'index', '5511967197968', 1 ) ,
- ('Cachorro', 'bob', 'Macho', 'medio', 'idoso', 'index', 'index', '5511967197968', 1 ),
+  ('cachorro', 'Lilica', 'Femea', 'Grande', 'adulto', 'index', 'index', '5511967197968', 1 ) ,
+  ('cachorro', 'Simba', 'Macho', 'Grande', 'adulto', 'index', 'index', '5511967197968', 1 ),
+ ('cachorro', 'Elimia', 'Femea', 'Grande', 'idoso', 'index', 'index', '5511967197968', 1 ),
+ ('cachorro', 'Haylei', 'Macho', 'Grande', 'adulto', 'index', 'index', '5511967197968', 1 ),
+ ('cachorro', 'Jake', 'Macho', 'Grande', 'adulto', 'index', 'index', '5511967197968', 1 ) ,
+  ('cachorro', 'Happy', 'Macho', 'Grande', 'filhote', 'index', 'index', '5511967197968', 1 ) ,
+  ('cachorro', 'Duda', 'Femea', 'medio', 'filhote', 'index', 'index', '5511967197968', 1 ),
+ ('cachorro', 'Lilica', 'Femea', 'medio', 'adulto', 'index', 'index', '5511967197968', 1 ) ,
+ ('cachorro', 'bob', 'Macho', 'medio', 'idoso', 'index', 'index', '5511967197968', 1 ),
  ('Gato', 'Teco', 'Macho', 'medio', 'idoso','index', 'index', '5511967197968', 1) ,
   ('Gato', 'Sasha', 'Femea', 'medio', 'idoso','index', 'index', '5511967197968', 1) ,
   ('Gato', 'Tico', 'Macho', 'medio', 'filhote', 'index', 'index', '5511967197968', 1 ),
- ('Cachorro', 'Lobinho', 'Macho', 'Grande', 'filhote', 'index', 'index', '5511967197968', 1 ),
- ('Cachorro', 'Bob', 'Macho', 'Grande', 'filhote', 'index', 'index', '5511967197968', 1 ),
+ ('cachorro', 'Lobinho', 'Macho', 'Grande', 'filhote', 'index', 'index', '5511967197968', 1 ),
+ ('cachorro', 'Bob', 'Macho', 'Grande', 'filhote', 'index', 'index', '5511967197968', 1 ),
  ('Gato', 'Pérola', 'Femea', 'Grande', 'idoso', 'index', 'index', '5511967197968', 1 ) ,
   ('Gato', 'Raja', 'Femea', 'Grande', 'adulto', 'index', 'index', '5511967197968', 1) ,
   ('cachorro', 'Sarah', 'femea', 'grande', 'adulto', 'index', 'index', '5511967197968', 1 ),
  ('Gato', 'Gigi', 'Femea', 'Grande', 'adulto', 'index', 'index', '5511967197968', 1 ) ,
  ('Gato', 'Don', 'Macho', 'pequeno', 'filhote', 'index', 'index', '5511967197968', 1 ),
- ('Cachorro', 'Pipoca', 'macho', 'Grande', 'adulto', 'index', 'index', '5511967197968', 1) ,
+ ('cachorro', 'Pipoca', 'macho', 'Grande', 'adulto', 'index', 'index', '5511967197968', 1) ,
   ('Gato', 'Cherry', 'Femea', 'Grande', 'adulto', 'index', 'index', '5511967197968', 1 ) ,
   ('Gato', 'Ariane', 'Femea', 'Grande', 'adulto', 'index', 'index', '5511967197968', 1 ),
  ('Gato', 'Pitoco', 'Macho', 'Grande', 'adulto', 'index', 'index', '5511967197968', 1 ) ,
  ('Gato', 'Jessica', 'Femea', 'Grande', 'adulto', 'index', 'index', '5511967197968', 1 ),
  ('Gato', 'Shelley', 'Femea', 'Grande', 'adulto', 'index', 'index', '5511967197968', 1 ) ,
-  ('Cachorro', 'João', 'Macho', 'pequeno', 'filhote', 'index', 'index', '5511967197968', 1 ) ,
+  ('cachorro', 'João', 'Macho', 'pequeno', 'filhote', 'index', 'index', '5511967197968', 1 ) ,
   ('Gato', 'Thor', 'Macho', 'grande', 'adulto', 'index', 'index', '5511967197968', 1 ),
  ('Gato', 'Valente', 'Macho', 'medio' ,'adulto', 'index', 'index', '5511967197968', 1 ) ,
- ('Cachorro', 'Renata', 'Femea','medio' , 'adulto', 'index', 'index', '5511967197968', 1 ),
- ('Cachorro', 'Anya', 'Femea','medio' , 'adulto', 'index', 'index', '5511967197968', 1 ) ,
+ ('cachorro', 'Renata', 'Femea','medio' , 'adulto', 'index', 'index', '5511967197968', 1 ),
+ ('cachorro', 'Anya', 'Femea','medio' , 'adulto', 'index', 'index', '5511967197968', 1 ) ,
   ('cachorro', 'Minnie', 'Femea','medio' , 'adulto', 'index', 'index', '5511967197968', 1 ),
  ('cachorro', 'Ringo', 'Macho','medio' , 'adulto', 'index', 'index', '5511967197968', 1 ) ,
- ('Cachorro', 'Tamires', 'Femea','medio' , 'adulto', 'index', 'index', '5511967197968', 1 ),
+ ('cachorro', 'Tamires', 'Femea','medio' , 'adulto', 'index', 'index', '5511967197968', 1 ),
  ('cachorro', 'Giuliano', 'Macho','medio' , 'adulto', 'index', 'index', '5511967197968', 1 ) ,
   ('cachorro', 'Miss Kitty', 'Femea','pequeno' , 'adulto', 'index', 'index', '5511967197968', 1 ) ,
   ('cachorro', 'Gabi', 'Femea','pequeno', 'adulto', 'index', 'index', '5511967197968', 1 ),
@@ -85,6 +77,9 @@ VALUES ('Cachorro', 'Cacau', 'Femea', 'Grande', 'Adulto', 'index', 'index', '551
  ('gato', 'Sara','pequeno', 'femea', 'adulto', 'index', 'index', '5511967197968', 1) ,
   ('gato', 'Brad','pequeno', 'Macho', 'adulto', 'index', 'index', '5511967197968', 1) ; 
 
+select count(animal), animal from pet
+group by animal;
+
 -- Quantidade de cachorros
 select count(animal) from pet
 where animal = 'cachorro';
@@ -93,6 +88,7 @@ where animal = 'cachorro';
 select count(animal) from pet
 where animal = 'gato';
 
+select * from pet;
 
 -- Quantidade de cachorros de pequeno porte
 select count(porte) from pet
@@ -112,9 +108,11 @@ where animal = 'gato' and porte = 'pequeno';
 select count(porte) from pet
 where animal = 'gato' and porte = 'medio';
 
--- Quantidade de Gatos de grande porte
+-- Quantidade de grande porte
 select count(porte) from pet
 where animal = 'gato' and porte = 'grande';
+
+
 
 -- Quantidade de pet filhote
 select count(idade) from pet
@@ -126,6 +124,8 @@ where idade = 'adulto';
 select count(idade) from pet
 where idade = 'idoso';
 
-
-
+select count(animal), animal from pet
+group by animal;
+select * from pet;
+select * from usuario;
 

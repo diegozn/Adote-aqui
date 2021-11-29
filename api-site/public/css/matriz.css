@@ -830,6 +830,9 @@ display: none;
     background-color: transparent;
     border: solid 2px rgba(255, 255, 255, 0.768);
 }
+.header_logado {
+    display: none;
+}
 
 footer {
     display: flex;

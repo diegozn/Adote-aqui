@@ -8,13 +8,14 @@
     <title>Adote-aqui</title>
     <link rel="shortcut icon" href="assets/imgs/fav.png" type="image/x-icon">
     <script src="https://kit.fontawesome.com/37e38224d1.js" crossorigin="anonymous"></script>
+    <script src="js/funcoes.js"></script>
     <link rel="stylesheet" href="css/matriz.css">
 
 </head>
 
-<body onclick="estrutura()">
+<body onload="verificar_login()" onclick="estrutura()">
 
-    <header>
+    <header id="header_padrao">
         <nav>
 
             <div id="topo" class="menu">
@@ -31,6 +32,30 @@
                     <li><a href="cadastro.html">Se Cadastrar</a></li>
                 </ul>
             </div>
+        </nav>
+        <div class="foto_perfil"></div>
+    </header>
+
+    <header id="header_logado">
+        <nav>
+    
+          <div id="topo" class="menu">
+            <a class="logo" href="index.html"><img src="../assets/imgs/fav.png" alt="Logo cachorro e gato"></a>
+            <ul class="menu_1">
+              <li><a href="../index.html">Inicio</a></li>
+              <li onclick="quem_somos()"><a href="#">Quem somos</a></li>
+              <li onclick="encontre()"><a href="#">Encontre</a></li>
+    
+            </ul>
+    
+            <ul class="menu_2">
+    
+              <li><a>Olá, <span id="b_usuario">usuário</span><i class="fas fa-user-circle"></i></a></li>
+              <li><a style="cursor: pointer;" onclick="sair_da_sessao()">Sair</a></li>
+    
+    
+            </ul>
+          </div>
         </nav>
         <div class="foto_perfil"></div>
     </header>
@@ -89,34 +114,34 @@
 
         <div class="article">
             <div class="container">
-
                 <div id="id_pet_lista_0" class="pet_1_1"><img id="1" src="assets/imgs/pet_1.jpg" alt="">
                     <div class="div_itens">
-                        <div class="pet_nome"> &emsp;Laica<br><span class="pet_cidade">&emsp;São Paulo, São Paulo</span>
+                        <div class="pet_nome"> &emsp;Cacau<br><span class="pet_cidade">&emsp;São Paulo, São Paulo</span>
                         </div>
                     </div>
                 </div>
                 <div class="pet_1"><img id="2" src="assets/imgs/pet_2.jpg" alt="">
                     <div class="div_itens">
-                        <div id="id_pet_nome" class="pet_nome"> &emsp;Laica<br><span class="pet_cidade">&emsp;São Paulo,
+                        <div id="id_pet_nome" class="pet_nome"> &emsp;Zeca<br><span class="pet_cidade">&emsp;São Paulo,
                                 São Paulo</span></div>
                     </div>
                 </div>
                 <div class="pet_1"><img id="3" src="assets/imgs/pet_3.jpg" alt="">
                     <div class="div_itens">
-                        <div class="pet_nome"> &emsp;Laica<br><span class="pet_cidade">&emsp;São Paulo, São Paulo</span>
+                        <div class="pet_nome"> &emsp;Boris<br><span class="pet_cidade">&emsp;São Paulo, São Paulo</span>
                         </div>
                     </div>
                 </div>
                 <div class="pet_1"><img id="4" src="assets/imgs/pet_4.jpg" alt="">
                     <div class="div_itens">
-                        <div class="pet_nome"> &emsp;Laica<br><span class="pet_cidade">&emsp;São Paulo, São Paulo</span>
+                        <div class="pet_nome"> &emsp;Frida<br><span class="pet_cidade">&emsp;São Paulo, São Paulo</span>
                         </div>
                     </div>
                 </div>
                 <div class="pet_1"><img id="5" src="assets/imgs/pet_5.jpg" alt="">
                     <div class="div_itens">
-                        <div class="pet_nome"> &emsp;Laica<br><span class="pet_cidade">&emsp;São Paulo, São Paulo</span>
+                        <div class="pet_nome"> &emsp;Vitória<br><span class="pet_cidade">&emsp;São Paulo, São
+                                Paulo</span>
                         </div>
                     </div>
                 </div>
@@ -125,31 +150,34 @@
             <div id="id_pet_lista_1" class="container_2">
                 <div class="pet_2_2"><img id="6" src="assets/imgs/pet_6.jpg" alt="">
                     <div class="div_itens">
-                        <div class="pet_nome"> &emsp;Laica<br><span class="pet_cidade">&emsp;São Paulo, São Paulo</span>
+                        <div class="pet_nome"> &emsp;Lilica<br><span class="pet_cidade">&emsp;São Paulo, São
+                                Paulo</span>
                         </div>
                     </div>
                 </div>
                 <div class="pet_2"><img id="7" src="assets/imgs/pet_7.jpg" alt="">
                     <div class="div_itens">
-                        <div class="pet_nome"> &emsp;Laica<br><span class="pet_cidade">&emsp;São Paulo, São Paulo</span>
+                        <div class="pet_nome"> &emsp;Simba<br><span class="pet_cidade">&emsp;São Paulo, São Paulo</span>
                         </div>
                     </div>
                 </div>
                 <div class="pet_2"><img id="8" src="assets/imgs/pet_8.jpg" alt="">
                     <div class="div_itens">
-                        <div class="pet_nome"> &emsp;Laica<br><span class="pet_cidade">&emsp;São Paulo, São Paulo</span>
+                        <div class="pet_nome"> &emsp;Elimia<br><span class="pet_cidade">&emsp;São Paulo, São
+                                Paulo</span>
                         </div>
                     </div>
                 </div>
                 <div class="pet_2"><img id="9" src="assets/imgs/pet_9.jpg" alt="">
                     <div class="div_itens">
-                        <div class="pet_nome"> &emsp;Laica<br><span class="pet_cidade">&emsp;São Paulo, São Paulo</span>
+                        <div class="pet_nome"> &emsp;Haylei<br><span class="pet_cidade">&emsp;São Paulo, São
+                                Paulo</span>
                         </div>
                     </div>
                 </div>
                 <div class="pet_2"><img id="10" src="assets/imgs/pet_10.jpg" alt="">
                     <div class="div_itens">
-                        <div class="pet_nome"> &emsp;Laica<br><span class="pet_cidade">&emsp;São Paulo, São Paulo</span>
+                        <div class="pet_nome"> &emsp;Jake<br><span class="pet_cidade">&emsp;São Paulo, São Paulo</span>
                         </div>
                     </div>
                 </div>
@@ -159,31 +187,31 @@
                 <div class="container_2">
                     <div class="pet_2_2"><img id="11" src="assets/imgs/pet_11.jpg" alt="">
                         <div class="div_itens">
-                            <div class="pet_nome"> &emsp;Laica<br><span class="pet_cidade">&emsp;São Paulo, São
+                            <div class="pet_nome"> &emsp;Happy<br><span class="pet_cidade">&emsp;São Paulo, São
                                     Paulo</span></div>
                         </div>
                     </div>
                     <div class="pet_2"><img id="12" src="assets/imgs/pet_12.jpg" alt="">
                         <div class="div_itens">
-                            <div class="pet_nome"> &emsp;Laica<br><span class="pet_cidade">&emsp;São Paulo, São
+                            <div class="pet_nome"> &emsp;Zezinho<br><span class="pet_cidade">&emsp;São Paulo, São
                                     Paulo</span></div>
                         </div>
                     </div>
                     <div class="pet_2"><img id="13" src="assets/imgs/pet_13.jpg" alt="">
                         <div class="div_itens">
-                            <div class="pet_nome"> &emsp;Laica<br><span class="pet_cidade">&emsp;São Paulo, São
+                            <div class="pet_nome"> &emsp;Lilica<br><span class="pet_cidade">&emsp;São Paulo, São
                                     Paulo</span></div>
                         </div>
                     </div>
                     <div class="pet_2"><img id="14" src="assets/imgs/pet_14.jpg" alt="">
                         <div class="div_itens">
-                            <div class="pet_nome"> &emsp;Laica<br><span class="pet_cidade">&emsp;São Paulo, São
+                            <div class="pet_nome"> &emsp;Bob<br><span class="pet_cidade">&emsp;São Paulo, São
                                     Paulo</span></div>
                         </div>
                     </div>
                     <div class="pet_2"><img id="15" src="assets/imgs/pet_15.jpg" alt="">
                         <div class="div_itens">
-                            <div class="pet_nome"> &emsp;Laica<br><span class="pet_cidade">&emsp;São Paulo, São
+                            <div class="pet_nome"> &emsp;Teco<br><span class="pet_cidade">&emsp;São Paulo, São
                                     Paulo</span></div>
                         </div>
                     </div>
@@ -192,31 +220,32 @@
                 <div class="container_2">
                     <div class="pet_2_2"><img id="16" src="assets/imgs/pet_16.jpg" alt="">
                         <div class="div_itens">
-                            <div class="pet_nome"> &emsp;Laica<br><span class="pet_cidade">&emsp;São Paulo, São
+                            <div class="pet_nome"> &emsp;Sasha<br><span class="pet_cidade">&emsp;São Paulo, São
                                     Paulo</span></div>
                         </div>
                     </div>
                     <div class="pet_2"><img id="17" src="assets/imgs/pet_17.jpg" alt="">
                         <div class="div_itens">
-                            <div class="pet_nome"> &emsp;Laica<br><span class="pet_cidade">&emsp;São Paulo, São
+                            <div class="pet_nome"> &emsp;Lobinha<br><span class="pet_cidade">&emsp;São Paulo, São
                                     Paulo</span></div>
                         </div>
                     </div>
                     <div class="pet_2"><img id="18" src="assets/imgs/pet_18.jpg" alt="">
                         <div class="div_itens">
-                            <div class="pet_nome"> &emsp;Laica<br><span class="pet_cidade">&emsp;São Paulo, São
+                            <div class="pet_nome"> &emsp;Bob<br><span class="pet_cidade">&emsp;São Paulo, São
                                     Paulo</span></div>
                         </div>
                     </div>
+                  
                     <div class="pet_2"><img id="19" src="assets/imgs/pet_19.jpg" alt="">
                         <div class="div_itens">
-                            <div class="pet_nome"> &emsp;Laica<br><span class="pet_cidade">&emsp;São Paulo, São
+                            <div class="pet_nome"> &emsp;Pérola<br><span class="pet_cidade">&emsp;São Paulo, São
                                     Paulo</span></div>
                         </div>
                     </div>
                     <div class="pet_2"><img id="20" src="assets/imgs/pet_20.jpg" alt="">
                         <div class="div_itens">
-                            <div class="pet_nome"> &emsp;Laica<br><span class="pet_cidade">&emsp;São Paulo, São
+                            <div class="pet_nome"> &emsp;Raja<br><span class="pet_cidade">&emsp;São Paulo, São
                                     Paulo</span></div>
                         </div>
                     </div>
@@ -226,31 +255,31 @@
                 <div class="container_2">
                     <div class="pet_2_2"><img id="21" src="assets/imgs/pet_21.jpg" alt="">
                         <div class="div_itens">
-                            <div class="pet_nome"> &emsp;Laica<br><span class="pet_cidade">&emsp;São Paulo, São
+                            <div class="pet_nome"> &emsp;Sarah<br><span class="pet_cidade">&emsp;São Paulo, São
                                     Paulo</span></div>
                         </div>
                     </div>
                     <div class="pet_2"><img id="22" src="assets/imgs/pet_22.jpg" alt="">
                         <div class="div_itens">
-                            <div class="pet_nome"> &emsp;Laica<br><span class="pet_cidade">&emsp;São Paulo, São
+                            <div class="pet_nome"> &emsp;Gigi<br><span class="pet_cidade">&emsp;São Paulo, São
                                     Paulo</span></div>
                         </div>
                     </div>
                     <div class="pet_2"><img id="23" src="assets/imgs/pet_23.jpg" alt="">
                         <div class="div_itens">
-                            <div class="pet_nome"> &emsp;Laica<br><span class="pet_cidade">&emsp;São Paulo, São
+                            <div class="pet_nome"> &emsp;Don<br><span class="pet_cidade">&emsp;São Paulo, São
                                     Paulo</span></div>
                         </div>
                     </div>
                     <div class="pet_2"><img id="24" src="assets/imgs/pet_24.jpg" alt="">
                         <div class="div_itens">
-                            <div class="pet_nome"> &emsp;Laica<br><span class="pet_cidade">&emsp;São Paulo, São
+                            <div class="pet_nome"> &emsp;Pipoca<br><span class="pet_cidade">&emsp;São Paulo, São
                                     Paulo</span></div>
                         </div>
                     </div>
                     <div class="pet_2"><img id="25" src="assets/imgs/pet_25.jpg" alt="">
                         <div class="div_itens">
-                            <div class="pet_nome"> &emsp;Laica<br><span class="pet_cidade">&emsp;São Paulo, São
+                            <div class="pet_nome"> &emsp;Cherry<br><span class="pet_cidade">&emsp;São Paulo, São
                                     Paulo</span></div>
                         </div>
                     </div>
@@ -259,163 +288,167 @@
                 <div class="container_2">
                     <div class="pet_2_2"><img id="26" src="assets/imgs/pet_26.jpg" alt="">
                         <div class="div_itens">
-                            <div class="pet_nome"> &emsp;Laica<br><span class="pet_cidade">&emsp;São Paulo, São
+                            <div class="pet_nome"> &emsp;Ariane<br><span class="pet_cidade">&emsp;São Paulo, São
                                     Paulo</span></div>
                         </div>
                     </div>
                     <div class="pet_2"><img id="27" src="assets/imgs/pet_27.jpg" alt="">
                         <div class="div_itens">
-                            <div class="pet_nome"> &emsp;Laica<br><span class="pet_cidade">&emsp;São Paulo, São
+                            <div class="pet_nome"> &emsp;Pitoco<br><span class="pet_cidade">&emsp;São Paulo, São
                                     Paulo</span></div>
                         </div>
                     </div>
                     <div class="pet_2"><img id="28" src="assets/imgs/pet_28.jpg" alt="">
                         <div class="div_itens">
-                            <div class="pet_nome"> &emsp;Laica<br><span class="pet_cidade">&emsp;São Paulo, São
+                            <div class="pet_nome"> &emsp;Jessica<br><span class="pet_cidade">&emsp;São Paulo, São
                                     Paulo</span></div>
                         </div>
                     </div>
                     <div class="pet_2"><img id="29" src="assets/imgs/pet_29.jpg" alt="">
                         <div class="div_itens">
-                            <div class="pet_nome"> &emsp;Laica<br><span class="pet_cidade">&emsp;São Paulo, São
+                            <div class="pet_nome"> &emsp;Shelley<br><span class="pet_cidade">&emsp;São Paulo, São
                                     Paulo</span></div>
                         </div>
                     </div>
+                    
+                  
+                   
                     <div class="pet_2"><img id="30" src="assets/imgs/pet_30.jpg" alt="">
                         <div class="div_itens">
-                            <div class="pet_nome"> &emsp;Laica<br><span class="pet_cidade">&emsp;São Paulo, São
-                                    Paulo</span></div>
+                            <div class="pet_nome"> &emsp;Thor<br><span class="pet_cidade">&emsp;São Paulo, São
+                                Paulo</span></div>
+                            </div>
                         </div>
                     </div>
-                </div>
-
-                <div class="container_2">
-                    <div class="pet_2_2"><img id="31" src="assets/imgs/pet_31.jpg" alt="">
-                        <div class="div_itens">
-                            <div class="pet_nome"> &emsp;Laica<br><span class="pet_cidade">&emsp;São Paulo, São
+                    
+                    <div class="container_2">
+                        <div class="pet_2_2"><img id="31" src="assets/imgs/pet_31.jpg" alt="">
+                            <div class="div_itens">
+                                <div class="pet_nome"> &emsp;Valente<br><span class="pet_cidade">&emsp;São Paulo, São
                                     Paulo</span></div>
                         </div>
                     </div>
                     <div class="pet_2"><img id="32" src="assets/imgs/pet_32.jpg" alt="">
                         <div class="div_itens">
-                            <div class="pet_nome"> &emsp;Laica<br><span class="pet_cidade">&emsp;São Paulo, São
-                                    Paulo</span></div>
+                            <div class="pet_nome"> &emsp;Renata<br><span class="pet_cidade">&emsp;São Paulo, São
+                                Paulo</span></div>
+                            </div>
                         </div>
-                    </div>
-                    <div class="pet_2"><img id="33" src="assets/imgs/pet_33.jpg" alt="">
-                        <div class="div_itens">
-                            <div class="pet_nome"> &emsp;Laica<br><span class="pet_cidade">&emsp;São Paulo, São
+                        <div class="pet_2"><img id="33" src="assets/imgs/pet_33.jpg" alt="">
+                            <div class="div_itens">
+                                <div class="pet_nome"> &emsp;Anya<br><span class="pet_cidade">&emsp;São Paulo, São
                                     Paulo</span></div>
-                        </div>
-                    </div>
-                    <div class="pet_2"><img id="34" src="assets/imgs/pet_34.jpg" alt="">
-                        <div class="div_itens">
-                            <div class="pet_nome"> &emsp;Laica<br><span class="pet_cidade">&emsp;São Paulo, São
+                                </div>
+                            </div>
+                            <div class="pet_2"><img id="34" src="assets/imgs/pet_34.jpg" alt="">
+                                <div class="div_itens">
+                                    <div class="pet_nome"> &emsp;Renata<br><span class="pet_cidade">&emsp;São Paulo, São
+                                        Paulo</span></div>
+                                    </div>
+                                </div>
+                                <div class="pet_2"><img id="35" src="assets/imgs/pet_35.jpg" alt="">
+                                    <div class="div_itens">
+                                        <div class="pet_nome"> &emsp;Minnie<br><span class="pet_cidade">&emsp;São Paulo, São
+                                            Paulo</span></div>
+                                        </div>
+                                    </div>
+                                </div>
+                                
+                                <div class="container_2">
+                                    <div class="pet_2_2"><img id="36" src="assets/imgs/pet_36.jpg" alt="">
+                                        <div class="div_itens">
+                                            <div class="pet_nome"> &emsp;Ringo<br><span class="pet_cidade">&emsp;São Paulo, São
+                                                Paulo</span></div>
+                                            </div>
+                                        </div>
+                                        <div class="pet_2"><img id="37" src="assets/imgs/pet_37.jpg" alt="">
+                                            <div class="div_itens">
+                                                <div class="pet_nome"> &emsp;Tamires<br><span class="pet_cidade">&emsp;São Paulo, São
+                                                    Paulo</span></div>
+                                                </div>
+                                            </div>
+                                            <div class="pet_2"><img id="38" src="assets/imgs/pet_38.jpg" alt="">
+                                                <div class="div_itens">
+                                                    <div class="pet_nome"> &emsp;Giuliano<br><span class="pet_cidade">&emsp;São Paulo, São
                                     Paulo</span></div>
-                        </div>
-                    </div>
-                    <div class="pet_2"><img id="35" src="assets/imgs/pet_35.jpg" alt="">
-                        <div class="div_itens">
-                            <div class="pet_nome"> &emsp;Laica<br><span class="pet_cidade">&emsp;São Paulo, São
-                                    Paulo</span></div>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="container_2">
-                    <div class="pet_2_2"><img id="36" src="assets/imgs/pet_36.jpg" alt="">
-                        <div class="div_itens">
-                            <div class="pet_nome"> &emsp;Laica<br><span class="pet_cidade">&emsp;São Paulo, São
-                                    Paulo</span></div>
-                        </div>
-                    </div>
-                    <div class="pet_2"><img id="37" src="assets/imgs/pet_37.jpg" alt="">
-                        <div class="div_itens">
-                            <div class="pet_nome"> &emsp;Laica<br><span class="pet_cidade">&emsp;São Paulo, São
-                                    Paulo</span></div>
-                        </div>
-                    </div>
-                    <div class="pet_2"><img id="38" src="assets/imgs/pet_38.jpg" alt="">
-                        <div class="div_itens">
-                            <div class="pet_nome"> &emsp;Laica<br><span class="pet_cidade">&emsp;São Paulo, São
-                                    Paulo</span></div>
-                        </div>
-                    </div>
-                    <div class="pet_2"><img id="39" src="assets/imgs/pet_39.jpg" alt="">
-                        <div class="div_itens">
-                            <div class="pet_nome"> &emsp;Laica<br><span class="pet_cidade">&emsp;São Paulo, São
-                                    Paulo</span></div>
+                                </div>
+                            </div>
+                            <div class="pet_2"><img id="39" src="assets/imgs/pet_39.jpg" alt="">
+                                <div class="div_itens">
+                            <div class="pet_nome"> &emsp;Miss Kitty<br><span class="pet_cidade">&emsp;São Paulo, São
+                                Paulo</span></div>
                         </div>
                     </div>
                     <div class="pet_2"><img id="40" src="assets/imgs/pet_40.jpg" alt="">
                         <div class="div_itens">
-                            <div class="pet_nome"> &emsp;Laica<br><span class="pet_cidade">&emsp;São Paulo, São
-                                    Paulo</span></div>
-                        </div>
+                            <div class="pet_nome"> &emsp;Ariana<br><span class="pet_cidade">&emsp;São Paulo, São
+                                Paulo</span></div>
+                            </div>
                     </div>
                 </div>
-
+                
                 <div class="container_2">
                     <div class="pet_2_2"><img id="41" src="assets/imgs/pet_41.jpg" alt="">
                         <div class="div_itens">
-                            <div class="pet_nome"> &emsp;Laica<br><span class="pet_cidade">&emsp;São Paulo, São
-                                    Paulo</span></div>
+                            <div class="pet_nome"> &emsp;Gabi<br><span class="pet_cidade">&emsp;São Paulo, São
+                                Paulo</span></div>
+                            </div>
                         </div>
-                    </div>
-                    <div class="pet_2"><img id="42" src="assets/imgs/pet_42.jpg" alt="">
-                        <div class="div_itens">
-                            <div class="pet_nome"> &emsp;Laica<br><span class="pet_cidade">&emsp;São Paulo, São
+                        <div class="pet_2"><img id="42" src="assets/imgs/pet_42.jpg" alt="">
+                            <div class="div_itens">
+                                <div class="pet_nome"> &emsp;Daniel<br><span class="pet_cidade">&emsp;São Paulo, São
                                     Paulo</span></div>
-                        </div>
-                    </div>
-                    <div class="pet_2"><img id="43" src="assets/imgs/pet_43.jpg" alt="">
-                        <div class="div_itens">
-                            <div class="pet_nome"> &emsp;Laica<br><span class="pet_cidade">&emsp;São Paulo, São
-                                    Paulo</span></div>
-                        </div>
-                    </div>
-                    <div class="pet_2"><img id="44" src="assets/imgs/pet_44.jpg" alt="">
-                        <div class="div_itens">
-                            <div class="pet_nome"> &emsp;Laica<br><span class="pet_cidade">&emsp;São Paulo, São
-                                    Paulo</span></div>
-                        </div>
-                    </div>
-                    <div class="pet_2"><img id="45" src="assets/imgs/pet_45.jpg" alt="">
-                        <div class="div_itens">
-                            <div class="pet_nome"> &emsp;Laica<br><span class="pet_cidade">&emsp;São Paulo, São
-                                    Paulo</span></div>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="container_2">
-                    <div class="pet_2_2"><img id="46" src="assets/imgs/pet_46.jpg" alt="">
-                        <div class="div_itens">
-                            <div class="pet_nome"> &emsp;Laica<br><span class="pet_cidade">&emsp;São Paulo, São
+                                </div>
+                            </div>
+                            <div class="pet_2"><img id="43" src="assets/imgs/pet_43.jpg" alt="">
+                                <div class="div_itens">
+                                    <div class="pet_nome"> &emsp;Donilo<br><span class="pet_cidade">&emsp;São Paulo, São
+                                        Paulo</span></div>
+                                    </div>
+                                   
+                                </div>
+                                <div class="pet_2"><img id="44" src="assets/imgs/pet_44.jpg" alt="">
+                                    <div class="div_itens">
+                                        <div class="pet_nome"> &emsp;Zuba<br><span class="pet_cidade">&emsp;São Paulo, São
+                                            Paulo</span></div>
+                                        </div>
+                                    </div>
+                                    <div class="pet_2"><img id="45" src="assets/imgs/pet_45.jpg" alt="">
+                                        <div class="div_itens">
+                                            <div class="pet_nome"> &emsp;Evan<br><span class="pet_cidade">&emsp;São Paulo, São
+                                                Paulo</span></div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    
+                                    <div class="container_2">
+                                        <div class="pet_2_2"><img id="46" src="assets/imgs/pet_46.jpg" alt="">
+                                            <div class="div_itens">
+                                                <div class="pet_nome"> &emsp;Cibele<br><span class="pet_cidade">&emsp;São Paulo, São
                                     Paulo</span></div>
                         </div>
                     </div>
                     <div class="pet_2"><img id="47" src="assets/imgs/pet_47.jpg" alt="">
                         <div class="div_itens">
-                            <div class="pet_nome"> &emsp;Laica<br><span class="pet_cidade">&emsp;São Paulo, São
+                            <div class="pet_nome"> &emsp;Sara<br><span class="pet_cidade">&emsp;São Paulo, São
                                     Paulo</span></div>
                         </div>
                     </div>
                     <div class="pet_2"><img id="48" src="assets/imgs/pet_48.jpg" alt="">
                         <div class="div_itens">
-                            <div class="pet_nome"> &emsp;Laica<br><span class="pet_cidade">&emsp;São Paulo, São
+                            <div class="pet_nome"> &emsp;Runi<br><span class="pet_cidade">&emsp;São Paulo, São
                                     Paulo</span></div>
                         </div>
                     </div>
                     <div class="pet_2"><img id="49" src="assets/imgs/pet_49.jpg" alt="">
                         <div class="div_itens">
-                            <div class="pet_nome"> &emsp;Laica<br><span class="pet_cidade">&emsp;São Paulo, São
+                            <div class="pet_nome"> &emsp;Joça<br><span class="pet_cidade">&emsp;São Paulo, São
                                     Paulo</span></div>
                         </div>
                     </div>
                     <div class="pet_2"><img id="50" src="assets/imgs/pet_50.jpg" alt="">
                         <div class="div_itens">
-                            <div class="pet_nome"> &emsp;Laica<br><span class="pet_cidade">&emsp;São Paulo, São
+                            <div class="pet_nome"> &emsp;Runi<br><span class="pet_cidade">&emsp;São Paulo, São
                                     Paulo</span></div>
                         </div>
                     </div>
@@ -439,7 +472,8 @@
                         <br><span class="txt_2">Os produtos de limpeza podem oferecer riscos para o seu pet, afinal a
                             maioria deles contém ingredientes tóxicos, como o ácido bórico, o peróxido de sódio, a
                             amônia, entre outros. Mas manter a limpeza da casa e do ambiente em que o seu filho de
-                            quatro patas fica...</span></div>
+                            quatro patas fica...</span>
+                    </div>
                 </div>
                 <div class="dica"><img src="assets/imgs/dicas1.png" alt="">
                     <div class="txt_1">Confira tudo o que você precisa saber sobre Alimentação Natural para cães e
@@ -459,14 +493,14 @@
 
             <button id="id_btn_1" class="btn_1" onclick="ver_dicas()">Ver dicas</button>
 
-<!-- 
+            
             <div id="div_sequencia_btn" style="display: none;" class="sequencia">
                 <button id="id_btn_ver_mais1" class="btn_ver_mais1">1</button>
                 <button onclick="sequencia_1()" class="btn_ver_mais2">2</button>
                 <button class="btn_ver_mais3">3</button>
                 <button class="btn_ver_mais3">...</button>
 
-            </div> -->
+            </div>
             <div class="espaco2"></div>
 
     </main>
@@ -510,7 +544,8 @@
             <span></span>
 
             <span>Sobre o Pet:</span>
-            <input id="id_ipt_personalidade" class="id_select_box_item_1" type="text" placeholder="Personalidade, vacinado..."> <br>
+            <input id="id_ipt_personalidade" class="id_select_box_item_1" type="text"
+                placeholder="Personalidade, vacinado..."> <br>
 
             <span>Foto do Pet:</span>
 
@@ -531,7 +566,7 @@
                 <h1 id="h1_nome_pet">Laika</h1>
                 <p id="texto_pet_tag">Cachorro | Macho | Filhote | Porte médio</span> <br> <br>
                     <span><i class="fas fa-map-marker-alt"></i> Região: São paulo, São Paulo</span> <br>
-                    <div id="info_pet"></div>
+                <div id="info_pet"></div>
                 <br><br>
             </div>
         </div>
@@ -611,9 +646,9 @@
 
 </html>
 <script>
-   var nome = ['Cacau', 'Zeca', 'BORIS', 'Frida', 'Vitória', 'Lilica', 'Simba', ' Elimia', 'Haylei', 'Jake', 'Happy', 'Duda', ' Lilica', ' bob', 'Teco', ' Sasha', ' Tico', 'Lobinho', 'Bob', 'Pérola', 'Raja', ' Sarah', 'Gigi', 'Don', 'Pipoca', 'Cherry', ' Ariane', 'Pitoco', 'Jessica', 'Shelley', ' João', ' Thor', 'Valente', ' Renata', 'Anya ', 'Renata', 'Minnie', 'Ringo', 'Tamires', 'Giuliano', ' Miss Kitty', ' Gabi', 'Ariana', 'Daniel', 'Donilo', 'Zuba', 'Evan', 'Cibele', 'Sara', 'Brad'];
+    var nome = ['','Cacau', 'Zeca', 'BORIS', 'Frida', 'Vitória', 'Lilica', 'Simba', ' Elimia', 'Haylei', 'Jake', 'Happy', 'Zezinho', ' Lilica', ' bob', 'Teco', ' Sasha', 'Lobinha', 'Bob', 'Pérola', 'Raja', ' Sarah', 'Gigi', 'Don', 'Pipoca', 'Cherry', ' Ariane', 'Pitoco', 'Jessica', 'Shelley', ' Thor', 'Valente', ' Renata', 'Anya ', 'Renata', 'Minnie', 'Ringo', 'Tamires', 'Giuliano', ' Miss Kitty', 'Ariana', 'Gabi', 'Daniel', 'Donilo', 'Zuba', 'Evan', 'Cibele', 'Sara', 'Runi', 'Joça', 'Runi'];
 
-  var info = [`A mais linda do mundo!!!
+    var info = [`A mais linda do mundo!!!
 Dócil, amorosa,sociável. Ama bolinhas.
 Tem 8 meses, provável porte médio. Castrada e vacinas em andamento.
 Um doce!!
@@ -629,7 +664,7 @@ Vamos ajudar esse cãozinho ganhar uma família? Curtam, compartilhem.
 Quer fazer a diferença na vida desse doguinho?
 
 Mande e-mail para lorengarci@gmail.com`,
-        `MUITO BONZINHO, DÓCIL, JÁ CASTRADO, CONVIVE BEM C/CÃES E GATOS. NO IPIRANGA, S.PAULO, C/ CÁSSIA: 11 99269-1046 SÓ WHATSAPP`,
+        `VOCÊ E SUA FAMILIA IRÃO ADORAR O ZEQUINHA, MUITO BONZINHO, DÓCIL, JÁ CASTRADO,  CONVIVE BEM C/CÃES E GATOS. NO IPIRANGA, S.PAULO, C/ CÁSSIA: 11 99269-1046 SÓ WHATSAPP`,
         `IDADE: 2 MESES
 RAÇA: SRD
 
@@ -706,7 +741,7 @@ Já foi vermifugado
 Será doada apenas para apartamento telado ou casas teladas
 Para mais informaçoes entrar em contato com Julia pelo Whatzapp 11 95039 1384`,
         `Kira 2 anos castrada e vacinada! Pesa 10 kg , mansinha brincalhona , não está acostumada com gatos`,
-        `erca de 3 meses, castrada, com primeira dose da vacina, fiv/felv negativa, muito dócil e brincalhona. Ideal para quem já tem outo gato e quer companhia pra ele, ou quem quer adotar uma duplinha.
+        `Lobinhaaa é lindaaaaaa, uma cachorra super gentil e AMAVELL. É uma pena ter que fazer essa doação, depois da PANDEMIA nossa situação financeira não foi das melhores. com primeira dose da vacina, fiv/felv negativa, muito dócil e brincalhona. Ideal para quem já tem outo gato e quer companhia pra ele, ou quem quer adotar uma duplinha.
 Somente para apartamento totalmente telado, em Santos ou cidades vizinhas.`,
         `Max foi resgatado das ruas no início de 2020, ano passado, antes da pandemia.
 Foi tratado de um problema de pele, cujo único cuidado agora é a administração do Simparic ou do Nexgard Spectra mensalmente. Tem aproximadamente 4 anos, é castrado, vacinado e vermifugado.
@@ -797,32 +832,35 @@ Contatos com Jéssica por WhatsApp: (11) 99425-8882`,
         `Femea, 1 ano, castrada e vacinada. Foi abandonada no Jd Caputera, próximo a cidade de Embu das artes. Na época estava prenha. Uma pessoa bondosa a recolheu e esperou nascer os bebes que foram muito bem adotados. Agora, Poly precisa encontrar um lar tb. É muito boazinha, um tanto tímida e se dá bem com crianças e outros cães.`,
         `Zion é da raça Yorkshire, ele tem 5 aninhos. É um cachorro muito amoroso e levado... Ele gosta de brincar com bolinhas, ir à rua e é louco por comida (a dele e dos donos).`,
     ];
-    
-    
+
+    var v_email = sessionStorage.EMAIL_USUARIO;
+    var v_nome = sessionStorage.NOME_USUARIO;
+   
     function estrutura() {
-    var evento_click = event.target
-    
-    if (evento_click.tagName === "IMG") {
-        var imagem_correta = Number(event.target.id)
-        console.log(imagem_correta)
-        for (var i = 0; i<= imagem_correta; i++) {
+        var evento_click = event.target
+        console.log(event.target.id) 
+
+        if (evento_click.tagName === "IMG" && event.target.id != 0) {
+            var imagem_correta = Number(event.target.id)
             console.log(imagem_correta)
-            info_pet.innerHTML = `<P>${info[i]}<P>`
-            
-            image_pet.src =  `assets/imgs/pet_${i}.jpg`;               
-            h1_nome_pet.innerHTML = `${nome[i]}`
-           
+            for (var i = 0; i <= imagem_correta; i++) {
+                console.log(imagem_correta)
+                info_pet.innerHTML = `<P>${info[i]}<P>`
+
+                image_pet.src = `assets/imgs/pet_${i}.jpg`;
+                h1_nome_pet.innerHTML = `${nome[i]}`
+
+            }
+            container_estrutura.style.display = 'block';
+            id_main.style.display = 'none';
+            frase_h2.style.display = 'none';
+            container_estrutura.style.display = 'none';
+            container_estrutura.style.display = 'block';
         }
-        container_estrutura.style.display = 'block';
-        id_main.style.display = 'none';
-        frase_h2.style.display = 'none';
-        container_estrutura.style.display = 'none';
-        container_estrutura.style.display = 'block';
     }
-        }
 
     function ver_mais() {
-       
+
         id_pet_lista_2.style.display = 'block';
         // div_sequencia_btn.style.display = 'block';
         id_div_banner.style.display = 'none';
@@ -847,13 +885,38 @@ Contatos com Jéssica por WhatsApp: (11) 99425-8882`,
         all_select_box.style.display = 'block'
     }
 
+    function verificar_login(){
+        console.log('funcionando')
+        if (v_email != null && v_nome != null) {
+            header_logado.style.display = 'block';
+            header_padrao.style.display = 'none'
+            console.log('ta logado amigao')
+            console.log(v_email);
+            console.log(v_nome);
+        }else {
+            console.log('não ta logado amigao')
+            console.log(v_email);
+            console.log(v_nome);
+            header_padrao.style.display = 'block'
+            header_logado.style.display = 'none'
+        }
+    }
+
+
     function doar() {
-        console.log('teste')
+        if (v_email != null && v_nome != null) {
+            console.log('teste')
         id_main.style.display = 'none';
         container_doar.style.display = 'block'
         id_espaco.style.display = 'none';
         id_espaco_footer.style.display = 'block'
-        frase_h2.style.display = 'none';
+        frase_h2.style.display = 'none';  
+       
+        } else {
+            window.location = "cadastro.html"
+           
+        }   
+        
     }
     function quem_somos() {
         id_main.style.display = 'none';
@@ -880,7 +943,6 @@ Contatos com Jéssica por WhatsApp: (11) 99425-8882`,
     }
 
     function anunciardoacao() {
-        
 
         var animalVar = id_s_animal.value;
         var nomeAnimalVar = id_ipt_nome_animal.value;
@@ -890,7 +952,9 @@ Contatos com Jéssica por WhatsApp: (11) 99425-8882`,
         var sobreVar = id_ipt_personalidade.value;
         var fotoVar = image_input.value;
         var contatoVar = id_ipt_contato.value;
-
+        var fk_usuarioVar = parseInt(sessionStorage.ID_USUARIO);
+        // var ​fk_usuarioVar =​ ​sessionStorage​.​ID_USUARIO​;
+        
         if (animalVar == "" || nomeAnimalVar == "" || sexoVar == "" || porteVar == "" || idadeVar == "" || sobreVar == "" || fotoVar == "" || contatoVar == "") {
 
             window.alert("Preencha todos os campos para prosseguir!");
@@ -906,7 +970,7 @@ Contatos com Jéssica por WhatsApp: (11) 99425-8882`,
             if (porteVar == "#") {
                 console.log('Selecione o porte do pet')
             }
-            
+
             if (idadeVar == "#") {
                 console.log('Selecione a idade do pet')
             }
@@ -931,14 +995,15 @@ Contatos com Jéssica por WhatsApp: (11) 99425-8882`,
             },
             body: JSON.stringify({
 
-            animalServer: animalVar, 
-            nomeAnimalServer: nomeAnimalVar, 
-            sexoServer: sexoVar, 
-            porteServer: porteVar, 
-            idadeServer: idadeVar,
-            sobreServer: sobreVar, 
-            fotoServer: fotoVar,
-            contatoServer: contatoVar
+                animalServer: animalVar,
+                nomeAnimalServer: nomeAnimalVar,
+                sexoServer: sexoVar,
+                porteServer: porteVar,
+                idadeServer: idadeVar,
+                sobreServer: sobreVar,
+                fotoServer: fotoVar,
+                contatoServer: contatoVar,
+                fk_usuarioServer: fk_usuarioVar,
 
             })
         }).then(function (resposta) {
@@ -946,16 +1011,16 @@ Contatos com Jéssica por WhatsApp: (11) 99425-8882`,
             console.log("resposta: ", resposta);
 
             if (resposta.ok) {
-                // window.alert("Cadastro realizado com sucesso!");
-                window.location = "login.html";
+                window.alert("Cadastro realizado com sucesso!");
+                window.location = "index.html";
                 limparFormulario();
-                
+
             } else {
                 throw ("Houve um erro ao tentar realizar o cadastro!");
             }
         }).catch(function (resposta) {
             console.log(`#ERRO: ${resposta}`);
-            
+
         });
 
         return false;
@@ -971,6 +1036,3 @@ Contatos com Jéssica por WhatsApp: (11) 99425-8882`,
 
     }
 </script>
-
-
-

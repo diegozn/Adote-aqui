@@ -102,6 +102,7 @@ function anunciardoacao(req, res) {
     var sobre = req.body.sobreServer;
     var foto = req.body.fotoServer;
     var contato = req.body.contatoServer;
+    var fk_usuario = req.body.fk_usuarioServer;
     
     if (animal == undefined) { 
         res.status(400).send("Seu animal está undefined!");
@@ -120,7 +121,7 @@ function anunciardoacao(req, res) {
     } else if (contato == undefined) {
         res.status(400).send("Sua contato está undefined!");   
     } else {  
-        usuarioModel.anunciardoacao(animal, nomeAnimal, sexo, porte, idade, sobre, foto, contato)
+        usuarioModel.anunciardoacao(animal, nomeAnimal, sexo, porte, idade, sobre, foto, contato, fk_usuario)
             .then(
                 function (resultado) {
                     res.json(resultado);

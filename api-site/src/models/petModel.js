@@ -16,8 +16,8 @@ function qtdgato(gato) {
     return database.executar(instrucaoSql);
 }
 
+
 module.exports = {
     qtdcachorro,
     qtdgato,
-
 }

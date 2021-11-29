@@ -43,8 +43,11 @@ function qtdgato(req, res) {
     });
 }
 
+
+
 module.exports = {
     qtdgato,
     qtdcachorro,
+   
 
 }

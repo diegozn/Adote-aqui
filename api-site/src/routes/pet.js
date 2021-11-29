@@ -12,4 +12,5 @@ router.get("/tempo-real/:idAquario", function (req, res) {
     petController.buscarpetsEmTempoReal(req, res);
 })
 
+
 module.exports = router;
